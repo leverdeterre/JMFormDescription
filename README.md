@@ -25,4 +25,4 @@ To create a form object
 * JMListFormView,
 * JMTextViewFormView
 
-![Image](./screenshots/merged_demos)
+![Image](./screenshots/merged_demos.png)
