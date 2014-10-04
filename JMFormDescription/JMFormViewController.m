@@ -138,4 +138,11 @@
     NSLog(@"%s",__FUNCTION__);
 }
 
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    self.formDescription = [self generateFormDescriptionUsingModel:self.formModel];
+    [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
+}
+
+
 @end

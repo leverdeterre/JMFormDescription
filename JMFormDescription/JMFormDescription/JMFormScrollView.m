@@ -69,10 +69,22 @@
 
 - (void)reloadScrollViewWithFormDescription:(NSArray *)descriptions
 {
+    self.backgroundColor = [UIColor redColor];
+    
     if (self.contentView.superview) {
         [self.contentView removeFromSuperview];
     }
     
+    /*
+    CGRect contentViewFrame = self.bounds;
+    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+    if (UIInterfaceOrientationIsLandscape(orientation)) {
+        CGFloat width
+        contentViewFrame.  = self.bounds;
+    }
+    
+    CGRect contentViewFrame =
+    */
     self.contentView = [[UIView alloc] initWithFrame:self.bounds];
     self.contentView.backgroundColor = [UIColor blueColor];
     CGFloat yPos = 0.0f ;
