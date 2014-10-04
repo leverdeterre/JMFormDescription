@@ -41,6 +41,8 @@ To create a form object
 ### Todo
 * Support UIAppearance protocol,
 * Add PickerFormView, 
-* Add DatePickerFormView. 
+* Add DatePickerFormView,
+* Keyboard type,
+* Textfield Regex to validate input.
 
 
