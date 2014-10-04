@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C258171219E08F6900B84485 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C258171119E08F6900B84485 /* README.md */; };
 		C258171419E0918D00B84485 /* JMFormDescription.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C258171319E0918D00B84485 /* JMFormDescription.podspec */; };
+		C258171619E0932000B84485 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C258171519E0932000B84485 /* LICENSE */; };
 		C275E61F19E03A1200ECEB3E /* JMFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E61E19E03A1200ECEB3E /* JMFormModel.m */; };
 		C275E62C19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E62A19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m */; };
 		C275E62D19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E62B19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib */; };
@@ -60,6 +61,7 @@
 /* Begin PBXFileReference section */
 		C258171119E08F6900B84485 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C258171319E0918D00B84485 /* JMFormDescription.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JMFormDescription.podspec; sourceTree = SOURCE_ROOT; };
+		C258171519E0932000B84485 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		C275E61D19E03A1200ECEB3E /* JMFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormModel.h; sourceTree = "<group>"; };
 		C275E61E19E03A1200ECEB3E /* JMFormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormModel.m; sourceTree = "<group>"; };
 		C275E62919E0733C00ECEB3E /* JMFormListSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormListSelectionTableViewController.h; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				C258171119E08F6900B84485 /* README.md */,
+				C258171519E0932000B84485 /* LICENSE */,
 				C258171319E0918D00B84485 /* JMFormDescription.podspec */,
 				C27D210819D20298001AB506 /* JMFormDescription-Info.plist */,
 				C27D210919D20298001AB506 /* InfoPlist.strings */,
@@ -368,6 +371,7 @@
 				C275E62D19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib in Resources */,
 				C275E65D19E08C4600ECEB3E /* JMListFormView.xib in Resources */,
 				C275E65F19E08C4600ECEB3E /* JMSwitchFormView.xib in Resources */,
+				C258171619E0932000B84485 /* LICENSE in Resources */,
 				C275E65B19E08C4600ECEB3E /* JMFormView.xib in Resources */,
 				C275E65519E08C4600ECEB3E /* JMButtonFormView.xib in Resources */,
 				C275E66119E08C4600ECEB3E /* JMTextfieldFormView.xib in Resources */,
