@@ -2,14 +2,14 @@ Pod::Spec.new do |s|
 
   s.name         = "JMFormDescription"
   s.version      = "0.0.1"
-  s.summary      = "JMFormDescription is an iOS library for easily manage complex form."
+  s.summary      = "JMFormDescription is an iOS library for easily manage complex Form."
   s.requires_arc = true
 
   s.description  = <<-DESC
-                   JMFormDescription is an Objective-C library for easily creating and manage complex structured from.
-                   * A new way to describe your tableView "layout" in a very simple method,
+                   JMFormDescription is an Objective-C library for easily creating and manage complex structured Form.
+                   * A new way to your layout in a very simple method,
                    * Datasource / Delegate considerably simplified and focus on manipulated objet, no indexPath!
-                   * The code produced using this implementation his highly customizable, reusable and flexible. (No more bugs?)
+                   * Next/Previous/Done inpoutAccesoryView for TextField and TextView.
                    DESC
 
   s.homepage     = "https://github.com/leverdeterre/JMFormDescription"
@@ -22,5 +22,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.source       = { :git => "https://github.com/leverdeterre/JMFormDescription.git", :tag => "0.0.1" }
   s.source_files = 'Classes', 'JMFormDescription/JMFormDescription/*.{h,m}'
-  s.framework    = 'UIKit'
+  s.public_header_files = 'JMFormDescription/JMFormDescription/*.h'
+  s.resources           = "JMFormDescription/JMFormDescription/*.xib"
+  s.framework           = 'UIKit'
 end
