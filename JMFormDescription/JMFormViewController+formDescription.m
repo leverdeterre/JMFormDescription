@@ -27,6 +27,7 @@
     textfieldDesc.modelKey = @"textfieldText1";
     [descriptions addObject:textfieldDesc];
     
+    /*
     textfieldDesc  = [JMTextfieldFormViewDescription new];
     textfieldDesc.placeholder = nil;
     textfieldDesc.data = model.textfieldText2;
@@ -42,7 +43,8 @@
     textfieldDesc.modelKey = @"textfieldText3";
     textfieldDesc.placeholder = @"Editable via customSelector1";
     [descriptions addObject:textfieldDesc];
-    
+    */
+     
     headerDesc = [JMFormSectionHeaderFormViewDescription new];
     headerDesc.title = @"Textfield tests With title";
     [descriptions addObject:headerDesc];
@@ -55,6 +57,7 @@
     textfieldTitleDesc.modelKey = @"textfieldText4";
     [descriptions addObject:textfieldTitleDesc];
     
+    /*
     textfieldTitleDesc = [JMTextfieldWithTitleFormViewDescription new];
     textfieldTitleDesc.title = @"Mont titre4";
     textfieldTitleDesc.placeholder = @"Mon placeholder4";
@@ -62,6 +65,7 @@
     textfieldTitleDesc.formDelegate = self;
     textfieldTitleDesc.modelKey = @"textfieldText5";
     [descriptions addObject:textfieldTitleDesc];
+    */
     
     headerDesc = [JMFormSectionHeaderFormViewDescription new];
     headerDesc.title = @"Switch tests title";
@@ -74,6 +78,7 @@
     switchDescription.modelKey = @"switch1";
     [descriptions addObject:switchDescription];
     
+    /*
     switchDescription = [JMTSwitchFormViewDescription new];
     switchDescription.data = @"Mon text de switch";
     switchDescription.on = model.switch2;
@@ -113,6 +118,7 @@
     switchDescription.formDelegate = self;
     switchDescription.modelKey = @"switch4";
     [descriptions addObject:switchDescription];
+    */
     
     headerDesc = [JMFormSectionHeaderFormViewDescription new];
     headerDesc.title = @"List selection tests title";
@@ -127,6 +133,7 @@
     listDesc.modelKey = @"selectedColorNAme";
     [descriptions addObject:listDesc];
     
+    /*
     listDesc = [JMListFormViewDescription new];
     listDesc.title = model.listPlaceholder;
     listDesc.formDelegate = self;
@@ -135,6 +142,7 @@
     listDesc.data = model.selectedColorNAme2;
     listDesc.modelKey = @"selectedColorNAme2";
     [descriptions addObject:listDesc];
+    */
     
     headerDesc = [JMFormSectionHeaderFormViewDescription new];
     headerDesc.title = @"TextView tests";
@@ -147,12 +155,14 @@
     textDesc.modelKey = @"bigText";
     [descriptions addObject:textDesc];
     
+    /*
     textDesc = [JMTextViewFormViewDescription new];
     textDesc.formDelegate = self;
     textDesc.placeholder = @"";
     textDesc.data = model.bigText2;
     textDesc.modelKey = @"bigText2";
     [descriptions addObject:textDesc];
+    */
     
     formDesc.formViewDescriptions = descriptions;
     return formDesc;
