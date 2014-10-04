@@ -78,8 +78,8 @@
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
     NSString * finalString = [textView.text stringByReplacingCharactersInRange:range withString:text];
-    if ([self.formDelegate respondsToSelector:@selector(textUpdatedFromCell:textView:toText:)]) {
-        [self.formDelegate textUpdatedFromCell:self textView:self.textView toText:finalString];
+    if ([self.formDelegate respondsToSelector:@selector(textUpdatedFromFormView:textView:toText:)]) {
+        [self.formDelegate textUpdatedFromFormView:self textView:self.textView toText:finalString];
     }
     
     return YES;

@@ -39,7 +39,7 @@
 
 #pragma mark - JMFormDelegate
 
-- (void)textUpdatedFromCell:(JMTextfieldFormView *)formView textfield:(UITextField *)textfield toText:(NSString *)text
+- (void)textUpdatedFromFormView:(JMTextfieldFormView *)formView textfield:(UITextField *)textfield toText:(NSString *)text
 {
     NSLog(@"%@ change text to %@",formView,text);
     NSInteger index = [self.formScrollView indexForFormView:formView];
@@ -47,7 +47,7 @@
     [self.formModel setValue:text forKey:modelKey];
 }
 
-- (void)textUpdatedFromCell:(JMTextViewFormView *)formView textView:(UITextView *)textView toText:(NSString *)text
+- (void)textUpdatedFromFormView:(JMTextViewFormView *)formView textView:(UITextView *)textView toText:(NSString *)text
 {
     NSLog(@"%@ change text to %@",formView,text);
     NSInteger index = [self.formScrollView indexForFormView:formView];
@@ -55,7 +55,7 @@
     [self.formModel setValue:text forKey:modelKey];
 }
 
-- (void)switchChangedFromCell:(JMSwitchFormView *)formView toValue:(BOOL)value
+- (void)switchChangedFromFormView:(JMSwitchFormView *)formView toValue:(BOOL)value
 {
     NSLog(@"%@ change switch to %d",formView,value);
     [self.view endEditing:NO];
@@ -67,13 +67,13 @@
     [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
 }
 
-- (void)buttonPressedFromCell:(JMButtonFormView *)formView withTitleValue:(NSString *)value
+- (void)buttonPressedFromFormView:(JMButtonFormView *)formView withTitleValue:(NSString *)value
 {
     NSLog(@"%@ button Pressed to %@",formView,value);
     [self.view endEditing:NO];
 }
 
-- (void)listPressedFromCell:(JMListFormView *)formView withSelectedValue:(NSString *)value
+- (void)listPressedFromFormView:(JMListFormView *)formView withSelectedValue:(NSString *)value
 {
     NSLog(@"%@ listPressedFromCell Pressed to %@",formView,value);
     NSInteger index = [self.formScrollView indexForFormView:formView];

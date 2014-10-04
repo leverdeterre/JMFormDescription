@@ -44,8 +44,8 @@
 
 - (void)buttonPressed:(id)sender
 {
-    if ([self.formDelegate respondsToSelector:@selector(listPressedFromCell:withSelectedValue:)]){
-        [self.formDelegate listPressedFromCell:self withSelectedValue:self.textfield.text];
+    if ([self.formDelegate respondsToSelector:@selector(listPressedFromFormView:withSelectedValue:)]){
+        [self.formDelegate listPressedFromFormView:self withSelectedValue:self.textfield.text];
     }
 }
 

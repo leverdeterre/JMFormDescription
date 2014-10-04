@@ -52,7 +52,7 @@
 - (IBAction)buttonPressed:(id)sender
 {
     if (self.formDelegate) {
-        [self.formDelegate buttonPressedFromCell:self withTitleValue:self.button.titleLabel.text];
+        [self.formDelegate buttonPressedFromFormView:self withTitleValue:self.button.titleLabel.text];
     }
 }
 

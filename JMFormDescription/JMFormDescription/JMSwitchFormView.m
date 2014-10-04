@@ -52,7 +52,7 @@
 - (IBAction)switchChanged:(id)sender
 {
     if (self.formDelegate) {
-        [self.formDelegate switchChangedFromCell:self toValue:self.switche.on];
+        [self.formDelegate switchChangedFromFormView:self toValue:self.switche.on];
     }
 }
 

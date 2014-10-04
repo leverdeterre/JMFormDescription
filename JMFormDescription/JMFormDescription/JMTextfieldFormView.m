@@ -111,8 +111,8 @@
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     NSString * finalString = [textField.text stringByReplacingCharactersInRange:range withString:string];
-    if ([self.formDelegate respondsToSelector:@selector(textUpdatedFromCell:textfield:toText:)]) {
-        [self.formDelegate textUpdatedFromCell:self textfield:textField toText:finalString];
+    if ([self.formDelegate respondsToSelector:@selector(textUpdatedFromFormView:textfield:toText:)]) {
+        [self.formDelegate textUpdatedFromFormView:self textfield:textField toText:finalString];
     }
     
     return YES;

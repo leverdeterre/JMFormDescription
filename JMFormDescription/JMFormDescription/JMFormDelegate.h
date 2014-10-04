@@ -18,11 +18,11 @@
 @protocol JMFormDelegate <NSObject>
 
 @optional
-- (void)textUpdatedFromCell:(JMTextfieldFormView *)formView textfield:(UITextField *)textfield toText:(NSString *)text;
-- (void)textUpdatedFromCell:(JMTextViewFormView *)formView textView:(UITextView *)textView toText:(NSString *)text;
-- (void)switchChangedFromCell:(JMSwitchFormView *)formView toValue:(BOOL)value;
-- (void)buttonPressedFromCell:(JMButtonFormView *)formView withTitleValue:(NSString *)value;
-- (void)listPressedFromCell:(JMListFormView *)formView withSelectedValue:(NSString *)value;
+- (void)textUpdatedFromFormView:(JMTextfieldFormView *)formView textfield:(UITextField *)textfield toText:(NSString *)text;
+- (void)textUpdatedFromFormView:(JMTextViewFormView *)formView textView:(UITextView *)textView toText:(NSString *)text;
+- (void)switchChangedFromFormView:(JMSwitchFormView *)formView toValue:(BOOL)value;
+- (void)buttonPressedFromFormView:(JMButtonFormView *)formView withTitleValue:(NSString *)value;
+- (void)listPressedFromFormView:(JMListFormView *)formView withSelectedValue:(NSString *)value;
 - (void)selectedChoice:(NSString *)choice forModelKey:(NSString *)modelKey;
 - (void)scrollToFormView:(JMFormView *)formView;
 
