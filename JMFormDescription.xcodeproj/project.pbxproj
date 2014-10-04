@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C21F887C19DF673F00C27E64 /* JMTextfieldFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21F887B19DF673F00C27E64 /* JMTextfieldFormView.xib */; };
+		C21F887E19DF67A100C27E64 /* JMTextfieldWithTitleFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21F887D19DF67A100C27E64 /* JMTextfieldWithTitleFormView.xib */; };
+		C21F888019DFDE5700C27E64 /* JMFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21F887F19DFDE5700C27E64 /* JMFormView.xib */; };
+		C21F888619DFEE2900C27E64 /* JMSwitchFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F888519DFEE2900C27E64 /* JMSwitchFormView.m */; };
+		C21F888819DFEE4B00C27E64 /* JMSwitchFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21F888719DFEE4B00C27E64 /* JMSwitchFormView.xib */; };
+		C21F88F519DFFEFA00C27E64 /* JMFormSectionHeaderFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21F88F219DFFEFA00C27E64 /* JMFormSectionHeaderFormView.xib */; };
+		C21F88F619DFFEFA00C27E64 /* JMFormSectionHeaderFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F88F319DFFEFA00C27E64 /* JMFormSectionHeaderFormView.m */; };
+		C21F88F919E0165600C27E64 /* JMButtonFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F88F819E0165600C27E64 /* JMButtonFormView.m */; };
+		C21F88FB19E0167100C27E64 /* JMButtonFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21F88FA19E0167100C27E64 /* JMButtonFormView.xib */; };
+		C21F88FF19E0248700C27E64 /* JMFormScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F88FD19E0248700C27E64 /* JMFormScrollView.m */; };
+		C275E61F19E03A1200ECEB3E /* JMFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E61E19E03A1200ECEB3E /* JMFormModel.m */; };
+		C275E62219E05C8C00ECEB3E /* JMListFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E62119E05C8C00ECEB3E /* JMListFormView.m */; };
+		C275E62419E05CEE00ECEB3E /* JMListFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E62319E05CEE00ECEB3E /* JMListFormView.xib */; };
+		C275E62719E06C7900ECEB3E /* JMFormDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E62619E06C7900ECEB3E /* JMFormDescription.m */; };
+		C275E62C19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E62A19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m */; };
+		C275E62D19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E62B19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib */; };
+		C275E63019E07D4900ECEB3E /* JMTextViewFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E62F19E07D4900ECEB3E /* JMTextViewFormView.m */; };
+		C275E63219E07D5B00ECEB3E /* JMTextViewFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E63119E07D5B00ECEB3E /* JMTextViewFormView.xib */; };
+		C27D210119D20298001AB506 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D210019D20298001AB506 /* Foundation.framework */; };
+		C27D210319D20298001AB506 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D210219D20298001AB506 /* CoreGraphics.framework */; };
+		C27D210519D20298001AB506 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D210419D20298001AB506 /* UIKit.framework */; };
+		C27D210B19D20298001AB506 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C27D210919D20298001AB506 /* InfoPlist.strings */; };
+		C27D210D19D20298001AB506 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D210C19D20298001AB506 /* main.m */; };
+		C27D211119D20298001AB506 /* JMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D211019D20298001AB506 /* JMAppDelegate.m */; };
+		C27D211419D20298001AB506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27D211219D20298001AB506 /* Main.storyboard */; };
+		C27D211719D20298001AB506 /* JMFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D211619D20298001AB506 /* JMFormViewController.m */; };
+		C27D211919D20298001AB506 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27D211819D20298001AB506 /* Images.xcassets */; };
+		C27D212019D20298001AB506 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D211F19D20298001AB506 /* XCTest.framework */; };
+		C27D212119D20298001AB506 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D210019D20298001AB506 /* Foundation.framework */; };
+		C27D212219D20298001AB506 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D210419D20298001AB506 /* UIKit.framework */; };
+		C27D212A19D20298001AB506 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C27D212819D20298001AB506 /* InfoPlist.strings */; };
+		C27D212C19D20298001AB506 /* JMFormDescriptionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D212B19D20298001AB506 /* JMFormDescriptionTests.m */; };
+		C27D215D19D2057D001AB506 /* JMFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D215C19D2057D001AB506 /* JMFormView.m */; };
+		C27D216019D20637001AB506 /* JMTextfieldFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D215F19D20637001AB506 /* JMTextfieldFormView.m */; };
+		C27D216319D20661001AB506 /* JMTextfieldWithTitleFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D216219D20661001AB506 /* JMTextfieldWithTitleFormView.m */; };
+		C27D216619D2074B001AB506 /* JMFormViewController+formDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D216519D2074B001AB506 /* JMFormViewController+formDescription.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C27D212319D20298001AB506 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C27D20F519D20298001AB506 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C27D20FC19D20298001AB506;
+			remoteInfo = JMFormDescription;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C21F887B19DF673F00C27E64 /* JMTextfieldFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMTextfieldFormView.xib; sourceTree = "<group>"; };
+		C21F887D19DF67A100C27E64 /* JMTextfieldWithTitleFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMTextfieldWithTitleFormView.xib; sourceTree = "<group>"; };
+		C21F887F19DFDE5700C27E64 /* JMFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMFormView.xib; sourceTree = "<group>"; };
+		C21F888419DFEE2900C27E64 /* JMSwitchFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSwitchFormView.h; sourceTree = "<group>"; };
+		C21F888519DFEE2900C27E64 /* JMSwitchFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSwitchFormView.m; sourceTree = "<group>"; };
+		C21F888719DFEE4B00C27E64 /* JMSwitchFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMSwitchFormView.xib; sourceTree = "<group>"; };
+		C21F88F219DFFEFA00C27E64 /* JMFormSectionHeaderFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMFormSectionHeaderFormView.xib; sourceTree = "<group>"; };
+		C21F88F319DFFEFA00C27E64 /* JMFormSectionHeaderFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormSectionHeaderFormView.m; sourceTree = "<group>"; };
+		C21F88F419DFFEFA00C27E64 /* JMFormSectionHeaderFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormSectionHeaderFormView.h; sourceTree = "<group>"; };
+		C21F88F719E0165600C27E64 /* JMButtonFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMButtonFormView.h; sourceTree = "<group>"; };
+		C21F88F819E0165600C27E64 /* JMButtonFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMButtonFormView.m; sourceTree = "<group>"; };
+		C21F88FA19E0167100C27E64 /* JMButtonFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMButtonFormView.xib; sourceTree = "<group>"; };
+		C21F88FC19E01BE300C27E64 /* JMFormViewDatasource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMFormViewDatasource.h; sourceTree = "<group>"; };
+		C21F88FD19E0248700C27E64 /* JMFormScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormScrollView.m; sourceTree = "<group>"; };
+		C21F88FE19E0248700C27E64 /* JMFormScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormScrollView.h; sourceTree = "<group>"; };
+		C275E61D19E03A1200ECEB3E /* JMFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormModel.h; sourceTree = "<group>"; };
+		C275E61E19E03A1200ECEB3E /* JMFormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormModel.m; sourceTree = "<group>"; };
+		C275E62019E05C8C00ECEB3E /* JMListFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMListFormView.h; sourceTree = "<group>"; };
+		C275E62119E05C8C00ECEB3E /* JMListFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMListFormView.m; sourceTree = "<group>"; };
+		C275E62319E05CEE00ECEB3E /* JMListFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMListFormView.xib; sourceTree = "<group>"; };
+		C275E62519E06C7900ECEB3E /* JMFormDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormDescription.h; sourceTree = "<group>"; };
+		C275E62619E06C7900ECEB3E /* JMFormDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormDescription.m; sourceTree = "<group>"; };
+		C275E62819E0709000ECEB3E /* JMFormViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMFormViews.h; sourceTree = "<group>"; };
+		C275E62919E0733C00ECEB3E /* JMFormListSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormListSelectionTableViewController.h; sourceTree = "<group>"; };
+		C275E62A19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormListSelectionTableViewController.m; sourceTree = "<group>"; };
+		C275E62B19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMFormListSelectionTableViewController.xib; sourceTree = "<group>"; };
+		C275E62E19E07D4900ECEB3E /* JMTextViewFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTextViewFormView.h; sourceTree = "<group>"; };
+		C275E62F19E07D4900ECEB3E /* JMTextViewFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTextViewFormView.m; sourceTree = "<group>"; };
+		C275E63119E07D5B00ECEB3E /* JMTextViewFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMTextViewFormView.xib; sourceTree = "<group>"; };
+		C27D20FD19D20298001AB506 /* JMFormDescription.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMFormDescription.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27D210019D20298001AB506 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C27D210219D20298001AB506 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C27D210419D20298001AB506 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C27D210819D20298001AB506 /* JMFormDescription-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JMFormDescription-Info.plist"; sourceTree = "<group>"; };
+		C27D210A19D20298001AB506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C27D210C19D20298001AB506 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C27D210E19D20298001AB506 /* JMFormDescription-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JMFormDescription-Prefix.pch"; sourceTree = "<group>"; };
+		C27D210F19D20298001AB506 /* JMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMAppDelegate.h; sourceTree = "<group>"; };
+		C27D211019D20298001AB506 /* JMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMAppDelegate.m; sourceTree = "<group>"; };
+		C27D211319D20298001AB506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C27D211519D20298001AB506 /* JMFormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMFormViewController.h; sourceTree = "<group>"; };
+		C27D211619D20298001AB506 /* JMFormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMFormViewController.m; sourceTree = "<group>"; };
+		C27D211819D20298001AB506 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C27D211E19D20298001AB506 /* JMFormDescriptionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMFormDescriptionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27D211F19D20298001AB506 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C27D212719D20298001AB506 /* JMFormDescriptionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JMFormDescriptionTests-Info.plist"; sourceTree = "<group>"; };
+		C27D212919D20298001AB506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C27D212B19D20298001AB506 /* JMFormDescriptionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMFormDescriptionTests.m; sourceTree = "<group>"; };
+		C27D215A19D2051C001AB506 /* JMFormDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMFormDelegate.h; sourceTree = "<group>"; };
+		C27D215B19D2057D001AB506 /* JMFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormView.h; sourceTree = "<group>"; };
+		C27D215C19D2057D001AB506 /* JMFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormView.m; sourceTree = "<group>"; };
+		C27D215E19D20637001AB506 /* JMTextfieldFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTextfieldFormView.h; sourceTree = "<group>"; };
+		C27D215F19D20637001AB506 /* JMTextfieldFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTextfieldFormView.m; sourceTree = "<group>"; };
+		C27D216119D20661001AB506 /* JMTextfieldWithTitleFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTextfieldWithTitleFormView.h; sourceTree = "<group>"; };
+		C27D216219D20661001AB506 /* JMTextfieldWithTitleFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTextfieldWithTitleFormView.m; sourceTree = "<group>"; };
+		C27D216419D2074B001AB506 /* JMFormViewController+formDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JMFormViewController+formDescription.h"; sourceTree = "<group>"; };
+		C27D216519D2074B001AB506 /* JMFormViewController+formDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JMFormViewController+formDescription.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C27D20FA19D20298001AB506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27D210319D20298001AB506 /* CoreGraphics.framework in Frameworks */,
+				C27D210519D20298001AB506 /* UIKit.framework in Frameworks */,
+				C27D210119D20298001AB506 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C27D211B19D20298001AB506 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27D212019D20298001AB506 /* XCTest.framework in Frameworks */,
+				C27D212219D20298001AB506 /* UIKit.framework in Frameworks */,
+				C27D212119D20298001AB506 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C275E63319E0874700ECEB3E /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C275E61D19E03A1200ECEB3E /* JMFormModel.h */,
+				C275E61E19E03A1200ECEB3E /* JMFormModel.m */,
+				C27D211519D20298001AB506 /* JMFormViewController.h */,
+				C27D211619D20298001AB506 /* JMFormViewController.m */,
+				C275E62919E0733C00ECEB3E /* JMFormListSelectionTableViewController.h */,
+				C275E62A19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m */,
+				C275E62B19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib */,
+				C27D216419D2074B001AB506 /* JMFormViewController+formDescription.h */,
+				C27D216519D2074B001AB506 /* JMFormViewController+formDescription.m */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		C27D20F419D20298001AB506 = {
+			isa = PBXGroup;
+			children = (
+				C27D210619D20298001AB506 /* JMFormDescription */,
+				C27D212519D20298001AB506 /* JMFormDescriptionTests */,
+				C27D20FF19D20298001AB506 /* Frameworks */,
+				C27D20FE19D20298001AB506 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C27D20FE19D20298001AB506 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C27D20FD19D20298001AB506 /* JMFormDescription.app */,
+				C27D211E19D20298001AB506 /* JMFormDescriptionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C27D20FF19D20298001AB506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C27D210019D20298001AB506 /* Foundation.framework */,
+				C27D210219D20298001AB506 /* CoreGraphics.framework */,
+				C27D210419D20298001AB506 /* UIKit.framework */,
+				C27D211F19D20298001AB506 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C27D210619D20298001AB506 /* JMFormDescription */ = {
+			isa = PBXGroup;
+			children = (
+				C27D210F19D20298001AB506 /* JMAppDelegate.h */,
+				C27D211019D20298001AB506 /* JMAppDelegate.m */,
+				C27D211219D20298001AB506 /* Main.storyboard */,
+				C275E63319E0874700ECEB3E /* Demo */,
+				C27D215519D20411001AB506 /* formViews */,
+				C27D211819D20298001AB506 /* Images.xcassets */,
+				C27D210719D20298001AB506 /* Supporting Files */,
+			);
+			path = JMFormDescription;
+			sourceTree = "<group>";
+		};
+		C27D210719D20298001AB506 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C27D210819D20298001AB506 /* JMFormDescription-Info.plist */,
+				C27D210919D20298001AB506 /* InfoPlist.strings */,
+				C27D210C19D20298001AB506 /* main.m */,
+				C27D210E19D20298001AB506 /* JMFormDescription-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C27D212519D20298001AB506 /* JMFormDescriptionTests */ = {
+			isa = PBXGroup;
+			children = (
+				C27D212B19D20298001AB506 /* JMFormDescriptionTests.m */,
+				C27D212619D20298001AB506 /* Supporting Files */,
+			);
+			path = JMFormDescriptionTests;
+			sourceTree = "<group>";
+		};
+		C27D212619D20298001AB506 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C27D212719D20298001AB506 /* JMFormDescriptionTests-Info.plist */,
+				C27D212819D20298001AB506 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C27D215519D20411001AB506 /* formViews */ = {
+			isa = PBXGroup;
+			children = (
+				C27D215A19D2051C001AB506 /* JMFormDelegate.h */,
+				C21F88FC19E01BE300C27E64 /* JMFormViewDatasource.h */,
+				C275E62819E0709000ECEB3E /* JMFormViews.h */,
+				C275E62519E06C7900ECEB3E /* JMFormDescription.h */,
+				C275E62619E06C7900ECEB3E /* JMFormDescription.m */,
+				C21F88FE19E0248700C27E64 /* JMFormScrollView.h */,
+				C21F88FD19E0248700C27E64 /* JMFormScrollView.m */,
+				C27D215B19D2057D001AB506 /* JMFormView.h */,
+				C27D215C19D2057D001AB506 /* JMFormView.m */,
+				C21F887F19DFDE5700C27E64 /* JMFormView.xib */,
+				C27D215E19D20637001AB506 /* JMTextfieldFormView.h */,
+				C27D215F19D20637001AB506 /* JMTextfieldFormView.m */,
+				C21F887B19DF673F00C27E64 /* JMTextfieldFormView.xib */,
+				C27D216119D20661001AB506 /* JMTextfieldWithTitleFormView.h */,
+				C27D216219D20661001AB506 /* JMTextfieldWithTitleFormView.m */,
+				C21F887D19DF67A100C27E64 /* JMTextfieldWithTitleFormView.xib */,
+				C275E62E19E07D4900ECEB3E /* JMTextViewFormView.h */,
+				C275E62F19E07D4900ECEB3E /* JMTextViewFormView.m */,
+				C275E63119E07D5B00ECEB3E /* JMTextViewFormView.xib */,
+				C21F88F419DFFEFA00C27E64 /* JMFormSectionHeaderFormView.h */,
+				C21F88F319DFFEFA00C27E64 /* JMFormSectionHeaderFormView.m */,
+				C21F88F219DFFEFA00C27E64 /* JMFormSectionHeaderFormView.xib */,
+				C21F888419DFEE2900C27E64 /* JMSwitchFormView.h */,
+				C21F888519DFEE2900C27E64 /* JMSwitchFormView.m */,
+				C21F888719DFEE4B00C27E64 /* JMSwitchFormView.xib */,
+				C21F88F719E0165600C27E64 /* JMButtonFormView.h */,
+				C21F88F819E0165600C27E64 /* JMButtonFormView.m */,
+				C21F88FA19E0167100C27E64 /* JMButtonFormView.xib */,
+				C275E62019E05C8C00ECEB3E /* JMListFormView.h */,
+				C275E62119E05C8C00ECEB3E /* JMListFormView.m */,
+				C275E62319E05CEE00ECEB3E /* JMListFormView.xib */,
+			);
+			name = formViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C27D20FC19D20298001AB506 /* JMFormDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C27D212F19D20298001AB506 /* Build configuration list for PBXNativeTarget "JMFormDescription" */;
+			buildPhases = (
+				C27D20F919D20298001AB506 /* Sources */,
+				C27D20FA19D20298001AB506 /* Frameworks */,
+				C27D20FB19D20298001AB506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMFormDescription;
+			productName = JMFormDescription;
+			productReference = C27D20FD19D20298001AB506 /* JMFormDescription.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C27D211D19D20298001AB506 /* JMFormDescriptionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C27D213219D20298001AB506 /* Build configuration list for PBXNativeTarget "JMFormDescriptionTests" */;
+			buildPhases = (
+				C27D211A19D20298001AB506 /* Sources */,
+				C27D211B19D20298001AB506 /* Frameworks */,
+				C27D211C19D20298001AB506 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C27D212419D20298001AB506 /* PBXTargetDependency */,
+			);
+			name = JMFormDescriptionTests;
+			productName = JMFormDescriptionTests;
+			productReference = C27D211E19D20298001AB506 /* JMFormDescriptionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C27D20F519D20298001AB506 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "jerome morissard";
+				TargetAttributes = {
+					C27D211D19D20298001AB506 = {
+						TestTargetID = C27D20FC19D20298001AB506;
+					};
+				};
+			};
+			buildConfigurationList = C27D20F819D20298001AB506 /* Build configuration list for PBXProject "JMFormDescription" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C27D20F419D20298001AB506;
+			productRefGroup = C27D20FE19D20298001AB506 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C27D20FC19D20298001AB506 /* JMFormDescription */,
+				C27D211D19D20298001AB506 /* JMFormDescriptionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C27D20FB19D20298001AB506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21F88F519DFFEFA00C27E64 /* JMFormSectionHeaderFormView.xib in Resources */,
+				C27D211919D20298001AB506 /* Images.xcassets in Resources */,
+				C27D210B19D20298001AB506 /* InfoPlist.strings in Resources */,
+				C27D211419D20298001AB506 /* Main.storyboard in Resources */,
+				C21F88FB19E0167100C27E64 /* JMButtonFormView.xib in Resources */,
+				C275E63219E07D5B00ECEB3E /* JMTextViewFormView.xib in Resources */,
+				C21F888019DFDE5700C27E64 /* JMFormView.xib in Resources */,
+				C21F887C19DF673F00C27E64 /* JMTextfieldFormView.xib in Resources */,
+				C275E62419E05CEE00ECEB3E /* JMListFormView.xib in Resources */,
+				C275E62D19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib in Resources */,
+				C21F887E19DF67A100C27E64 /* JMTextfieldWithTitleFormView.xib in Resources */,
+				C21F888819DFEE4B00C27E64 /* JMSwitchFormView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C27D211C19D20298001AB506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27D212A19D20298001AB506 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C27D20F919D20298001AB506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21F88F619DFFEFA00C27E64 /* JMFormSectionHeaderFormView.m in Sources */,
+				C27D216319D20661001AB506 /* JMTextfieldWithTitleFormView.m in Sources */,
+				C27D210D19D20298001AB506 /* main.m in Sources */,
+				C275E62719E06C7900ECEB3E /* JMFormDescription.m in Sources */,
+				C27D215D19D2057D001AB506 /* JMFormView.m in Sources */,
+				C275E63019E07D4900ECEB3E /* JMTextViewFormView.m in Sources */,
+				C27D211719D20298001AB506 /* JMFormViewController.m in Sources */,
+				C275E62C19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m in Sources */,
+				C21F88FF19E0248700C27E64 /* JMFormScrollView.m in Sources */,
+				C27D216019D20637001AB506 /* JMTextfieldFormView.m in Sources */,
+				C27D211119D20298001AB506 /* JMAppDelegate.m in Sources */,
+				C21F88F919E0165600C27E64 /* JMButtonFormView.m in Sources */,
+				C275E61F19E03A1200ECEB3E /* JMFormModel.m in Sources */,
+				C27D216619D2074B001AB506 /* JMFormViewController+formDescription.m in Sources */,
+				C21F888619DFEE2900C27E64 /* JMSwitchFormView.m in Sources */,
+				C275E62219E05C8C00ECEB3E /* JMListFormView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C27D211A19D20298001AB506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27D212C19D20298001AB506 /* JMFormDescriptionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C27D212419D20298001AB506 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C27D20FC19D20298001AB506 /* JMFormDescription */;
+			targetProxy = C27D212319D20298001AB506 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C27D210919D20298001AB506 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C27D210A19D20298001AB506 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C27D211219D20298001AB506 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C27D211319D20298001AB506 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C27D212819D20298001AB506 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C27D212919D20298001AB506 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C27D212D19D20298001AB506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C27D212E19D20298001AB506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C27D213019D20298001AB506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JMFormDescription/JMFormDescription-Prefix.pch";
+				INFOPLIST_FILE = "JMFormDescription/JMFormDescription-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C27D213119D20298001AB506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JMFormDescription/JMFormDescription-Prefix.pch";
+				INFOPLIST_FILE = "JMFormDescription/JMFormDescription-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C27D213319D20298001AB506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JMFormDescription.app/JMFormDescription";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JMFormDescription/JMFormDescription-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JMFormDescriptionTests/JMFormDescriptionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C27D213419D20298001AB506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JMFormDescription.app/JMFormDescription";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JMFormDescription/JMFormDescription-Prefix.pch";
+				INFOPLIST_FILE = "JMFormDescriptionTests/JMFormDescriptionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C27D20F819D20298001AB506 /* Build configuration list for PBXProject "JMFormDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27D212D19D20298001AB506 /* Debug */,
+				C27D212E19D20298001AB506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C27D212F19D20298001AB506 /* Build configuration list for PBXNativeTarget "JMFormDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27D213019D20298001AB506 /* Debug */,
+				C27D213119D20298001AB506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C27D213219D20298001AB506 /* Build configuration list for PBXNativeTarget "JMFormDescriptionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27D213319D20298001AB506 /* Debug */,
+				C27D213419D20298001AB506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C27D20F519D20298001AB506 /* Project object */;
+}

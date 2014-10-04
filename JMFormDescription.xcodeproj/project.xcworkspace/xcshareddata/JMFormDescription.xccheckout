@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>33782E14-B50F-4DEB-8514-198AB94F99D5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JMFormDescription</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B50B7418-EC8B-42B8-B73D-DC08EBB81F84</key>
+		<string>https://github.com/leverdeterre/JMFormDescription.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JMFormDescription.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B50B7418-EC8B-42B8-B73D-DC08EBB81F84</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/leverdeterre/JMFormDescription.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B50B7418-EC8B-42B8-B73D-DC08EBB81F84</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B50B7418-EC8B-42B8-B73D-DC08EBB81F84</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JMFormDescription</string>
+		</dict>
+	</array>
+</dict>
+</plist>
