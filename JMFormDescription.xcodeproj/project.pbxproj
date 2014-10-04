@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C258171219E08F6900B84485 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C258171119E08F6900B84485 /* README.md */; };
 		C275E61F19E03A1200ECEB3E /* JMFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E61E19E03A1200ECEB3E /* JMFormModel.m */; };
 		C275E62C19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E62A19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m */; };
 		C275E62D19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E62B19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C258171119E08F6900B84485 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C275E61D19E03A1200ECEB3E /* JMFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormModel.h; sourceTree = "<group>"; };
 		C275E61E19E03A1200ECEB3E /* JMFormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormModel.m; sourceTree = "<group>"; };
 		C275E62919E0733C00ECEB3E /* JMFormListSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormListSelectionTableViewController.h; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		C27D210719D20298001AB506 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C258171119E08F6900B84485 /* README.md */,
 				C27D210819D20298001AB506 /* JMFormDescription-Info.plist */,
 				C27D210919D20298001AB506 /* InfoPlist.strings */,
 				C27D210C19D20298001AB506 /* main.m */,
@@ -393,6 +396,7 @@
 				C275E62C19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m in Sources */,
 				C275E65419E08C4600ECEB3E /* JMButtonFormView.m in Sources */,
 				C27D211119D20298001AB506 /* JMAppDelegate.m in Sources */,
+				C258171219E08F6900B84485 /* README.md in Sources */,
 				C275E65619E08C4600ECEB3E /* JMFormDescription.m in Sources */,
 				C275E65719E08C4600ECEB3E /* JMFormScrollView.m in Sources */,
 				C275E61F19E03A1200ECEB3E /* JMFormModel.m in Sources */,
