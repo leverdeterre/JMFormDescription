@@ -51,7 +51,7 @@
 
 - (IBAction)buttonPressed:(id)sender
 {
-    if (self.formDelegate) {
+    if ([self.formDelegate respondsToSelector:@selector(buttonPressedFromFormView:withTitleValue:)]) {
         [self.formDelegate buttonPressedFromFormView:self withTitleValue:self.button.titleLabel.text];
     }
 }

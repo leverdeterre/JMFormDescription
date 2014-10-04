@@ -51,7 +51,7 @@
 
 - (IBAction)switchChanged:(id)sender
 {
-    if (self.formDelegate) {
+    if ([self.formDelegate respondsToSelector:@selector(switchChangedFromFormView:toValue:)]) {
         [self.formDelegate switchChangedFromFormView:self toValue:self.switche.on];
     }
 }
