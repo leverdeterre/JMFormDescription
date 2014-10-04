@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JMFormDescription"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "JMFormDescription is an iOS library for easily manage complex Form."
   s.requires_arc = true
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = { "jerome Morissard" => "morissardj@gmail.com" }
   s.platform     = :ios, '6.0'
-  s.source       = { :git => "https://github.com/leverdeterre/JMFormDescription.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/leverdeterre/JMFormDescription.git", :tag => "0.0.2" }
   s.source_files = 'Classes', 'JMFormDescription/JMFormDescription/*.{h,m}'
   s.public_header_files = 'JMFormDescription/JMFormDescription/*.h'
   s.resources           = "JMFormDescription/JMFormDescription/*.xib"
