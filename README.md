@@ -2,6 +2,7 @@
 
 JMFormDescription is an Objective-C library for easily creating forms on iOS. 
 
+![Image](./screenshots/merged_demos.png)
 
 ###Creating a form element (formView)
 
@@ -16,13 +17,18 @@ To create a form object
 ```
 
 ### Supported formViews
------------------------
+
 * JMFormSectionHeaderFormView (to simulate a section header),
 * JMTextfieldFormView,
 * JMTextfieldWithTitleFormView,
 * JMSwitchFormView,
 * JMButtonFormView,
 * JMListFormView,
-* JMTextViewFormView
+* JMTextViewFormView.
 
-![Image](./screenshots/merged_demos.png)
+### Todo
+* Support UIAppearance protocol,
+* Add PickerFormView, 
+* Add DatePickerFormView. 
+
+
