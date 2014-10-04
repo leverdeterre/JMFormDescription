@@ -158,22 +158,31 @@
 		C275E63419E08C4600ECEB3E /* JMFormDescription */ = {
 			isa = PBXGroup;
 			children = (
-				C275E63519E08C4600ECEB3E /* JMButtonFormView.h */,
-				C275E63619E08C4600ECEB3E /* JMButtonFormView.m */,
-				C275E63719E08C4600ECEB3E /* JMButtonFormView.xib */,
+				C275E64419E08C4600ECEB3E /* JMFormViews.h */,
+				C275E66619E08C7400ECEB3E /* FormViews */,
 				C275E63819E08C4600ECEB3E /* JMFormDelegate.h */,
+				C275E64319E08C4600ECEB3E /* JMFormViewDatasource.h */,
 				C275E63919E08C4600ECEB3E /* JMFormDescription.h */,
 				C275E63A19E08C4600ECEB3E /* JMFormDescription.m */,
 				C275E63B19E08C4600ECEB3E /* JMFormScrollView.h */,
 				C275E63C19E08C4600ECEB3E /* JMFormScrollView.m */,
+			);
+			name = JMFormDescription;
+			path = JMFormDescription/JMFormDescription;
+			sourceTree = "<group>";
+		};
+		C275E66619E08C7400ECEB3E /* FormViews */ = {
+			isa = PBXGroup;
+			children = (
+				C275E63519E08C4600ECEB3E /* JMButtonFormView.h */,
+				C275E63619E08C4600ECEB3E /* JMButtonFormView.m */,
+				C275E63719E08C4600ECEB3E /* JMButtonFormView.xib */,
 				C275E63D19E08C4600ECEB3E /* JMFormSectionHeaderFormView.h */,
 				C275E63E19E08C4600ECEB3E /* JMFormSectionHeaderFormView.m */,
 				C275E63F19E08C4600ECEB3E /* JMFormSectionHeaderFormView.xib */,
 				C275E64019E08C4600ECEB3E /* JMFormView.h */,
 				C275E64119E08C4600ECEB3E /* JMFormView.m */,
 				C275E64219E08C4600ECEB3E /* JMFormView.xib */,
-				C275E64319E08C4600ECEB3E /* JMFormViewDatasource.h */,
-				C275E64419E08C4600ECEB3E /* JMFormViews.h */,
 				C275E64519E08C4600ECEB3E /* JMListFormView.h */,
 				C275E64619E08C4600ECEB3E /* JMListFormView.m */,
 				C275E64719E08C4600ECEB3E /* JMListFormView.xib */,
@@ -190,8 +199,7 @@
 				C275E65219E08C4600ECEB3E /* JMTextViewFormView.m */,
 				C275E65319E08C4600ECEB3E /* JMTextViewFormView.xib */,
 			);
-			name = JMFormDescription;
-			path = JMFormDescription/JMFormDescription;
+			name = FormViews;
 			sourceTree = "<group>";
 		};
 		C27D20F419D20298001AB506 = {

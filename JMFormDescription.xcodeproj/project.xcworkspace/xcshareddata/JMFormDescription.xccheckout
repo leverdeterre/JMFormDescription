@@ -10,29 +10,41 @@
 	<string>JMFormDescription</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B50B7418-EC8B-42B8-B73D-DC08EBB81F84</key>
+		<key>20BAC74A208E42CB707EE1AB2691DC6AA3C6CE5D</key>
 		<string>https://github.com/leverdeterre/JMFormDescription.git</string>
+		<key>AF35A7A83FF9099F4AF74D1E16D71D18D0829CE0</key>
+		<string>https://github.com/leverdeterre/JMAnimatedImageView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>JMFormDescription.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B50B7418-EC8B-42B8-B73D-DC08EBB81F84</key>
+		<key>20BAC74A208E42CB707EE1AB2691DC6AA3C6CE5D</key>
 		<string>../..</string>
+		<key>AF35A7A83FF9099F4AF74D1E16D71D18D0829CE0</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/leverdeterre/JMFormDescription.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B50B7418-EC8B-42B8-B73D-DC08EBB81F84</string>
+	<string>20BAC74A208E42CB707EE1AB2691DC6AA3C6CE5D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B50B7418-EC8B-42B8-B73D-DC08EBB81F84</string>
+			<string>AF35A7A83FF9099F4AF74D1E16D71D18D0829CE0</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>20BAC74A208E42CB707EE1AB2691DC6AA3C6CE5D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>JMFormDescription</string>
 		</dict>
