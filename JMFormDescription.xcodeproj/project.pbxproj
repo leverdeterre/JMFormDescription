@@ -7,24 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C21F887C19DF673F00C27E64 /* JMTextfieldFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21F887B19DF673F00C27E64 /* JMTextfieldFormView.xib */; };
-		C21F887E19DF67A100C27E64 /* JMTextfieldWithTitleFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21F887D19DF67A100C27E64 /* JMTextfieldWithTitleFormView.xib */; };
-		C21F888019DFDE5700C27E64 /* JMFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21F887F19DFDE5700C27E64 /* JMFormView.xib */; };
-		C21F888619DFEE2900C27E64 /* JMSwitchFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F888519DFEE2900C27E64 /* JMSwitchFormView.m */; };
-		C21F888819DFEE4B00C27E64 /* JMSwitchFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21F888719DFEE4B00C27E64 /* JMSwitchFormView.xib */; };
-		C21F88F519DFFEFA00C27E64 /* JMFormSectionHeaderFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21F88F219DFFEFA00C27E64 /* JMFormSectionHeaderFormView.xib */; };
-		C21F88F619DFFEFA00C27E64 /* JMFormSectionHeaderFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F88F319DFFEFA00C27E64 /* JMFormSectionHeaderFormView.m */; };
-		C21F88F919E0165600C27E64 /* JMButtonFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F88F819E0165600C27E64 /* JMButtonFormView.m */; };
-		C21F88FB19E0167100C27E64 /* JMButtonFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C21F88FA19E0167100C27E64 /* JMButtonFormView.xib */; };
-		C21F88FF19E0248700C27E64 /* JMFormScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C21F88FD19E0248700C27E64 /* JMFormScrollView.m */; };
 		C275E61F19E03A1200ECEB3E /* JMFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E61E19E03A1200ECEB3E /* JMFormModel.m */; };
-		C275E62219E05C8C00ECEB3E /* JMListFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E62119E05C8C00ECEB3E /* JMListFormView.m */; };
-		C275E62419E05CEE00ECEB3E /* JMListFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E62319E05CEE00ECEB3E /* JMListFormView.xib */; };
-		C275E62719E06C7900ECEB3E /* JMFormDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E62619E06C7900ECEB3E /* JMFormDescription.m */; };
 		C275E62C19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E62A19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m */; };
 		C275E62D19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E62B19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib */; };
-		C275E63019E07D4900ECEB3E /* JMTextViewFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E62F19E07D4900ECEB3E /* JMTextViewFormView.m */; };
-		C275E63219E07D5B00ECEB3E /* JMTextViewFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E63119E07D5B00ECEB3E /* JMTextViewFormView.xib */; };
+		C275E65419E08C4600ECEB3E /* JMButtonFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E63619E08C4600ECEB3E /* JMButtonFormView.m */; };
+		C275E65519E08C4600ECEB3E /* JMButtonFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E63719E08C4600ECEB3E /* JMButtonFormView.xib */; };
+		C275E65619E08C4600ECEB3E /* JMFormDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E63A19E08C4600ECEB3E /* JMFormDescription.m */; };
+		C275E65719E08C4600ECEB3E /* JMFormScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E63C19E08C4600ECEB3E /* JMFormScrollView.m */; };
+		C275E65819E08C4600ECEB3E /* JMFormSectionHeaderFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E63E19E08C4600ECEB3E /* JMFormSectionHeaderFormView.m */; };
+		C275E65919E08C4600ECEB3E /* JMFormSectionHeaderFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E63F19E08C4600ECEB3E /* JMFormSectionHeaderFormView.xib */; };
+		C275E65A19E08C4600ECEB3E /* JMFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E64119E08C4600ECEB3E /* JMFormView.m */; };
+		C275E65B19E08C4600ECEB3E /* JMFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E64219E08C4600ECEB3E /* JMFormView.xib */; };
+		C275E65C19E08C4600ECEB3E /* JMListFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E64619E08C4600ECEB3E /* JMListFormView.m */; };
+		C275E65D19E08C4600ECEB3E /* JMListFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E64719E08C4600ECEB3E /* JMListFormView.xib */; };
+		C275E65E19E08C4600ECEB3E /* JMSwitchFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E64919E08C4600ECEB3E /* JMSwitchFormView.m */; };
+		C275E65F19E08C4600ECEB3E /* JMSwitchFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E64A19E08C4600ECEB3E /* JMSwitchFormView.xib */; };
+		C275E66019E08C4600ECEB3E /* JMTextfieldFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E64C19E08C4600ECEB3E /* JMTextfieldFormView.m */; };
+		C275E66119E08C4600ECEB3E /* JMTextfieldFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E64D19E08C4600ECEB3E /* JMTextfieldFormView.xib */; };
+		C275E66219E08C4600ECEB3E /* JMTextfieldWithTitleFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E64F19E08C4600ECEB3E /* JMTextfieldWithTitleFormView.m */; };
+		C275E66319E08C4600ECEB3E /* JMTextfieldWithTitleFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E65019E08C4600ECEB3E /* JMTextfieldWithTitleFormView.xib */; };
+		C275E66419E08C4600ECEB3E /* JMTextViewFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E65219E08C4600ECEB3E /* JMTextViewFormView.m */; };
+		C275E66519E08C4600ECEB3E /* JMTextViewFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E65319E08C4600ECEB3E /* JMTextViewFormView.xib */; };
 		C27D210119D20298001AB506 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D210019D20298001AB506 /* Foundation.framework */; };
 		C27D210319D20298001AB506 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D210219D20298001AB506 /* CoreGraphics.framework */; };
 		C27D210519D20298001AB506 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D210419D20298001AB506 /* UIKit.framework */; };
@@ -39,9 +42,6 @@
 		C27D212219D20298001AB506 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27D210419D20298001AB506 /* UIKit.framework */; };
 		C27D212A19D20298001AB506 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C27D212819D20298001AB506 /* InfoPlist.strings */; };
 		C27D212C19D20298001AB506 /* JMFormDescriptionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D212B19D20298001AB506 /* JMFormDescriptionTests.m */; };
-		C27D215D19D2057D001AB506 /* JMFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D215C19D2057D001AB506 /* JMFormView.m */; };
-		C27D216019D20637001AB506 /* JMTextfieldFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D215F19D20637001AB506 /* JMTextfieldFormView.m */; };
-		C27D216319D20661001AB506 /* JMTextfieldWithTitleFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D216219D20661001AB506 /* JMTextfieldWithTitleFormView.m */; };
 		C27D216619D2074B001AB506 /* JMFormViewController+formDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D216519D2074B001AB506 /* JMFormViewController+formDescription.m */; };
 /* End PBXBuildFile section */
 
@@ -56,35 +56,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C21F887B19DF673F00C27E64 /* JMTextfieldFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMTextfieldFormView.xib; sourceTree = "<group>"; };
-		C21F887D19DF67A100C27E64 /* JMTextfieldWithTitleFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMTextfieldWithTitleFormView.xib; sourceTree = "<group>"; };
-		C21F887F19DFDE5700C27E64 /* JMFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMFormView.xib; sourceTree = "<group>"; };
-		C21F888419DFEE2900C27E64 /* JMSwitchFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSwitchFormView.h; sourceTree = "<group>"; };
-		C21F888519DFEE2900C27E64 /* JMSwitchFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSwitchFormView.m; sourceTree = "<group>"; };
-		C21F888719DFEE4B00C27E64 /* JMSwitchFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMSwitchFormView.xib; sourceTree = "<group>"; };
-		C21F88F219DFFEFA00C27E64 /* JMFormSectionHeaderFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMFormSectionHeaderFormView.xib; sourceTree = "<group>"; };
-		C21F88F319DFFEFA00C27E64 /* JMFormSectionHeaderFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormSectionHeaderFormView.m; sourceTree = "<group>"; };
-		C21F88F419DFFEFA00C27E64 /* JMFormSectionHeaderFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormSectionHeaderFormView.h; sourceTree = "<group>"; };
-		C21F88F719E0165600C27E64 /* JMButtonFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMButtonFormView.h; sourceTree = "<group>"; };
-		C21F88F819E0165600C27E64 /* JMButtonFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMButtonFormView.m; sourceTree = "<group>"; };
-		C21F88FA19E0167100C27E64 /* JMButtonFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMButtonFormView.xib; sourceTree = "<group>"; };
-		C21F88FC19E01BE300C27E64 /* JMFormViewDatasource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMFormViewDatasource.h; sourceTree = "<group>"; };
-		C21F88FD19E0248700C27E64 /* JMFormScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormScrollView.m; sourceTree = "<group>"; };
-		C21F88FE19E0248700C27E64 /* JMFormScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormScrollView.h; sourceTree = "<group>"; };
 		C275E61D19E03A1200ECEB3E /* JMFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormModel.h; sourceTree = "<group>"; };
 		C275E61E19E03A1200ECEB3E /* JMFormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormModel.m; sourceTree = "<group>"; };
-		C275E62019E05C8C00ECEB3E /* JMListFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMListFormView.h; sourceTree = "<group>"; };
-		C275E62119E05C8C00ECEB3E /* JMListFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMListFormView.m; sourceTree = "<group>"; };
-		C275E62319E05CEE00ECEB3E /* JMListFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMListFormView.xib; sourceTree = "<group>"; };
-		C275E62519E06C7900ECEB3E /* JMFormDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormDescription.h; sourceTree = "<group>"; };
-		C275E62619E06C7900ECEB3E /* JMFormDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormDescription.m; sourceTree = "<group>"; };
-		C275E62819E0709000ECEB3E /* JMFormViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMFormViews.h; sourceTree = "<group>"; };
 		C275E62919E0733C00ECEB3E /* JMFormListSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormListSelectionTableViewController.h; sourceTree = "<group>"; };
 		C275E62A19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormListSelectionTableViewController.m; sourceTree = "<group>"; };
 		C275E62B19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMFormListSelectionTableViewController.xib; sourceTree = "<group>"; };
-		C275E62E19E07D4900ECEB3E /* JMTextViewFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTextViewFormView.h; sourceTree = "<group>"; };
-		C275E62F19E07D4900ECEB3E /* JMTextViewFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTextViewFormView.m; sourceTree = "<group>"; };
-		C275E63119E07D5B00ECEB3E /* JMTextViewFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMTextViewFormView.xib; sourceTree = "<group>"; };
+		C275E63519E08C4600ECEB3E /* JMButtonFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMButtonFormView.h; sourceTree = "<group>"; };
+		C275E63619E08C4600ECEB3E /* JMButtonFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMButtonFormView.m; sourceTree = "<group>"; };
+		C275E63719E08C4600ECEB3E /* JMButtonFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMButtonFormView.xib; sourceTree = "<group>"; };
+		C275E63819E08C4600ECEB3E /* JMFormDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormDelegate.h; sourceTree = "<group>"; };
+		C275E63919E08C4600ECEB3E /* JMFormDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormDescription.h; sourceTree = "<group>"; };
+		C275E63A19E08C4600ECEB3E /* JMFormDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormDescription.m; sourceTree = "<group>"; };
+		C275E63B19E08C4600ECEB3E /* JMFormScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormScrollView.h; sourceTree = "<group>"; };
+		C275E63C19E08C4600ECEB3E /* JMFormScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormScrollView.m; sourceTree = "<group>"; };
+		C275E63D19E08C4600ECEB3E /* JMFormSectionHeaderFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormSectionHeaderFormView.h; sourceTree = "<group>"; };
+		C275E63E19E08C4600ECEB3E /* JMFormSectionHeaderFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormSectionHeaderFormView.m; sourceTree = "<group>"; };
+		C275E63F19E08C4600ECEB3E /* JMFormSectionHeaderFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMFormSectionHeaderFormView.xib; sourceTree = "<group>"; };
+		C275E64019E08C4600ECEB3E /* JMFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormView.h; sourceTree = "<group>"; };
+		C275E64119E08C4600ECEB3E /* JMFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormView.m; sourceTree = "<group>"; };
+		C275E64219E08C4600ECEB3E /* JMFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMFormView.xib; sourceTree = "<group>"; };
+		C275E64319E08C4600ECEB3E /* JMFormViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormViewDatasource.h; sourceTree = "<group>"; };
+		C275E64419E08C4600ECEB3E /* JMFormViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormViews.h; sourceTree = "<group>"; };
+		C275E64519E08C4600ECEB3E /* JMListFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMListFormView.h; sourceTree = "<group>"; };
+		C275E64619E08C4600ECEB3E /* JMListFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMListFormView.m; sourceTree = "<group>"; };
+		C275E64719E08C4600ECEB3E /* JMListFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMListFormView.xib; sourceTree = "<group>"; };
+		C275E64819E08C4600ECEB3E /* JMSwitchFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSwitchFormView.h; sourceTree = "<group>"; };
+		C275E64919E08C4600ECEB3E /* JMSwitchFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSwitchFormView.m; sourceTree = "<group>"; };
+		C275E64A19E08C4600ECEB3E /* JMSwitchFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMSwitchFormView.xib; sourceTree = "<group>"; };
+		C275E64B19E08C4600ECEB3E /* JMTextfieldFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTextfieldFormView.h; sourceTree = "<group>"; };
+		C275E64C19E08C4600ECEB3E /* JMTextfieldFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTextfieldFormView.m; sourceTree = "<group>"; };
+		C275E64D19E08C4600ECEB3E /* JMTextfieldFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMTextfieldFormView.xib; sourceTree = "<group>"; };
+		C275E64E19E08C4600ECEB3E /* JMTextfieldWithTitleFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTextfieldWithTitleFormView.h; sourceTree = "<group>"; };
+		C275E64F19E08C4600ECEB3E /* JMTextfieldWithTitleFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTextfieldWithTitleFormView.m; sourceTree = "<group>"; };
+		C275E65019E08C4600ECEB3E /* JMTextfieldWithTitleFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMTextfieldWithTitleFormView.xib; sourceTree = "<group>"; };
+		C275E65119E08C4600ECEB3E /* JMTextViewFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTextViewFormView.h; sourceTree = "<group>"; };
+		C275E65219E08C4600ECEB3E /* JMTextViewFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTextViewFormView.m; sourceTree = "<group>"; };
+		C275E65319E08C4600ECEB3E /* JMTextViewFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMTextViewFormView.xib; sourceTree = "<group>"; };
 		C27D20FD19D20298001AB506 /* JMFormDescription.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMFormDescription.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27D210019D20298001AB506 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C27D210219D20298001AB506 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,13 +111,6 @@
 		C27D212719D20298001AB506 /* JMFormDescriptionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JMFormDescriptionTests-Info.plist"; sourceTree = "<group>"; };
 		C27D212919D20298001AB506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C27D212B19D20298001AB506 /* JMFormDescriptionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMFormDescriptionTests.m; sourceTree = "<group>"; };
-		C27D215A19D2051C001AB506 /* JMFormDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMFormDelegate.h; sourceTree = "<group>"; };
-		C27D215B19D2057D001AB506 /* JMFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormView.h; sourceTree = "<group>"; };
-		C27D215C19D2057D001AB506 /* JMFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormView.m; sourceTree = "<group>"; };
-		C27D215E19D20637001AB506 /* JMTextfieldFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTextfieldFormView.h; sourceTree = "<group>"; };
-		C27D215F19D20637001AB506 /* JMTextfieldFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTextfieldFormView.m; sourceTree = "<group>"; };
-		C27D216119D20661001AB506 /* JMTextfieldWithTitleFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMTextfieldWithTitleFormView.h; sourceTree = "<group>"; };
-		C27D216219D20661001AB506 /* JMTextfieldWithTitleFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMTextfieldWithTitleFormView.m; sourceTree = "<group>"; };
 		C27D216419D2074B001AB506 /* JMFormViewController+formDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JMFormViewController+formDescription.h"; sourceTree = "<group>"; };
 		C27D216519D2074B001AB506 /* JMFormViewController+formDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JMFormViewController+formDescription.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +155,45 @@
 			name = Demo;
 			sourceTree = "<group>";
 		};
+		C275E63419E08C4600ECEB3E /* JMFormDescription */ = {
+			isa = PBXGroup;
+			children = (
+				C275E63519E08C4600ECEB3E /* JMButtonFormView.h */,
+				C275E63619E08C4600ECEB3E /* JMButtonFormView.m */,
+				C275E63719E08C4600ECEB3E /* JMButtonFormView.xib */,
+				C275E63819E08C4600ECEB3E /* JMFormDelegate.h */,
+				C275E63919E08C4600ECEB3E /* JMFormDescription.h */,
+				C275E63A19E08C4600ECEB3E /* JMFormDescription.m */,
+				C275E63B19E08C4600ECEB3E /* JMFormScrollView.h */,
+				C275E63C19E08C4600ECEB3E /* JMFormScrollView.m */,
+				C275E63D19E08C4600ECEB3E /* JMFormSectionHeaderFormView.h */,
+				C275E63E19E08C4600ECEB3E /* JMFormSectionHeaderFormView.m */,
+				C275E63F19E08C4600ECEB3E /* JMFormSectionHeaderFormView.xib */,
+				C275E64019E08C4600ECEB3E /* JMFormView.h */,
+				C275E64119E08C4600ECEB3E /* JMFormView.m */,
+				C275E64219E08C4600ECEB3E /* JMFormView.xib */,
+				C275E64319E08C4600ECEB3E /* JMFormViewDatasource.h */,
+				C275E64419E08C4600ECEB3E /* JMFormViews.h */,
+				C275E64519E08C4600ECEB3E /* JMListFormView.h */,
+				C275E64619E08C4600ECEB3E /* JMListFormView.m */,
+				C275E64719E08C4600ECEB3E /* JMListFormView.xib */,
+				C275E64819E08C4600ECEB3E /* JMSwitchFormView.h */,
+				C275E64919E08C4600ECEB3E /* JMSwitchFormView.m */,
+				C275E64A19E08C4600ECEB3E /* JMSwitchFormView.xib */,
+				C275E64B19E08C4600ECEB3E /* JMTextfieldFormView.h */,
+				C275E64C19E08C4600ECEB3E /* JMTextfieldFormView.m */,
+				C275E64D19E08C4600ECEB3E /* JMTextfieldFormView.xib */,
+				C275E64E19E08C4600ECEB3E /* JMTextfieldWithTitleFormView.h */,
+				C275E64F19E08C4600ECEB3E /* JMTextfieldWithTitleFormView.m */,
+				C275E65019E08C4600ECEB3E /* JMTextfieldWithTitleFormView.xib */,
+				C275E65119E08C4600ECEB3E /* JMTextViewFormView.h */,
+				C275E65219E08C4600ECEB3E /* JMTextViewFormView.m */,
+				C275E65319E08C4600ECEB3E /* JMTextViewFormView.xib */,
+			);
+			name = JMFormDescription;
+			path = JMFormDescription/JMFormDescription;
+			sourceTree = "<group>";
+		};
 		C27D20F419D20298001AB506 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +216,7 @@
 		C27D20FF19D20298001AB506 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C275E63419E08C4600ECEB3E /* JMFormDescription */,
 				C27D210019D20298001AB506 /* Foundation.framework */,
 				C27D210219D20298001AB506 /* CoreGraphics.framework */,
 				C27D210419D20298001AB506 /* UIKit.framework */,
@@ -192,7 +232,6 @@
 				C27D211019D20298001AB506 /* JMAppDelegate.m */,
 				C27D211219D20298001AB506 /* Main.storyboard */,
 				C275E63319E0874700ECEB3E /* Demo */,
-				C27D215519D20411001AB506 /* formViews */,
 				C27D211819D20298001AB506 /* Images.xcassets */,
 				C27D210719D20298001AB506 /* Supporting Files */,
 			);
@@ -226,44 +265,6 @@
 				C27D212819D20298001AB506 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C27D215519D20411001AB506 /* formViews */ = {
-			isa = PBXGroup;
-			children = (
-				C27D215A19D2051C001AB506 /* JMFormDelegate.h */,
-				C21F88FC19E01BE300C27E64 /* JMFormViewDatasource.h */,
-				C275E62819E0709000ECEB3E /* JMFormViews.h */,
-				C275E62519E06C7900ECEB3E /* JMFormDescription.h */,
-				C275E62619E06C7900ECEB3E /* JMFormDescription.m */,
-				C21F88FE19E0248700C27E64 /* JMFormScrollView.h */,
-				C21F88FD19E0248700C27E64 /* JMFormScrollView.m */,
-				C27D215B19D2057D001AB506 /* JMFormView.h */,
-				C27D215C19D2057D001AB506 /* JMFormView.m */,
-				C21F887F19DFDE5700C27E64 /* JMFormView.xib */,
-				C27D215E19D20637001AB506 /* JMTextfieldFormView.h */,
-				C27D215F19D20637001AB506 /* JMTextfieldFormView.m */,
-				C21F887B19DF673F00C27E64 /* JMTextfieldFormView.xib */,
-				C27D216119D20661001AB506 /* JMTextfieldWithTitleFormView.h */,
-				C27D216219D20661001AB506 /* JMTextfieldWithTitleFormView.m */,
-				C21F887D19DF67A100C27E64 /* JMTextfieldWithTitleFormView.xib */,
-				C275E62E19E07D4900ECEB3E /* JMTextViewFormView.h */,
-				C275E62F19E07D4900ECEB3E /* JMTextViewFormView.m */,
-				C275E63119E07D5B00ECEB3E /* JMTextViewFormView.xib */,
-				C21F88F419DFFEFA00C27E64 /* JMFormSectionHeaderFormView.h */,
-				C21F88F319DFFEFA00C27E64 /* JMFormSectionHeaderFormView.m */,
-				C21F88F219DFFEFA00C27E64 /* JMFormSectionHeaderFormView.xib */,
-				C21F888419DFEE2900C27E64 /* JMSwitchFormView.h */,
-				C21F888519DFEE2900C27E64 /* JMSwitchFormView.m */,
-				C21F888719DFEE4B00C27E64 /* JMSwitchFormView.xib */,
-				C21F88F719E0165600C27E64 /* JMButtonFormView.h */,
-				C21F88F819E0165600C27E64 /* JMButtonFormView.m */,
-				C21F88FA19E0167100C27E64 /* JMButtonFormView.xib */,
-				C275E62019E05C8C00ECEB3E /* JMListFormView.h */,
-				C275E62119E05C8C00ECEB3E /* JMListFormView.m */,
-				C275E62319E05CEE00ECEB3E /* JMListFormView.xib */,
-			);
-			name = formViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,18 +344,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C21F88F519DFFEFA00C27E64 /* JMFormSectionHeaderFormView.xib in Resources */,
+				C275E65919E08C4600ECEB3E /* JMFormSectionHeaderFormView.xib in Resources */,
 				C27D211919D20298001AB506 /* Images.xcassets in Resources */,
 				C27D210B19D20298001AB506 /* InfoPlist.strings in Resources */,
+				C275E66319E08C4600ECEB3E /* JMTextfieldWithTitleFormView.xib in Resources */,
 				C27D211419D20298001AB506 /* Main.storyboard in Resources */,
-				C21F88FB19E0167100C27E64 /* JMButtonFormView.xib in Resources */,
-				C275E63219E07D5B00ECEB3E /* JMTextViewFormView.xib in Resources */,
-				C21F888019DFDE5700C27E64 /* JMFormView.xib in Resources */,
-				C21F887C19DF673F00C27E64 /* JMTextfieldFormView.xib in Resources */,
-				C275E62419E05CEE00ECEB3E /* JMListFormView.xib in Resources */,
+				C275E66519E08C4600ECEB3E /* JMTextViewFormView.xib in Resources */,
 				C275E62D19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib in Resources */,
-				C21F887E19DF67A100C27E64 /* JMTextfieldWithTitleFormView.xib in Resources */,
-				C21F888819DFEE4B00C27E64 /* JMSwitchFormView.xib in Resources */,
+				C275E65D19E08C4600ECEB3E /* JMListFormView.xib in Resources */,
+				C275E65F19E08C4600ECEB3E /* JMSwitchFormView.xib in Resources */,
+				C275E65B19E08C4600ECEB3E /* JMFormView.xib in Resources */,
+				C275E65519E08C4600ECEB3E /* JMButtonFormView.xib in Resources */,
+				C275E66119E08C4600ECEB3E /* JMTextfieldFormView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,22 +374,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C21F88F619DFFEFA00C27E64 /* JMFormSectionHeaderFormView.m in Sources */,
-				C27D216319D20661001AB506 /* JMTextfieldWithTitleFormView.m in Sources */,
+				C275E65819E08C4600ECEB3E /* JMFormSectionHeaderFormView.m in Sources */,
+				C275E66019E08C4600ECEB3E /* JMTextfieldFormView.m in Sources */,
+				C275E66219E08C4600ECEB3E /* JMTextfieldWithTitleFormView.m in Sources */,
+				C275E65C19E08C4600ECEB3E /* JMListFormView.m in Sources */,
 				C27D210D19D20298001AB506 /* main.m in Sources */,
-				C275E62719E06C7900ECEB3E /* JMFormDescription.m in Sources */,
-				C27D215D19D2057D001AB506 /* JMFormView.m in Sources */,
-				C275E63019E07D4900ECEB3E /* JMTextViewFormView.m in Sources */,
+				C275E66419E08C4600ECEB3E /* JMTextViewFormView.m in Sources */,
 				C27D211719D20298001AB506 /* JMFormViewController.m in Sources */,
+				C275E65E19E08C4600ECEB3E /* JMSwitchFormView.m in Sources */,
 				C275E62C19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m in Sources */,
-				C21F88FF19E0248700C27E64 /* JMFormScrollView.m in Sources */,
-				C27D216019D20637001AB506 /* JMTextfieldFormView.m in Sources */,
+				C275E65419E08C4600ECEB3E /* JMButtonFormView.m in Sources */,
 				C27D211119D20298001AB506 /* JMAppDelegate.m in Sources */,
-				C21F88F919E0165600C27E64 /* JMButtonFormView.m in Sources */,
+				C275E65619E08C4600ECEB3E /* JMFormDescription.m in Sources */,
+				C275E65719E08C4600ECEB3E /* JMFormScrollView.m in Sources */,
 				C275E61F19E03A1200ECEB3E /* JMFormModel.m in Sources */,
 				C27D216619D2074B001AB506 /* JMFormViewController+formDescription.m in Sources */,
-				C21F888619DFEE2900C27E64 /* JMSwitchFormView.m in Sources */,
-				C275E62219E05C8C00ECEB3E /* JMListFormView.m in Sources */,
+				C275E65A19E08C4600ECEB3E /* JMFormView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
