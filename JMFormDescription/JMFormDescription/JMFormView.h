@@ -20,6 +20,9 @@
 
 @interface JMFormView : UIView <JMFormViewDatasource>
 
+@property (strong, nonatomic) UIColor *formViewBackgroundColor UI_APPEARANCE_SELECTOR;
+@property (strong, nonatomic) UIFont *formViewTitleFont UI_APPEARANCE_SELECTOR;
+
 @property (assign, nonatomic) BOOL formViewCanBecomeResponder;
 @property (weak, nonatomic) id <JMFormDelegate>formDelegate;
 

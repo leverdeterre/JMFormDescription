@@ -130,4 +130,16 @@
     [self.textfield becomeFirstResponder];
 }
 
+#pragma mark - Appearance
+
+- (void)setFormViewTextfieldFont:(UIFont *)textfieldFont
+{
+    self.textfield.font = textfieldFont;
+}
+
+- (void)setFormViewTextfieldTextColor:(UIColor *)textfieldColor
+{
+    self.textfield.textColor = textfieldColor;
+}
+
 @end

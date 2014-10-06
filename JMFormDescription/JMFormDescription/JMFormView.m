@@ -108,4 +108,11 @@
     //[self textfield resignFirstResponder];
 }
 
+#pragma mark - Appearance
+
+- (void)setFormViewBackgroundColor:(UIColor *)formViewBackgroundColor
+{
+    self.backgroundColor = formViewBackgroundColor;
+}
+
 @end

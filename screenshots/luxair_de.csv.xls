@@ -1,0 +1,286 @@
+﻿login_page_welcome_title_label;Melden Sie sich mit Ihrem MyLuxair-Profil
+login_page_welcome_text_label;für das vollständige Luxair-Erlebnis!
+login_page_login_placeholder;Benutzername
+login_page_password_placeholder;Passwort
+login_page_login_button;Login
+login_page_hide_text;Diese Seite nicht mehr anzeigen
+login_page_mandatory_text;* Pflichtfelder
+login_page_create_account_button;Profil erstellen
+login_page_pass_lost_button;Login oder Passwort vergessen?
+login_page_skip_button;Überspringen Sie diesen Schritt
+login_page_email_password_error_text;Ihre Anmeldedaten sind nicht gültig. Bitte versuchen Sie es erneut.
+home_page_book_flight_title;Buchen Sie Ihre Flüge
+home_page_from_label;Von
+home_page_to_label;Nach
+home_page_airport_selection_message_text;Bitte wählen Sie Ihre Abfahrts-und Ankunftsflughäfen, bevor Sie Ihre Reisedaten wählen. 
+home_page_dates_label;Reisedaten
+home_page_passenger_label;Passagier
+home_page_book_now_button;Flüge suchen
+home_page_checkin_button;Check-in
+home_page_arrivals_and_departures_button;Ankünfte & Abflüge
+home_page_my_luxair_button;Myluxair
+home_page_timetable_button;Flugplan
+home_page_city_guides_button;Reiseführer
+home_page_calendar_round_trip_label;Hin- und Rückflug
+home_page_calendar_one_way_label;Nur Hinflug
+home_page_passenger_adult_label;Erwachsene
+home_page_passenger_child_label;Kinder
+home_page_passenger_infant_label;Babys
+home_page_passenger_adults_label;Erwachsene
+home_page_passenger_children_label;Kinder
+home_page_passenger_infants_label;Babys
+menu_my_services_title;Meine Services
+menu_book_flight_button;Flug buchen
+menu_mob_checkin_button;Mobile Check-In
+menu_my_luxair_button;My Luxair
+menu_city_guides_button;Reiseführer
+menu_timetable_button;Flugplan
+menu_departures_arrivals_button;Ankünfte & Abflüge
+menu_newsletter_button;Newsletter
+menu_my_informations_title;Information
+menu_luggage_informations_button;Informationen zu Gepäck
+menu_contact_button;Kontakt
+menu_faq_button;FAQ
+menu_settings_button;Einstellungen
+menu_terms_conditions_button;AGB
+menu_connected_log_out;Abmeldung
+departures_arrivals_departures_button;Abflüge
+departures_arrivals_arrivals_button;Ankünfte
+departures_arrivals_departures_label;Abflüge ab Flughafen xxxxxxxx
+departures_arrivals_arrivals_label;Ankünfte am Flughafen xxxxxxxx
+departures_arrivals_all_day_picker;ganzer Tag
+departures_arrivals_to_label;nach
+departures_arrivals_from_label;von
+departures_arrivals_estimated_at_label;Erwartet
+departures_arrivals_first_picker_picker;6 - 12h
+departures_arrivals_second_picker_picker;12 - 18h
+departures_arrivals_third_picker_picker;18 - 24h
+departures_arrivals_ok_button;OK
+departures_arrivals_terminal_label;Terminal
+departures_arrivals_gate_label;Gate
+departures_arrivals_departed_label;Abgeflogen
+departures_arrivals_expected_label;Erwartet
+departures_arrivals_arrived_label;Gelandet
+departures_arrivals_delayed_label;Verspätet
+departures_arrivals_canceled_label;Annulliert
+timetable_timetable_title;Flugplan
+timetable_round_trip_label;Hin- und Rückflug
+timetable_one_way_label;Nur Hinflug
+timetable_search_flights_button;Suche
+timetable_dates_label;Reisedaten
+timetable_departure_label;Abfahrt
+timetable_arrival_label;Ankünft
+timetable_flight_duration_label;Flugdauer
+faq_faq_title;FAQ
+faq_select_topic_text;Bitte wählen Sie aus zu welchem Thema wir Ihnen helfen können:
+faq_flight_mobile_checkin_text;Welche Flüge sind offen für Mobile Check-In?
+faq_use_mobile_checkin_text;Wann kann ich den Mobile Check-In nutzen?
+faq_complete_mobile_checkin_text;Was brauche ich zum Mobilen Einchecken?
+faq_mobile_boarding_text;Was ist eine mobile Bordkarte und wie sieht diese aus?
+faq_baggage_to_checkin_text;Was muss ich tun, wenn ich Gepäck aufzugeben habe?
+faq_flight_mobile_checkin_answer_text;Das Mobile Check-In ist zugänglich für alle Passagiere mit einer bestätigten Buchung, die ein elektronisches Ticket für einen von Luxair durchgeführten Flug haben, außer auf LuxairTours Flügen sowie auf Flügen, die in Bari, Lissabon, Madrid, Porto, Paris, Rom oder Venedig starten.
+faq_use_mobile_checkin_answer_text;Sie können ab 24 Stunden bis zu einer Stunde vor Abflug über Ihr Mobiltelefon für Ihren Flug einchecken.
+faq_complete_mobile_checkin_answer_text;Sie benötigen eine bestätigte Buchung mit einem elektronischen Ticket für einen von Luxair durchgeführten Flug (mit Ausnahme von LuxairTours Flügen sowie Flügen mit Abflug aus Bari, Lissabon, Madrid, Porto, Paris, Rom oder Venedig), sowie ein webfähiges Mobiltelefon mit Browserfunktionalität und Email Zugang.
+faq_mobile_boarding_answer_text;Eine mobile Bordkarte ist ein Bild, welches direkt auf Ihr Mobiltelefon geschickt wird. Sie brauchen dann bei der Sicherheitskontrolle und beim Boarding nur das Bild auf dem Bildschirm zu zeigen. Es ersetzt die traditionelle Bordkarte.
+faq_baggage_to_checkin_answer_text;"Wenn Sie Gepäck aufgeben möchten, gehen Sie nach dem Sie sich über Ihr Mobiltelefon eingecheckt haben, zum Gepäckannahmeschalter (""drop-off point""). Dort können Sie Ihr Gepäck aufgeben, bevor Sie durch die Sicherheitskontrolle gehen."
+luggage_rules_title;Gepäck
+luggage_questions_text;Alles was Sie über den Transport von Gepäck wissen müssen und Welche Services werden von Luxair Luxembourg Airlines angeboten?
+luggage_free_allowance_label;Freigepäck
+luggage_hand_label;Handgepäck
+luggage_sports_equipment_label;Sport-Ausrüstung
+luggage_animals_label;Tiere
+luggage_dangerous_good_label;Gefährliche Güter
+luggage_luxair_assistance_label;LuxairServices Baggage Assistance
+luggage_losts_delayed_text;Ihr Gepäck ging verloren oder kam verspätet an?
+luggage_detailed_desc_text;Detaillierte Gepäckregelungen auf der Luxair Website
+free_baggage_allowance_label;Freigepäck
+free_baggage_business_label;Business
+free_baggage_kg1_text;30kg
+free_baggage_eco_label;Economy
+free_baggage_kg2_text;20kg
+free_baggage_miles_more_text;Miles & More HON Circle Member, Senator. MasterCard Miles & More Luxair BCEE Gold oder Business*. Miles & More Frequent Travellers
+free_baggage_additional_allowance_text;20 kg zusätzliches Freigepäck*
+free_baggage_connecting_flight_rules_text;*Im Falle von Anschlussflügen gelten die IATA-Regeln oder die Regeln der jeweiligen Fluggesellschaft.
+free_baggage_combined_offer_text;** Für diese Kategorie kann das Angebot nicht mit den Vorteilen der Miles & More Status Cards kombiniert werden.
+hand_luggage_hand_title;Handgepäck
+hand_luggage_business_label;Business Master Card Miles & More Luxair BCEE Gold oder Business
+hand_luggage_kg3_text;2 x 7 kg (total 14 kg)
+hand_luggage_economy_label;Economy
+hand_luggage_kg4_text;1 x 7 kg
+animals_animals_label;Tiere
+animals_pets_in_cabin_text;Tiere in der Kabine (max. 8 kg inkl. Käfig)
+animals_one_way_price_text;70€ pro Strecke (Blindenhunde und vergleichbare Begleithunde kostenlos)
+animals_in_cargo_text;Tiere im Frachtraum
+animals_one_way_price_dogs_text;100€ pro Strecke (Blindenhunde und vergleichbare Begleithunde kostenlos)
+dangerous_good_dangerous_good_title;Gefährliche Güter
+dangerous_good_security_reasons_text;Aus Sicherheitsgründen ist die Mitnahme gefährlicher Güter in die Sicherheitszone bzw. in das Flugzeug verboten.
+dangerous_good_details_text;Für detaillierte Infos zu gefährlichen Gütern, klicken Sie hier
+luggage_assistance_baggage_label;LuxairServices Baggage Assistance
+luggage_assistance_lost_delayed_text;Ihr Gepäck ging verloren oder kam verspätet an? 
+luggage_assistance_inconvenience_text;Bitte entschuldigen Sie die Unannehmlichkeiten. Zögern Sie nicht, uns zu kontaktieren. Wir werden Ihnen so schnell wie möglich helfen.
+luggage_assistance_luxair_services_text;LuxairServices Baggage Assistance:
+luggage_assistance_phone_label;Telefon:
+luggage_assistance_phone_number_text;35 224 565 003
+luggage_assistance_fax_label;Fax :
+luggage_assistance_fax_number_text;Fax : +352 2456 5022
+luggage_assistance_email_label;E-mail :
+luggage_assistance_email_bagage_claim_text;baggage.claim@luxair.lu
+luggage_assistance_luxair_world_tracer_services_text;Luxair WorldTracer Service: Dieser Service erlaubt Ihnen den Verlauf Ihres Gepäckvorgangs von zu Hause, vom Büro oder von Ihrem Hotelzimmer aus per Internet zu verfolgen, und dies 24 Stunden am Tag und 7 Tage in der Woche.
+luggage_assistance_access_worldtracer_service_text;Klicken Sie hier um den WorldTracer Service aufzurufen
+baggage_assistance_warning_title;Achtung
+baggage_assistance_redirect_outside_text;Sie verlassen im nächsten Schritt die Applikation, sind Sie einverstanden?
+baggage_assistance_no_button;Nein
+baggage_assistance_yes_button;Ja
+sports_equipement_title;Sport-Ausrüstung
+sports_golf_label;Golf-Ausrüstung
+sports_golf_business_label;Business
+sports_golf_business_kg_allowance_text;20 kg
+sports_golf_economy_label;Economy
+sports_golf_economy_kg_allowance_text;35€ pro Strecke für Gepäck bis zu 20 kg
+sports_golf_miles_more_label;Ausnahme: Miles & More Status und MasterCard Miles & More Luxair BCEE Gold & Business
+sports_golf_miles_more_allowance_text;Kostenloser Transport eines Golfgepäckstücks bis zu 20 kg.
+sports_diving_equipment_label;Tauchausrüstung
+sports_diving_equipment_text;Economy + Business Passagiere: 35 € pro Tauchausrüstung bis 30 kg (pro Strecke). 
+sports_surfboard_label;Surfbrett / Kite
+sports_surfboard_text;50 € pro Kite-/Surfbrett bis 30 kg pro Strecke
+sports_skiing_label;Skiausrüstung (einschließlich Snowboards)
+sports_sking_text;35 € pro Skiausrüstung bis 30 kg (pro Strecke)
+sports_paragliding_label;Paragliding-Ausrüstung
+sports_paragliding_text;Paragliding-Ausrüstung bis 20 kg wird mit 35 € pro Strecke berechnet. Wiegt die Ausrüstung mehr als 20 kg, wird das Übergewicht mit der üblichen Rate für Übergepäck (15 EUR/kg) berechnet.
+sports_bikes_label;Fahrräder
+sports_bikes_text;50 € pro Fahrrad bis 30 kg (pro Strecke). 
+sports_additional_weight_detail;* Zusätzliches Gepäck wird mit einem Übergepäckszuschlag von 15€/kg berechnet.
+sports_detailed_information;Detaillierte Informationen über den Transport von Sportausrüstungen
+language_settings_title;Sprache ändern
+language_settings_french_label;Français
+language_settings_english_label;English
+language_settings_german_label;Deutsch
+language_settings_apply_button;OK
+myluxair_login_title;Willkommen zu MyLuxair 
+myluxair_login_username_label;Benutzername
+myluxair_login_password_label;Passwort
+myluxair_login_button;Benutzername
+myluxair_login_mandatory_label;* Pflichtfelder
+myluxair_login_credentials_error_label;Ihre Anmeldedaten sind nicht gültig. Bitte versuchen Sie es erneut.
+myluxair_login_benefit title;MyLuxair Vorteile
+myluxair_login_first_benefit_text;Speichern Sie Ihr Kundenprofil und sparen Sie wervolle Zeit für Ihre nächsten Buchungen
+myluxair_login_second_benefit_text;Melden Sie sich zum SMS-Benachrichtigungs-Service an
+myluxair_login_third_benefit_text;Drucken Sie Ihren Boarding-Pass aus oder erhalten Sie ihn direkt auf Ihr Handy
+myluxair_login_fourth_benefit_text;... und Vieles Mehr!
+myluxair_login_general_terms_text;Allgemeinen Nutzungsbedingungen für MyLuxair
+myluxair_login_password_lost_label;Benutzername oder Passwort vergessen?
+myluxair_login_create_account_button;Profil erstellen
+myluxair_login_popup_lost_title;Zugangsdaten vergessen?
+myluxair_login_popup_lost_explanation_text;Geben Sie die E-Mail-Adresse an, die Sie bei der Registrierung verwendet haben.
+myluxair_login_popup_lost_email_button;Email Adresse
+myluxair_login_popup_lost_credentials_button;Meine Zugangsdaten anfordern
+myluxair_login_popup_lost_email_message_text;Diese E-Mail-Adresse existiert nicht. Bitte geben Sie eine andere E-Mail-Adresse ein. 
+myluxair_login_password_lost_confirmation_title;Neue Zugangsdaten
+myluxair_login_password_lost_confirmation_text;Eine Email mit Ihren neuen Zugangsdaten wurde an Ihre Mailbox gesendet. Bitte prüfen Sie Ihre Emails.
+myluxair_login_terms_conditions_title;MyLuxair AGB
+myluxair_login_terms_conditions;MyLuxair ist ein kostenloser Service, der für Sie von Luxair bereitgestellt wird, auf www.luxair.lu verfügbar ist und folgende Funktionen beinhaltet:\n- Rufen Sie Ihre Buchungen einfach auf und bearbeiten Sie diese.\n- Speichern Sie Ihre Details und die Ihrer Mitreisenden für Ihre nächste Buchung.\n- Melden Sie sich zum Luxair Newsletter an und profitieren Sie von besonderen Angeboten und wissenswerten Informationen.\n- Melden Sie sich zu SMS-Benachrichtigungen im Fall von Verspätungen oder Streichung Ihres Fluges an.\n- Checken Sie über Ihr Profil direkt online ein und wählen Ihren Sitzplatz online selbst aus.\n- Nutzen Sie unserem Mobile Check-In Service, wählen Sie Ihrem Sitzplatz vom Handy aus und erhalten Sie Ihren Boardingpass direkt auf Ihr Handy.\n- Kontaktieren Sie unser CallCenter auf komfortable, direkte und persönliche Art und Weise. Luxair versucht sicherzustellen, dass Sie korrekte Informationen zum Flugstatus erhalten.\nZugleich kann Luxair nicht garantieren, dass die per Email oder per SMS übermittelten Informationen jederzeit rechtzeitig erfolgen oder vollständig sind.\nSituationen könnten sich schnell ändern und verschiedene Faktoren unseren Flugplan beeinflussen. Bitte nehmen Sie zur Kenntnis, dass beispielsweise ein Flug, der als „verspätet“ angezeigt wird unter gewissen Umständen auch „planmässig“ gestartet sein könnte.\nLuxair Luxembourg Airlines kann nicht für Konsequenzen auf Basis von Flugstatus-Informationen verantwortlich gemacht werden, die Sie durch die Registrierung zu MyLuxair erhalten haben.Da MyLuxair komplett kostenlos ist, hat Luxair das Recht, diesen Service jederzeit in vollkommen eigenem Ermessen abzuschalten, insbesondere wenn Luxair einen Missbrauch oder bösartige Nutzung des Service feststellt.
+myluxair_create_account_step1_mr_label;Herr
+myluxair_create_account_step1_mrs_label;Frau
+myluxair_create_account_step1_login_label;Wählen Sie einen Benutzernamen
+myluxair_create_account_step1_firstname_label;Vorname
+myluxair_create_account_step1_lastname_label;Nachname
+myluxair_create_account_step1_birthdate_label;Geburtsdatum
+myluxair_create_account_step1_miles_label;Miles&More Kartennummer
+myluxair_create_account_step1_next_button;Weiter
+myluxair_create_account_step1_miles_number_message_text;Die Miles & More-Nummer sollte 15 Zeichen haben. 
+myluxair_create_account_step2_mobile_phone_label;Mobiltelefon
+myluxair_create_account_step2_home_phone_label;Private Telefonnummer
+myluxair_create_account_step2_private_email_label;Private E-Mail-Adresse
+myluxair_create_account_step2_business_email_label;Email professionnel
+myluxair_create_account_step2_private_conf_label;Confirmez l'email privé
+myluxair_create_account_step2_business_conf_label;confirmez l'email professionnel
+myluxair_create_account_step2_email_com_label;Email de communication
+myluxair_create_account_step2_private_label;Privé
+myluxair_create_account_step2_business_label;Professionnel
+myluxair_create_account_step2_check_email_message_text;Bitte geben Sie eine gültige E-Mail-Adresse ein. 
+myluxair_create_account_step2_mandatory_message_text;Dieses Feld ist ein Pflichtfeld
+myluxair_create_account_step3_home_addr_label;Private Adresse
+myluxair_create_account_step3_home_zip_label;Code postal
+myluxair_create_account_step3_home_city_label;Ville
+myluxair_create_account_step3_home_country_label;Land
+myluxair_create_account_step3_business_addr_label;Geschäftliche Adresse
+myluxair_create_account_step3_accept_tc_label;Ich akzeptiere die Allgemeinen Nutzungsbedingungen für MyLuxair
+myluxair_create_account_step3_send_button;Senden
+myluxair_create_account_step3_tc_acceptance_text;Bitte akzeptieren Sie die MyLuxair AGB 
+myluxair_create_account_success_title;Erfolg
+myluxair_create_account_success_text;Ihr MyLuxair Profil wurde erfolgreich erstellt! Eine Bestätigungsmail wurde an Ihre Mailbox gesendet. \n\nBitte stellen Sie sicher, dass unsere E-Mail nicht in Ihrem Spam-Ordner gelandet ist.\n\nDiese E-Mail enthält Ihr vorläufiges Passwort, das Sie nach der Freischaltung Ihres Profils ändern können.
+myluxair_create_account_validation_title;MyLuxair Validierung
+myluxair_create_account_validation_text;Ihr Benutzerprofil wurde erfolgreich erstellt.
+myluxair_home_welcome_title;Willkommen [first name] [last name] 
+myluxair_home_welcome_text;Willkommen zu Ihrem MyLuxair Profil
+myluxair_home_select_category_text;Bitte wählen Sie eine der unten stehenden Kategorien.
+myluxair_home_informations_title;Information
+myluxair_home_about_me_button;Über mich
+myluxair_home_my_passengers_button;Meine Passagierdaten
+myluxair_home_my_luxair_services_button;Meine MyLuxair Services
+myluxair_home_eservice_title;eServices
+myluxair_home_checkin_button;Check-In Optionen
+myluxair_home_actions_title;Aktionen
+myluxair_home_booking_button;Meine Buchungen anschauen
+myluxair_home_password_button;Passwortverwaltung
+myluxair_mydetails_business_phone_label;Geschäftliche Telefonnummer
+myluxair_mypassengers_title;Meine Passagierdaten
+myluxair_mypassengers_edit_provided_button;Bearbeiten
+myluxair_mypassengers_genre_man_label;Herr
+myluxair_mypassengers_genre_woman_label;Frau
+myluxair_mypassengers_nationality_label;Nationalität
+myluxair_mypassengers_document_type_label;Dokumententyp
+myluxair_mypassengers_card_label;Personalausweis
+myluxair_mypassengers_passport_label;Reisepass
+myluxair_mypassengers_number_label;Nummer
+myluxair_mypassengers_expiration_label;Gültig bis
+myluxair_mypassengers_second_name_label;Zweiter Name
+myluxair_mypassengers_text;Sie haben Ihre Passagierdaten nicht eingegeben. Bitte speichern Sie Ihre Passagierdaten und sparen Sie Zeit bei Ihren nächsten Buchungen.
+myluxair_mypassengers_edit_button;Meine Passagierdaten bearbeiten
+myluxair_mypassengers_save_changes_button;Änderungen speichern
+myluxair_services_title;Meine Luxair Services
+myluxair_services_newsletter_title;Newsletter Registrierung
+myluxair_services_newsletter_description_text;Registrieren Sie sich für den Luxair Newsletter: Registrieren Sie sich bei Luxair, um über exklusive Angebote und Neuigkeiten informiert zu werden!
+myluxair_services_newsletter_concellation_text;Das Abonnement kann später durch einfaches Klicken in jeder empfangenen E-Mail abbestellt werden. Luxair fühlt sich Ihrer Privatsfähre verpflichtet: Daher sind Ihre persönlichen Angaben durch das Gesetz vom 2. August 2002 geschützt.
+myluxair_services_newsletter_email_label;Meine E-Mail-Adresse lautet: 
+myluxair_services_subscribe_question;Möchten Sie sich anmelden?
+myluxair_services_sms_alert_title;SMS-Benachrichtigungen
+myluxair_services_sms_alert_text;"Erhalten Sie im Falle einer Verspätung oder Annulation Ihres Fluges eine Nachricht per SMS.(Bitte geben Sie zuerst eine Handynummer in der ""Über mich"" sektion an)"
+myluxair_services_sms_alert_phone_text;Meine Handynummer:
+myluxair_services_checkin_invitation_title;Mobile Check-in Einladung
+myluxair_services_checkin_invitation_text;Mobile Check-In direkt von Ihrem Mobiltelefon: Erhalten Sie Ihre Mobile Bordkarte direkt als QR-Code auf Ihr Mobiltelefon und lassen Sie diese am Flughafen einscannen. (Bitte beachten Sie, dass Ihr Mobiltelefon internetfähig sein muss).
+myluxair_services_checkin_format_text;Bevorzugtes Format
+myluxair_services_checkin_sms_button;SMS
+myluxair_services_checkin_email_button;E-mail
+myluxair_checkin_options_title;Check-In Optionen
+myluxair_checkin_options_departure_label;Abflughafen
+myluxair_checkin_options_web_text;Web & Mobile Check-In - Bequem, schnell und einfach
+myluxair_checkin_options_seat_text;Sitzplatz an Bord – Wählen Sie Ihre Präferenz
+myluxair_checkin_options_boarding_text;Boarding pass - Selbst drucken oder direkt auf Ihr Handy erhalten
+myluxair_checkin_options_group_text;Gruppen Check-In - Bis zu 9 Personen
+myluxair_checkin_options_mention_label;Geben Sie einen Flughafen oder Flughafen-Code ein.
+myluxair_checkin_options_mobile_text;Mobile Check-In
+myluxair_checkin_options_web_option_text;Web Check-In
+myluxair_checkin_options_fast_text;Fast Track : C-Class und SEN/HON
+myluxair_checkin_options_kiosk_text;Kiosk Check-In
+myluxair_checkin_options_application_text;Bitte nutzen Sie die AirFrance Applikation für den Kiosk Check-In (Flughäfen: Paris).
+myluxair_mybookings_title;Buchung suchen
+myluxair_mybookings_passenger_label;Passagiername
+myluxair_mybookings_reservation_label;Reservierungsnummer
+myluxair_mybookings_mention_text;6 alphanumerische Zeichen - diese finden Sie in Ihrer Buchungsbestätigung
+myluxair_mybookings_find_button;Meine Buchung finden
+myluxair_mybookings_result_title;Meine Buchungen
+myluxair_mybookings_history_button;Buchungs-Historie
+myluxair_passwords_title;Mein Passwort ändern
+myluxair_passwords_current_label;Aktuelles Passwort
+myluxair_passwords_new_label;Neues Passwort
+myluxair_passwords_confirmation_label;Neues Passwort bestätigen
+myluxair_passwords_change_button;Speichern
+myluxair_passwords_confirmation_mention_text;Bitte geben Sie dieselben Werte ein
+invalid password_current_mention_text;Ungültiges Passwort  
+myluxair_passwords_popup_change_text;Ihr Passwort wurde geändert 
+logout_popup_title;Abmelden 
+logout_popup_message_text;Möchten Sie sich ausloggen? 
+logout_popup_cancel_button;Zurück
+generic_autocomplete_no_airport_result;Kein Flughafen gefunden 
+generic_autocomplete_airport_name_code_placeholder;Geben Sie einen Flughafen oder Flughafen-Code ein

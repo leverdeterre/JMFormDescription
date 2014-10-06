@@ -33,4 +33,9 @@
     self.formDelegate = description.formDelegate;
 }
 
+- (void)setFormViewTitleFont:(UIFont *)formViewTitleFont
+{
+    self.titleLabel.font = formViewTitleFont;
+}
+
 @end

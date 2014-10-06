@@ -14,4 +14,8 @@
 
 @interface JMFormSectionHeaderFormView : JMFormView
 
+@property (strong, nonatomic) UIFont *formViewHeaderLabelFont UI_APPEARANCE_SELECTOR;
+@property (strong, nonatomic) UIColor *formViewHeaderLabelColor UI_APPEARANCE_SELECTOR;
+@property (strong, nonatomic) UIColor *formViewHeaderBackgroundColor UI_APPEARANCE_SELECTOR;
+
 @end

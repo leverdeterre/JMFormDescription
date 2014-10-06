@@ -42,4 +42,21 @@
     self.textLabel.text = description.title;
 }
 
+#pragma mark - Appearance
+
+- (void)setFormViewHeaderLabelColor:(UIColor *)formViewHeaderLabelColor
+{
+    self.textLabel.textColor = formViewHeaderLabelColor;
+}
+
+- (void)setFormViewHeaderLabelFont:(UIFont *)formViewHeaderLabelFont
+{
+    self.textLabel.font = formViewHeaderLabelFont;
+}
+
+- (void)setFormViewHeaderBackgroundColor:(UIColor *)formViewHeaderBackgroundColor
+{
+    self.backgroundColor = formViewHeaderBackgroundColor;
+}
+
 @end

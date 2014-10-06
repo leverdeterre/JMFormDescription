@@ -74,24 +74,10 @@
     if (self.contentView.superview) {
         [self.contentView removeFromSuperview];
     }
-    
-    /*
-    CGRect contentViewFrame = self.bounds;
-    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-    if (UIInterfaceOrientationIsLandscape(orientation)) {
-        CGFloat width
-        contentViewFrame.  = self.bounds;
-    }
-    
-    CGRect contentViewFrame =
-    */
+
     self.contentView = [[UIView alloc] initWithFrame:self.bounds];
     self.contentView.backgroundColor = [UIColor blueColor];
-    CGFloat yPos = 0.0f ;
-    CGFloat defaultHeightSpace = 1.0f;
     CGFloat computedHeight = 0.0f;
-
-    self.backgroundColor = [UIColor clearColor];
 
     JMFormView *previousFormView;
     JMFormView *currentFormView;
@@ -101,12 +87,6 @@
             previousFormView = currentFormView;
             currentFormView = [desc.formViewClass viewFromNib];
             [currentFormView updateFormViewWithDescription:desc];
-            
-            CGRect cellFrame = CGRectMake(0.0f,
-                                          yPos,
-                                          CGRectGetWidth(self.frame),
-                                          desc.formViewHeight);
-            currentFormView.frame = cellFrame;
             [currentFormView setTranslatesAutoresizingMaskIntoConstraints:NO];
             [self.contentView addSubview:currentFormView];
             
@@ -114,9 +94,9 @@
             [self addConstraintsForPreviousFormView:previousFormView
                                     currentFormView:currentFormView
                              currentFormDescription:desc
-                                 defaultHeightSpace:defaultHeightSpace];
+                                 defaultHeightSpace:self.formViewSpace];
             
-            computedHeight = computedHeight + desc.formViewHeight + defaultHeightSpace;
+            computedHeight = computedHeight + desc.formViewHeight + self.formViewSpace;
         }
     }
     
@@ -172,7 +152,23 @@
     }
 }
 
-#pragma mark - 
+- (void)addContentViewConstraintsWithHeight:(CGFloat)height
+{
+    id views = @{@"contentView": self.contentView};
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[contentView]-|"
+                                                                 options:NSLayoutFormatAlignAllBaseline
+                                                                 metrics:nil
+                                                                   views:views]];
+    
+    NSDictionary *metrics = @{@"contentViewHeight":@(height)};
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[contentView(contentViewHeight)]"
+                                                                 options:NSLayoutFormatAlignAllBaseline
+                                                                 metrics:metrics
+                                                                   views:views]];
+}
+
+
+#pragma mark -
 
 - (NSInteger)indexForFormView:(JMFormView *)formView
 {

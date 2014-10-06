@@ -17,5 +17,17 @@
 @property (assign, nonatomic) SEL blockingButtonSelector;
 @end
 
+
 @interface JMTextfieldFormView : JMFormView
+@property (strong, nonatomic) UIFont *formViewTextfieldFont UI_APPEARANCE_SELECTOR;
+@property (strong, nonatomic) UIColor *formViewTextfieldBackgroundColor UI_APPEARANCE_SELECTOR;
+@property (strong, nonatomic) UIColor *formViewTextfieldTextColor UI_APPEARANCE_SELECTOR;
+
+/*
+@property (assign, nonatomic) CGFloat textfieldCornerRadius UI_APPEARANCE_SELECTOR;
+@property (assign, nonatomic) CGFloat textfieldShadowOpacity UI_APPEARANCE_SELECTOR;
+@property (assign, nonatomic) CGSize textfieldShadowOffset UI_APPEARANCE_SELECTOR;
+@property (assign, nonatomic) BOOL textfieldClipsToBounds  UI_APPEARANCE_SELECTOR;
+@property (assign, nonatomic) CGFloat textfieldShadowRadius UI_APPEARANCE_SELECTOR;
+ */
 @end

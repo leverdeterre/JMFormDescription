@@ -32,6 +32,12 @@
     self.formModel.coloChoices = @[@"blue",@"red", @"grey"];
     self.formModel.listPlaceholder = @"choose a color";
     
+    [[JMFormView appearance] setFormViewBackgroundColor:[UIColor colorWithRed:219.0/255 green:214.0/255 blue:208/255 alpha:1.0]];
+    [[JMTextfieldFormView appearance] setFormViewTextfieldFont:[UIFont systemFontOfSize:10.0f]];
+    [[JMTextfieldFormView appearance] setFormViewTextfieldTextColor:[UIColor blackColor]];
+    [[JMFormSectionHeaderFormView appearance] setFormViewHeaderLabelFont:[UIFont italicSystemFontOfSize:25.0f]];
+    [[JMFormSectionHeaderFormView appearance] setFormViewHeaderBackgroundColor:[UIColor whiteColor]];
+
     //generate Layout description
     self.formDescription = [self generateFormDescriptionUsingModel:self.formModel];
     [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
