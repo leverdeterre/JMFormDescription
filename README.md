@@ -26,9 +26,23 @@ To create a form object
 * JMListFormView,
 * JMTextViewFormView.
 
+### Delegation (JMFormDelegate)
+
+```objc
+- (void)textUpdatedFromFormView:(JMTextfieldFormView *)formView textfield:(UITextField *)textfield toText:(NSString *)text;
+- (void)textUpdatedFromFormView:(JMTextViewFormView *)formView textView:(UITextView *)textView toText:(NSString *)text;
+- (void)switchChangedFromFormView:(JMSwitchFormView *)formView toValue:(BOOL)value;
+- (void)buttonPressedFromFormView:(JMButtonFormView *)formView withTitleValue:(NSString *)value;
+- (void)listPressedFromFormView:(JMListFormView *)formView withSelectedValue:(NSString *)value;
+- (void)selectedChoice:(NSString *)choice forModelKey:(NSString *)modelKey;
+- (void)scrollToFormView:(JMFormView *)formView;
+```
+
 ### Todo
 * Support UIAppearance protocol,
 * Add PickerFormView, 
-* Add DatePickerFormView. 
+* Add DatePickerFormView,
+* Keyboard type,
+* Textfield Regex to validate input.
 
 
