@@ -115,4 +115,9 @@
     self.backgroundColor = formViewBackgroundColor;
 }
 
+- (void)setFormViewTitleFont:(UIFont *)formViewTitleFont
+{
+
+}
+
 @end

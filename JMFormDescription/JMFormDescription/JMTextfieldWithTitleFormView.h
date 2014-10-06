@@ -14,4 +14,6 @@
 
 @interface JMTextfieldWithTitleFormView : JMTextfieldFormView
 
+@property (strong, nonatomic) UIFont *formViewTitleFont UI_APPEARANCE_SELECTOR;
+
 @end

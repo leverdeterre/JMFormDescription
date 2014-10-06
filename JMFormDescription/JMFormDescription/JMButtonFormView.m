@@ -46,7 +46,6 @@
     self.formDelegate = description.formDelegate;
     [self.button.layer setCornerRadius:2];
     [self.button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.button sizeToFit];
 }
 
 - (IBAction)buttonPressed:(id)sender

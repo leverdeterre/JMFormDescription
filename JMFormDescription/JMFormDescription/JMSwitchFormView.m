@@ -56,4 +56,17 @@
     }
 }
 
+#pragma mark - Appearance
+
+- (void)setFormViewTitleFont:(UIFont *)formViewTitleFont
+{
+    self.textLabel.font = formViewTitleFont;
+}
+
+- (void)setFormViewSwitchTintColor:(UIColor *)formViewSwitchTintColor
+{
+    self.switche.tintColor = formViewSwitchTintColor;
+    self.switche.onTintColor = formViewSwitchTintColor;
+}
+
 @end

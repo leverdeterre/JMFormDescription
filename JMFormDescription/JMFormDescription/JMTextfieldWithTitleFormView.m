@@ -33,6 +33,8 @@
     self.formDelegate = description.formDelegate;
 }
 
+#pragma mark - Appearance
+
 - (void)setFormViewTitleFont:(UIFont *)formViewTitleFont
 {
     self.titleLabel.font = formViewTitleFont;

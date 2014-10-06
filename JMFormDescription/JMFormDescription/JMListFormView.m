@@ -40,6 +40,14 @@
     [self addSubview:overviewedButton];
     self.textfield.delegate = nil;
     self.textfield.userInteractionEnabled = NO;
+    
+    self.textfield.rightViewMode = UITextFieldViewModeAlways;
+    UIImageView *rightImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ico_arrow_down_list"]];
+    CGRect rightImageViewFrame = rightImageView.frame;
+    rightImageViewFrame.size = CGSizeMake(25.0f,25.0f);
+    rightImageView.frame = rightImageViewFrame;
+    rightImageView.contentMode = UIViewContentModeCenter;
+    self.textfield.rightView = rightImageView;
 }
 
 - (void)buttonPressed:(id)sender

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C24A7E1A19E3495C00BDF4B3 /* ico_arrow_down_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C24A7E1819E3495C00BDF4B3 /* ico_arrow_down_list@2x.png */; };
+		C24A7E1B19E3495C00BDF4B3 /* ico_arrow_down_list.png in Resources */ = {isa = PBXBuildFile; fileRef = C24A7E1919E3495C00BDF4B3 /* ico_arrow_down_list.png */; };
 		C275E61F19E03A1200ECEB3E /* JMFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E61E19E03A1200ECEB3E /* JMFormModel.m */; };
 		C275E62C19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E62A19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m */; };
 		C275E62D19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E62B19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib */; };
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C24A7E1819E3495C00BDF4B3 /* ico_arrow_down_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_arrow_down_list@2x.png"; sourceTree = "<group>"; };
+		C24A7E1919E3495C00BDF4B3 /* ico_arrow_down_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_arrow_down_list.png; sourceTree = "<group>"; };
 		C275E61D19E03A1200ECEB3E /* JMFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormModel.h; sourceTree = "<group>"; };
 		C275E61E19E03A1200ECEB3E /* JMFormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormModel.m; sourceTree = "<group>"; };
 		C275E62919E0733C00ECEB3E /* JMFormListSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormListSelectionTableViewController.h; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 		C275E66619E08C7400ECEB3E /* FormViews */ = {
 			isa = PBXGroup;
 			children = (
+				C24A7E1819E3495C00BDF4B3 /* ico_arrow_down_list@2x.png */,
+				C24A7E1919E3495C00BDF4B3 /* ico_arrow_down_list.png */,
 				C275E63519E08C4600ECEB3E /* JMButtonFormView.h */,
 				C275E63619E08C4600ECEB3E /* JMButtonFormView.m */,
 				C275E63719E08C4600ECEB3E /* JMButtonFormView.xib */,
@@ -352,12 +358,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C24A7E1A19E3495C00BDF4B3 /* ico_arrow_down_list@2x.png in Resources */,
 				C275E65919E08C4600ECEB3E /* JMFormSectionHeaderFormView.xib in Resources */,
 				C27D211919D20298001AB506 /* Images.xcassets in Resources */,
 				C27D210B19D20298001AB506 /* InfoPlist.strings in Resources */,
 				C275E66319E08C4600ECEB3E /* JMTextfieldWithTitleFormView.xib in Resources */,
 				C27D211419D20298001AB506 /* Main.storyboard in Resources */,
 				C275E66519E08C4600ECEB3E /* JMTextViewFormView.xib in Resources */,
+				C24A7E1B19E3495C00BDF4B3 /* ico_arrow_down_list.png in Resources */,
 				C275E62D19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib in Resources */,
 				C275E65D19E08C4600ECEB3E /* JMListFormView.xib in Resources */,
 				C275E65F19E08C4600ECEB3E /* JMSwitchFormView.xib in Resources */,

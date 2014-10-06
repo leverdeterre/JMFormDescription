@@ -31,16 +31,23 @@
     self.formModel = [JMFormModel new];
     self.formModel.coloChoices = @[@"blue",@"red", @"grey"];
     self.formModel.listPlaceholder = @"choose a color";
+    self.formModel.textfieldText1 = @"test";
     
     [[JMFormView appearance] setFormViewBackgroundColor:[UIColor colorWithRed:219.0/255 green:214.0/255 blue:208/255 alpha:1.0]];
-    [[JMTextfieldFormView appearance] setFormViewTextfieldFont:[UIFont systemFontOfSize:10.0f]];
+    [[JMTextfieldFormView appearance] setFormViewTextfieldFont:[UIFont fontWithName:@"HelveticaNeue-Regular" size:16.0f]];
     [[JMTextfieldFormView appearance] setFormViewTextfieldTextColor:[UIColor blackColor]];
-    [[JMFormSectionHeaderFormView appearance] setFormViewHeaderLabelFont:[UIFont italicSystemFontOfSize:25.0f]];
+    
+    [[JMTextfieldWithTitleFormView appearance] setFormViewTitleFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:16.0f]];
+    [[JMFormSectionHeaderFormView appearance] setFormViewHeaderLabelFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:25.0f]];
     [[JMFormSectionHeaderFormView appearance] setFormViewHeaderBackgroundColor:[UIColor whiteColor]];
+    
     [[JMButtonFormView appearance] setFormViewButtonTitleColor:[UIColor whiteColor]];
     [[JMButtonFormView appearance] setFormViewButtonBackgroundColor:[UIColor blackColor]];
-    [[JMButtonFormView appearance] setFormViewButtonTitleFont:[UIFont systemFontOfSize:15.0f]];
+    [[JMButtonFormView appearance] setFormViewButtonTitleFont:[UIFont fontWithName:@"HelveticaNeue-Regular" size:16.0f]];
     
+    [[JMSwitchFormView appearance] setFormViewTitleFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:15.0f]];
+    [[JMSwitchFormView appearance] setFormViewSwitchTintColor:[UIColor purpleColor]];
+
     //generate Layout description
     self.formDescription = [self generateFormDescriptionUsingModel:self.formModel];
     [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];

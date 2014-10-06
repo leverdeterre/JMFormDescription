@@ -15,4 +15,6 @@
 
 @interface JMSwitchFormView : JMFormView
 
+@property (strong, nonatomic) UIColor *formViewSwitchTintColor UI_APPEARANCE_SELECTOR;
+
 @end
