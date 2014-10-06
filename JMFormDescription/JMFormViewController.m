@@ -37,7 +37,10 @@
     [[JMTextfieldFormView appearance] setFormViewTextfieldTextColor:[UIColor blackColor]];
     [[JMFormSectionHeaderFormView appearance] setFormViewHeaderLabelFont:[UIFont italicSystemFontOfSize:25.0f]];
     [[JMFormSectionHeaderFormView appearance] setFormViewHeaderBackgroundColor:[UIColor whiteColor]];
-
+    [[JMButtonFormView appearance] setFormViewButtonTitleColor:[UIColor whiteColor]];
+    [[JMButtonFormView appearance] setFormViewButtonBackgroundColor:[UIColor blackColor]];
+    [[JMButtonFormView appearance] setFormViewButtonTitleFont:[UIFont systemFontOfSize:15.0f]];
+    
     //generate Layout description
     self.formDescription = [self generateFormDescriptionUsingModel:self.formModel];
     [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];

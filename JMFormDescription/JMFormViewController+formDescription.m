@@ -147,14 +147,23 @@
     textDesc.modelKey = @"bigText";
     [descriptions addObject:textDesc];
     
-    /*
     textDesc = [JMTextViewFormViewDescription new];
     textDesc.formDelegate = self;
     textDesc.placeholder = @"";
     textDesc.data = model.bigText2;
     textDesc.modelKey = @"bigText2";
     [descriptions addObject:textDesc];
-    */
+    
+    headerDesc = [JMFormSectionHeaderFormViewDescription new];
+    headerDesc.title = @"Button tests";
+    [descriptions addObject:headerDesc];
+    
+    JMButtonFormViewDescription *buttonDesc = [JMButtonFormViewDescription new];
+    buttonDesc.formDelegate = self;
+    buttonDesc.title = @"This is a validation button";
+    buttonDesc.formViewHeight = 50.0f;
+    [descriptions addObject:buttonDesc];
+
     
     formDesc.formViewDescriptions = descriptions;
     return formDesc;

@@ -15,6 +15,8 @@
     self = [super init];
     if (self) {
         self.enable = YES;
+        self.formViewHeight = 50.0f;
+        self.formViewClass = [JMButtonFormView class];
     }
     return self;
 }
@@ -43,8 +45,6 @@
     [self.button setTitle:description.title forState:UIControlStateNormal];
     self.formDelegate = description.formDelegate;
     [self.button.layer setCornerRadius:2];
-    [self.button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self.button setBackgroundColor:[UIColor redColor]];
     [self.button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.button sizeToFit];
 }
@@ -55,5 +55,23 @@
         [self.formDelegate buttonPressedFromFormView:self withTitleValue:self.button.titleLabel.text];
     }
 }
+
+#pragma mark - Appearance
+
+- (void)setFormViewButtonTitleColor:(UIColor *)formViewButtonTitleColor
+{
+    self.button.tintColor = formViewButtonTitleColor;
+}
+
+- (void)setFormViewButtonTitleFont:(UIFont *)formViewButtonTitleFont
+{
+    self.button.titleLabel.font = formViewButtonTitleFont;
+}
+
+- (void)setFormViewButtonBackgroundColor:(UIColor *)formViewButtonBackgroundColor
+{
+    self.button.backgroundColor = formViewButtonBackgroundColor;
+}
+
 
 @end
