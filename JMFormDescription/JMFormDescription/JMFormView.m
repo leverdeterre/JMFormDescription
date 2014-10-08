@@ -39,8 +39,10 @@
     return self;
 }
 
-- (void)updateFormViewWithDescription:(id)data
+- (void)updateFormViewWithDescription:(JMFormViewDescription *)data
 {
+    self.completionBlock = data.completionBlock;
+    self.formDelegate = data.formDelegate;
 }
 
 + (instancetype)viewFromNib

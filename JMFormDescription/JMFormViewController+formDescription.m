@@ -37,10 +37,9 @@
     textfieldDesc  = [JMTextfieldFormViewDescription new];
     textfieldDesc.placeholder = nil;
     textfieldDesc.data = model.textfieldText3;
-    textfieldDesc.formDelegate = self;
-    textfieldDesc.blockingButtonSelector = @selector(customSelector1:);
-    textfieldDesc.modelKey = @"textfieldText3";
-    textfieldDesc.placeholder = @"Editable via customSelector1";
+    textfieldDesc.completionBlock = ^(id modifiedValue){
+        model.textfieldText3 = modifiedValue;
+    };
     [descriptions addObject:textfieldDesc];
      
     headerDesc = [JMFormSectionHeaderFormViewDescription new];
@@ -59,8 +58,9 @@
     textfieldTitleDesc.title = @"Mont titre4";
     textfieldTitleDesc.placeholder = @"Mon placeholder4";
     textfieldTitleDesc.data = model.textfieldText5;
-    textfieldTitleDesc.formDelegate = self;
-    textfieldTitleDesc.modelKey = @"textfieldText5";
+    textfieldTitleDesc.completionBlock = ^(id modifiedValue){
+        model.textfieldText5 = modifiedValue;
+    };
     [descriptions addObject:textfieldTitleDesc];
     
     headerDesc = [JMFormSectionHeaderFormViewDescription new];

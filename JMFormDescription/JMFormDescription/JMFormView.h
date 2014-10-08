@@ -10,12 +10,18 @@
 #import "JMFormViewDatasource.h"
 #import "JMFormDelegate.h"
 
+typedef void (^JMFormViewCompltionBlock)(id modifiedValue);
+
 @interface JMFormViewDescription : NSObject
 @property (strong, nonatomic) Class formViewClass;
 @property (strong, nonatomic) id data;
 @property (assign, nonatomic) CGFloat formViewHeight;
+//update with delegate
 @property (weak, nonatomic) id <JMFormDelegate>formDelegate;
 @property (weak, nonatomic) NSString* modelKey;
+
+//update with block
+@property (copy, nonatomic) JMFormViewCompltionBlock completionBlock;
 @end
 
 @interface JMFormView : UIView <JMFormViewDatasource>
@@ -25,6 +31,7 @@
 
 @property (assign, nonatomic) BOOL formViewCanBecomeResponder;
 @property (weak, nonatomic) id <JMFormDelegate>formDelegate;
+@property (copy, nonatomic) JMFormViewCompltionBlock updateBlock;
 
 + (instancetype)viewFromNib;
 - (void)formViewBecomeFirstResponder;
