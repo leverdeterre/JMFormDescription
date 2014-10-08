@@ -4,7 +4,7 @@ JMFormDescription is an Objective-C library for easily creating forms on iOS.
 
 ![Image](./screenshots/merged_demos.png)
 
-###Creating a form element (formView)
+###Creating a form element (JMFormView)
 
 To create a form object
 
@@ -26,7 +26,16 @@ To create a form object
 * JMListFormView,
 * JMTextViewFormView.
 
-### Delegation (JMFormDelegate)
+###Creating a form (JMFormScrollView)
+
+Create a formDescription to describe all your formViews and call JMScrollView instance method 
+
+```objc
+- (void)reloadScrollViewWithFormDescription:(NSArray *)descriptions
+```
+
+### FormView actions, methods, updates
+#### Delegation (JMFormDelegate)
 
 ```objc
 - (void)textUpdatedFromFormView:(JMTextfieldFormView *)formView textfield:(UITextField *)textfield toText:(NSString *)text;
@@ -38,8 +47,24 @@ To create a form object
 - (void)scrollToFormView:(JMFormView *)formView;
 ```
 
+#### Blocks (JMFormViewCompltionBlock)
+
+formDescription can contains your update methods !
+```objc
+JMTextfieldFormViewDescription *textfieldTitleDesc = [JMTextfieldFormViewDescription new];
+textfieldTitleDesc.placeholder = @"Mon placeholder4";
+textfieldTitleDesc.data = model.maValeur;
+textfieldTitleDesc.completionBlock = ^(id modifiedValue){
+model.maValeur = modifiedValue;
+};
+```
+
+### FormView UIAppearance
+
+JMFormView can be customize using UIAppearance protocol.
+
+
 ### Todo
-* Support UIAppearance protocol,
 * Add PickerFormView, 
 * Add DatePickerFormView,
 * Keyboard type,
