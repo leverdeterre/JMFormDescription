@@ -84,6 +84,8 @@ JMFormView can be customize using UIAppearance protocol.
 * Add PickerFormView, 
 * Add DatePickerFormView,
 * Keyboard type,
-* Textfield Regex to validate input.
+* Textfield Regex to validate input,
+* Implement dynamic reload, insertions, deletions.
+
 
 
