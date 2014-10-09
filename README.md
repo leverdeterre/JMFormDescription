@@ -51,23 +51,41 @@ Create a formDescription to describe all your formViews and call JMScrollView in
 
 formDescription can contains your update methods !
 ```objc
-JMTextfieldFormViewDescription *textfieldTitleDesc = [JMTextfieldFormViewDescription new];
-textfieldTitleDesc.placeholder = @"Mon placeholder4";
-textfieldTitleDesc.data = model.maValeur;
-textfieldTitleDesc.completionBlock = ^(id modifiedValue){
-model.maValeur = modifiedValue;
+JMTextfieldFormViewDescription *textfieldDesc = [JMTextfieldFormViewDescription new];
+textfieldDesc.placeholder = @"Mon placeholder4";
+textfieldDesc.data = model.maValeur;
+textfieldDesc.completionBlock = ^(id modifiedValue){
+     model.maValeur = modifiedValue;
 };
 ```
 
 ### FormView UIAppearance
 
 JMFormView can be customize using UIAppearance protocol.
+```objc
+[[JMFormView appearance] setFormViewBackgroundColor:[UIColor colorWithRed:219.0/255 green:214.0/255 blue:208/255 alpha:1.0]];
+[[JMTextfieldFormView appearance] setFormViewTextfieldFont:[UIFont fontWithName:@"HelveticaNeue-Regular" size:16.0f]];
+[[JMTextfieldFormView appearance] setFormViewTextfieldTextColor:[UIColor blackColor]];
+    
+[[JMTextfieldWithTitleFormView appearance] setFormViewTitleFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:16.0f]];
+[[JMFormSectionHeaderFormView appearance] setFormViewHeaderLabelFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:25.0f]];
+[[JMFormSectionHeaderFormView appearance] setFormViewHeaderBackgroundColor:[UIColor whiteColor]];
+    
+[[JMButtonFormView appearance] setFormViewButtonTitleColor:[UIColor whiteColor]];
+[[JMButtonFormView appearance] setFormViewButtonBackgroundColor:[UIColor blackColor]];
+[[JMButtonFormView appearance] setFormViewButtonTitleFont:[UIFont fontWithName:@"HelveticaNeue-Regular" size:16.0f]];
+    
+[[JMSwitchFormView appearance] setFormViewTitleFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:15.0f]];
+[[JMSwitchFormView appearance] setFormViewSwitchTintColor:[UIColor purpleColor]];
+```
 
 
 ### Todo
 * Add PickerFormView, 
 * Add DatePickerFormView,
 * Keyboard type,
-* Textfield Regex to validate input.
+* Textfield Regex to validate input,
+* Implement dynamic reload, insertions, deletions.
+
 
 
