@@ -37,10 +37,17 @@
     if (self.presentingViewController) {
         if ([self.formDelegate respondsToSelector:@selector(dismissWithChoice:forModelKey:)]) {
             [self.formDelegate dismissWithChoice:selectedValue forModelKey:self.modelKey];
+        } else if (self.completionBlock) {
+            [self.presentingViewController dismissViewControllerAnimated:YES completion:^{
+                self.completionBlock(selectedValue);
+            }];
         }
     } else {
         if ([self.formDelegate respondsToSelector:@selector(popWithChoice:forModelKey:)]) {
             [self.formDelegate popWithChoice:selectedValue forModelKey:self.modelKey];
+        } else if (self.completionBlock) {
+            [self.navigationController popToRootViewControllerAnimated:YES];
+            self.completionBlock(selectedValue);
         }
     }
 }

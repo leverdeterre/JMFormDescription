@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "JMFormDelegate.h"
+#import "JMFormView.h"
 
 @interface JMFormListSelectionTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSArray *values;
 @property (weak, nonatomic) id <JMFormDelegate> formDelegate;
 @property (strong, nonatomic) NSString *modelKey;
-
+@property (copy, nonatomic) JMFormViewCompltionBlock completionBlock;
 @end

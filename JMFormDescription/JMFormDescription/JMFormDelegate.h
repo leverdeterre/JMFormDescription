@@ -15,6 +15,8 @@
 @class JMListFormView;
 @class JMTextViewFormView;
 
+typedef void (^JMFormViewCompltionBlock)(id modifiedValue);
+
 @protocol JMFormDelegate <NSObject>
 
 @optional
@@ -33,6 +35,7 @@
 //List
 - (void)listPressedFromFormView:(JMListFormView *)formView withSelectedValue:(NSString *)value;
 - (void)presentListChoices:(NSArray *)choices forModelKey:(NSString *)modelKey currentChoice:(id)currentChoice;
+- (void)presentListChoices:(NSArray *)choices currentChoice:(id)currentChoice withCompletionBlock:(JMFormViewCompltionBlock)block;
 - (void)dismissWithChoice:(id)currentChoice forModelKey:(NSString *)modelKey;
 - (void)pushListChoices:(NSArray *)choices forModelKey:(NSString *)modelKey currentChoice:(id)currentChoice;
 - (void)popWithChoice:(id)currentChoice forModelKey:(NSString *)modelKey;

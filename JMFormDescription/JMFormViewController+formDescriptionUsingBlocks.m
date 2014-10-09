@@ -1,17 +1,17 @@
 //
-//  JMFormViewController+formDescription.m
+//  JMFormViewController+formDescriptionUsingBlocks.m
 //  JMFormDescription
 //
-//  Created by jerome morissard on 23/09/14.
+//  Created by jerome morissard on 09/10/14.
 //  Copyright (c) 2014 jerome morissard. All rights reserved.
 //
 
-#import "JMFormViewController+formDescription.h"
+#import "JMFormViewController+formDescriptionUsingBlocks.h"
 #import "JMFormViews.h"
 
-@implementation JMFormViewController (formDescription)
+@implementation JMFormViewController (formDescriptionUsingBlocks)
 
-- (JMFormDescription *)generateFormDescriptionUsingModel:(JMFormModel *)model
+- (JMFormDescription *)generateFormDescriptionBlocksUsingModel:(JMFormModel *)model
 {
     JMFormDescription *formDesc = [JMFormDescription new];
     NSMutableArray *descriptions = [NSMutableArray new];
@@ -23,15 +23,17 @@
     JMTextfieldFormViewDescription *textfieldDesc  = [JMTextfieldFormViewDescription new];
     textfieldDesc.placeholder = @"Mon placeholder";
     textfieldDesc.data = model.textfieldText1;
-    textfieldDesc.formDelegate = self;
-    textfieldDesc.modelKey = @"textfieldText1";
+    textfieldDesc.updateBlock = ^(id modifiedValue){
+        model.textfieldText1 = modifiedValue;
+    };
     [descriptions addObject:textfieldDesc];
     
     textfieldDesc  = [JMTextfieldFormViewDescription new];
     textfieldDesc.placeholder = nil;
     textfieldDesc.data = model.textfieldText2;
-    textfieldDesc.formDelegate = self;
-    textfieldDesc.modelKey = @"textfieldText2";
+    textfieldDesc.updateBlock = ^(id modifiedValue){
+        model.textfieldText2 = modifiedValue;
+    };
     [descriptions addObject:textfieldDesc];
     
     textfieldDesc  = [JMTextfieldFormViewDescription new];
@@ -41,22 +43,23 @@
         model.textfieldText3 = modifiedValue;
     };
     [descriptions addObject:textfieldDesc];
-     
+    
     headerDesc = [JMFormSectionHeaderFormViewDescription new];
     headerDesc.title = @"Textfield tests With title";
     [descriptions addObject:headerDesc];
     
     JMTextfieldWithTitleFormViewDescription * textfieldTitleDesc = [JMTextfieldWithTitleFormViewDescription new];
-    textfieldTitleDesc.title = @"Mont titre3";
-    textfieldTitleDesc.placeholder = @"Mon placeholder3";
+    textfieldTitleDesc.title = @"Mont titre4";
+    textfieldTitleDesc.placeholder = @"Mon placeholder4";
     textfieldTitleDesc.data = model.textfieldText4;
-    textfieldTitleDesc.formDelegate = self;
-    textfieldTitleDesc.modelKey = @"textfieldText4";
+    textfieldTitleDesc.updateBlock = ^(id modifiedValue){
+        model.textfieldText4 = modifiedValue;
+    };
     [descriptions addObject:textfieldTitleDesc];
     
     textfieldTitleDesc = [JMTextfieldWithTitleFormViewDescription new];
-    textfieldTitleDesc.title = @"Mont titre4";
-    textfieldTitleDesc.placeholder = @"Mon placeholder4";
+    textfieldTitleDesc.title = @"Mont titre5";
+    textfieldTitleDesc.placeholder = @"Mon placeholder5";
     textfieldTitleDesc.data = model.textfieldText5;
     textfieldTitleDesc.updateBlock = ^(id modifiedValue){
         model.textfieldText5 = modifiedValue;
@@ -70,24 +73,22 @@
     JMTSwitchFormViewDescription *switchDescription = [JMTSwitchFormViewDescription new];
     switchDescription.data = @"Mon text de switch";
     switchDescription.on = model.switch1;
-    switchDescription.formDelegate = self;
-    switchDescription.modelKey = @"switch1";
+    switchDescription.updateBlock = ^(id modifiedValue){
+        model.switch1 = [modifiedValue boolValue];
+    };
     [descriptions addObject:switchDescription];
     
     switchDescription = [JMTSwitchFormViewDescription new];
     switchDescription.data = @"Mon text de switch";
     switchDescription.on = model.switch2;
-    switchDescription.formDelegate = self;
-    switchDescription.modelKey = @"switch2";
+    switchDescription.updateBlock = ^(id modifiedValue){
+        model.switch2 = [modifiedValue boolValue];
+    };
     [descriptions addObject:switchDescription];
     
     switchDescription = [JMTSwitchFormViewDescription new];
     switchDescription.data = @"Switch pour déplier";
     switchDescription.on = model.expended;
-    /*
-     switchDescription.formDelegate = self;
-     switchDescription.modelKey = @"expended";
-     */
     switchDescription.updateBlock = ^(id modifiedValue){
         model.expended = [modifiedValue boolValue];
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -101,16 +102,18 @@
         textfieldTitleDesc.title = @"Secret textfield";
         textfieldTitleDesc.placeholder = @"Secret textfield";
         textfieldTitleDesc.data = model.secretValue;
-        textfieldTitleDesc.formDelegate = self;
-        textfieldTitleDesc.modelKey = @"secretValue";
+        textfieldTitleDesc.updateBlock = ^(id modifiedValue){
+            model.secretValue = modifiedValue;
+        };
         [descriptions addObject:textfieldTitleDesc];
         
         textfieldTitleDesc = [JMTextfieldWithTitleFormViewDescription new];
         textfieldTitleDesc.title = @"Secret textfield 2";
         textfieldTitleDesc.placeholder = @"Secret textfield 2";
         textfieldTitleDesc.data = model.secretValue2;
-        textfieldTitleDesc.formDelegate = self;
-        textfieldTitleDesc.modelKey = @"secretValue2";
+        textfieldTitleDesc.updateBlock = ^(id modifiedValue){
+            model.secretValue2 = modifiedValue;
+        };
         [descriptions addObject:textfieldTitleDesc];
     }
     
@@ -118,8 +121,9 @@
     switchDescription.data = @"Mon text de switch un peu plus llong ";
     switchDescription.enable = NO;
     switchDescription.on = model.switch4;
-    switchDescription.formDelegate = self;
-    switchDescription.modelKey = @"switch4";
+    switchDescription.updateBlock = ^(id modifiedValue){
+        model.switch4 = [modifiedValue boolValue];
+    };
     [descriptions addObject:switchDescription];
     
     headerDesc = [JMFormSectionHeaderFormViewDescription new];
@@ -133,19 +137,28 @@
     listDesc.listStyle = JMListFormViewAppleModal;
     listDesc.updateBlock = ^(id modifiedValue){
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self presentListChoices:model.coloChoices forModelKey:@"selectedColorNAme" currentChoice:model.selectedColorNAme];
+            [self presentListChoices:model.coloChoices currentChoice:model.selectedColorNAme withCompletionBlock:^(id modifiedValue) {
+                model.selectedColorNAme = modifiedValue;
+                [self reloadContent];
+            }];
         });
     };
     [descriptions addObject:listDesc];
     
     listDesc = [JMListFormViewDescription new];
     listDesc.title = @"push list using delegate";
-    listDesc.formDelegate = self;
     listDesc.choices = model.coloChoices;
     listDesc.placeholder = @"Choose a color";
     listDesc.data = model.selectedColorNAme2;
-    listDesc.modelKey = @"selectedColorNAme2";
     listDesc.listStyle = JMListFormViewApplePush;
+    listDesc.updateBlock = ^(id modifiedValue){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self presentListChoices:model.coloChoices currentChoice:model.selectedColorNAme2 withCompletionBlock:^(id modifiedValue) {
+                model.selectedColorNAme2 = modifiedValue;
+                [self reloadContent];
+            }];
+        });
+    };
     [descriptions addObject:listDesc];
     
     headerDesc = [JMFormSectionHeaderFormViewDescription new];
@@ -153,17 +166,19 @@
     [descriptions addObject:headerDesc];
     
     JMTextViewFormViewDescription *textDesc = [JMTextViewFormViewDescription new];
-    textDesc.formDelegate = self;
     textDesc.placeholder = @"";
     textDesc.data = model.bigText;
-    textDesc.modelKey = @"bigText";
+    textDesc.updateBlock = ^(id modifiedValue){
+        model.bigText = modifiedValue;
+    };
     [descriptions addObject:textDesc];
     
     textDesc = [JMTextViewFormViewDescription new];
-    textDesc.formDelegate = self;
     textDesc.placeholder = @"";
     textDesc.data = model.bigText2;
-    textDesc.modelKey = @"bigText2";
+    textDesc.updateBlock = ^(id modifiedValue){
+        model.bigText2 = modifiedValue;
+    };
     [descriptions addObject:textDesc];
     
     headerDesc = [JMFormSectionHeaderFormViewDescription new];
@@ -175,11 +190,10 @@
     buttonDesc.title = @"This is a validation button";
     buttonDesc.formViewHeight = 50.0f;
     [descriptions addObject:buttonDesc];
-
+    
     
     formDesc.formViewDescriptions = descriptions;
     return formDesc;
 }
 
 @end
-

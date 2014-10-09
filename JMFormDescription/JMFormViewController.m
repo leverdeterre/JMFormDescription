@@ -7,7 +7,7 @@
 //
 
 #import "JMFormViewController.h"
-#import "JMFormViewController+formDescription.h"
+#import "JMFormViewController+formDescriptionUsingBlocks.h"
 
 #import "JMFormListSelectionTableViewController.h"
 
@@ -32,22 +32,8 @@
     self.formModel.coloChoices = @[@"blue",@"red", @"grey"];
     self.formModel.listPlaceholder = @"choose a color";
     self.formModel.textfieldText1 = @"test";
-
-    [[JMFormScrollView appearance] setFormViewSpace:0.0f];
-    [[JMFormView appearance] setFormViewBackgroundColor:[UIColor colorWithRed:219.0/255 green:214.0/255 blue:208/255 alpha:1.0]];
-    [[JMTextfieldFormView appearance] setFormViewTextfieldFont:[UIFont fontWithName:@"HelveticaNeue-Regular" size:16.0f]];
-    [[JMTextfieldFormView appearance] setFormViewTextfieldTextColor:[UIColor blackColor]];
     
-    [[JMTextfieldWithTitleFormView appearance] setFormViewTitleFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:16.0f]];
-    [[JMFormSectionHeaderFormView appearance] setFormViewHeaderLabelFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:25.0f]];
-    [[JMFormSectionHeaderFormView appearance] setFormViewHeaderBackgroundColor:[UIColor whiteColor]];
-    
-    [[JMButtonFormView appearance] setFormViewButtonTitleColor:[UIColor whiteColor]];
-    [[JMButtonFormView appearance] setFormViewButtonBackgroundColor:[UIColor blackColor]];
-    [[JMButtonFormView appearance] setFormViewButtonTitleFont:[UIFont fontWithName:@"HelveticaNeue-Regular" size:16.0f]];
-    
-    [[JMSwitchFormView appearance] setFormViewTitleFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:15.0f]];
-    [[JMSwitchFormView appearance] setFormViewSwitchTintColor:[UIColor purpleColor]];
+    self.title = @"JMFormView blocks";
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -55,13 +41,13 @@
     [super viewWillAppear:animated];
     
     //generate Layout description
-    self.formDescription = [self generateFormDescriptionUsingModel:self.formModel];
+    self.formDescription = [self generateFormDescriptionBlocksUsingModel:self.formModel];
     [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
 }
 
 - (void)reloadContent
 {
-    self.formDescription = [self generateFormDescriptionUsingModel:self.formModel];
+    self.formDescription = [self generateFormDescriptionBlocksUsingModel:self.formModel];
     [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
 }
 
@@ -72,104 +58,22 @@
 
 #pragma mark - JMFormDelegate
 
-- (void)textUpdatedFromFormView:(JMTextfieldFormView *)formView textfield:(UITextField *)textfield toText:(NSString *)text
-{
-    NSLog(@"%@ change text to %@",formView,text);
-    NSInteger index = [self.formScrollView indexForFormView:formView];
-    NSString *modelKey = [self.formDescription modelKeyForDescriptionAtIndex:index];
-    [self.formModel setValue:text forKey:modelKey];
-}
-
-- (void)textUpdatedFromFormView:(JMTextViewFormView *)formView textView:(UITextView *)textView toText:(NSString *)text
-{
-    NSLog(@"%@ change text to %@",formView,text);
-    NSInteger index = [self.formScrollView indexForFormView:formView];
-    NSString *modelKey = [self.formDescription modelKeyForDescriptionAtIndex:index];
-    [self.formModel setValue:text forKey:modelKey];
-}
-
-- (void)switchChangedFromFormView:(JMSwitchFormView *)formView toValue:(BOOL)value
-{
-    NSLog(@"%@ change switch to %d",formView,value);
-    [self.view endEditing:NO];
-    NSInteger index = [self.formScrollView indexForFormView:formView];
-    NSString *modelKey = [self.formDescription modelKeyForDescriptionAtIndex:index];
-    [self.formModel setValue:@(value) forKey:modelKey];
-    [self reloadContent];
-}
-
-- (void)buttonPressedFromFormView:(JMButtonFormView *)formView withTitleValue:(NSString *)value
-{
-    NSLog(@"%@ button Pressed to %@",formView,value);
-    [self.view endEditing:NO];
-}
 
 #pragma mark - JMListFormView delegate full demos
 
-- (void)listPressedFromFormView:(JMListFormView *)formView withSelectedValue:(NSString *)value
-{
-    NSLog(@"%@ listPressedFromCell Pressed to %@",formView,value);
-    NSInteger index = [self.formScrollView indexForFormView:formView];
-    [self.view endEditing:NO];
-
-    JMFormListSelectionTableViewController *listVc = [JMFormListSelectionTableViewController new];
-    JMListFormViewDescription *desc = [self.formDescription.formViewDescriptions objectAtIndex:index];
-    listVc.values = desc.choices;
-    listVc.formDelegate = self;
-    listVc.modelKey = desc.modelKey;
-    listVc.title = desc.title;
-    
-    if (formView.listStyle == JMListFormViewAppleModal) {
-        UINavigationController *nacV = [[UINavigationController alloc] initWithRootViewController:listVc];
-        [self presentViewController:nacV animated:YES completion:NULL];
-    } else {
-        [self.navigationController pushViewController:listVc animated:YES];
-    }
-}
-
-- (void)dismissWithChoice:(id)currentChoice forModelKey:(NSString *)modelKey
-{
-    [self.view endEditing:NO];
-    [self.formModel setValue:currentChoice forKeyPath:modelKey];
-    [self dismissViewControllerAnimated:YES completion:^{
-        [self reloadContent];
-    }];
-}
-
-- (void)presentListChoices:(NSArray *)choices forModelKey:(NSString *)modelKey currentChoice:(id)currentChoice
+- (void)presentListChoices:(NSArray *)choices currentChoice:(id)currentChoice withCompletionBlock:(JMFormViewCompltionBlock)block
 {
     JMFormListSelectionTableViewController *listVc = [JMFormListSelectionTableViewController new];
     listVc.values = choices;
-    listVc.formDelegate = self;
-    listVc.modelKey = modelKey;
-    //listVc.title = title;
+    listVc.completionBlock = block;
     UINavigationController *nacV = [[UINavigationController alloc] initWithRootViewController:listVc];
     [self presentViewController:nacV animated:YES completion:NULL];
 }
-
-- (void)pushListChoices:(NSArray *)choices forModelKey:(NSString *)modelKey currentChoice:(id)currentChoice
-{
-    JMFormListSelectionTableViewController *listVc = [JMFormListSelectionTableViewController new];
-    listVc.values = choices;
-    listVc.formDelegate = self;
-    listVc.modelKey = modelKey;
-    [self.navigationController pushViewController:listVc animated:YES];
-}
-
-- (void)popWithChoice:(id)currentChoice forModelKey:(NSString *)modelKey
-{
-    [self.formModel setValue:currentChoice forKeyPath:modelKey];
-    [self reloadContent];
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-#pragma mark -
 
 - (void)scrollToFormView:(JMFormView *)formView
 {
     [self.formScrollView scrollRectToVisible:formView.frame animated:YES];
 }
-
 
 #pragma mark - Keyboard ...
 
@@ -207,9 +111,8 @@
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
-    self.formDescription = [self generateFormDescriptionUsingModel:self.formModel];
+    self.formDescription = [self generateFormDescriptionBlocksUsingModel:self.formModel];
     [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
 }
-
 
 @end
