@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,7 +12,6 @@
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-6D-WL8">
                     <rect key="frame" x="20" y="7" width="280" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="280" id="5y8-o9-St8"/>
                         <constraint firstAttribute="height" constant="21" id="XwC-RK-3fU"/>
@@ -22,7 +21,6 @@
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nVK-89-I6P">
                     <rect key="frame" x="20" y="34" width="280" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="280" id="jgt-Bm-OXi"/>
                         <constraint firstAttribute="height" constant="30" id="rNm-gO-Ljy"/>
@@ -30,21 +28,66 @@
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ubz-xr-XGC" userLabel="PushStyleView">
+                    <rect key="frame" x="0.0" y="29" width="320" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC8-wc-lMo">
+                            <rect key="frame" x="20" y="8" width="263" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="0Kr-LO-wM3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_chevron_horizontal.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y7c-xS-RyK">
+                            <rect key="frame" x="286" y="11" width="26" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="Z7O-Qc-N8A"/>
+                                <constraint firstAttribute="width" constant="26" id="qQl-ZJ-ky0"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="AC8-wc-lMo" secondAttribute="bottom" constant="8" id="BAT-gi-UEm"/>
+                        <constraint firstItem="Y7c-xS-RyK" firstAttribute="leading" secondItem="AC8-wc-lMo" secondAttribute="trailing" constant="3" id="VMQ-Cz-qGX"/>
+                        <constraint firstAttribute="bottom" secondItem="Y7c-xS-RyK" secondAttribute="bottom" constant="11" id="kKt-Jq-9Ip"/>
+                        <constraint firstItem="AC8-wc-lMo" firstAttribute="leading" secondItem="Ubz-xr-XGC" secondAttribute="leading" constant="20" id="oxz-W6-E3g"/>
+                        <constraint firstAttribute="trailing" secondItem="Y7c-xS-RyK" secondAttribute="trailing" constant="8" id="s27-we-osC"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.27843138579999999" green="0.80392163989999998" blue="0.78823536630000002" alpha="1" colorSpace="deviceRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ubz-xr-XGC" secondAttribute="trailing" id="0Nv-Ag-2va"/>
+                <constraint firstAttribute="bottom" secondItem="Ubz-xr-XGC" secondAttribute="bottom" id="3rB-i2-zud"/>
                 <constraint firstItem="nVK-89-I6P" firstAttribute="leading" secondItem="tg1-LL-Tt7" secondAttribute="leading" constant="20" id="FpM-tZ-kkY"/>
                 <constraint firstItem="Rdt-6D-WL8" firstAttribute="top" secondItem="tg1-LL-Tt7" secondAttribute="top" constant="7" id="dPG-IB-9cb"/>
                 <constraint firstItem="Rdt-6D-WL8" firstAttribute="leading" secondItem="tg1-LL-Tt7" secondAttribute="leading" constant="20" id="dSv-Eu-had"/>
+                <constraint firstItem="Ubz-xr-XGC" firstAttribute="top" secondItem="Rdt-6D-WL8" secondAttribute="bottom" constant="1" id="qqc-6X-WJE"/>
                 <constraint firstItem="nVK-89-I6P" firstAttribute="top" secondItem="Rdt-6D-WL8" secondAttribute="bottom" constant="6" id="rAo-Fn-vP2"/>
+                <constraint firstItem="Ubz-xr-XGC" firstAttribute="leading" secondItem="tg1-LL-Tt7" secondAttribute="leading" id="sGl-Lb-zX1"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="pushStyleContainerView" destination="Ubz-xr-XGC" id="pg0-B5-LqF"/>
+                <outlet property="selectedValueLabel" destination="AC8-wc-lMo" id="rPd-8Q-Qqr"/>
                 <outlet property="textfield" destination="nVK-89-I6P" id="p55-TJ-BN7"/>
                 <outlet property="textfieldHeight" destination="rNm-gO-Ljy" id="gN8-j5-oE7"/>
                 <outlet property="textfieldWidth" destination="jgt-Bm-OXi" id="zBk-x9-2Y8"/>
                 <outlet property="titleLabel" destination="Rdt-6D-WL8" id="8tR-6X-kId"/>
             </connections>
+            <point key="canvasLocation" x="351" y="218.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="ico_chevron_horizontal.png" width="26" height="26"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

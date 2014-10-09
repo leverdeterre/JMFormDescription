@@ -20,9 +20,15 @@
 }
 @end
 
-@interface JMTextfieldWithTitleFormView ()
+@interface JMListFormView ()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+//Modal style
 @property (weak, nonatomic) IBOutlet UITextField *textfield;
+
+//Push style
+@property (weak, nonatomic) IBOutlet UIView *pushStyleContainerView;
+@property (weak, nonatomic) IBOutlet UILabel *selectedValueLabel;
 @end
 
 @implementation JMListFormView
@@ -32,22 +38,38 @@
     [super updateFormViewWithDescription:description];
     self.titleLabel.text = description.title;
     self.formDelegate = description.formDelegate;
-
+    self.listStyle = description.listStyle;
+    
+    if (self.listStyle == JMListFormViewAppleModal) {
+        self.textfield.hidden = NO;
+        self.pushStyleContainerView.hidden = YES;
+        
+        self.textfield.rightViewMode = UITextFieldViewModeAlways;
+        UIImageView *rightImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ico_arrow_down_list"]];
+        CGRect rightImageViewFrame = rightImageView.frame;
+        rightImageViewFrame.size = CGSizeMake(25.0f,25.0f);
+        rightImageView.frame = rightImageViewFrame;
+        rightImageView.contentMode = UIViewContentModeCenter;
+        self.textfield.rightView = rightImageView;
+        self.textfield.delegate = nil;
+        self.textfield.userInteractionEnabled = NO;
+        self.textfield.placeholder = description.placeholder;
+        
+    } else {
+        self.textfield.hidden = YES;
+        self.pushStyleContainerView.hidden = NO;
+        if (description.data) {
+            self.selectedValueLabel.text = description.data;
+        } else {
+            self.selectedValueLabel.text = description.placeholder;
+        }
+    }
+    
     UIButton *overviewedButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [overviewedButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [overviewedButton setAutoresizingMask:(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight)];
     [overviewedButton setFrame:self.bounds];
     [self addSubview:overviewedButton];
-    self.textfield.delegate = nil;
-    self.textfield.userInteractionEnabled = NO;
-    
-    self.textfield.rightViewMode = UITextFieldViewModeAlways;
-    UIImageView *rightImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ico_arrow_down_list"]];
-    CGRect rightImageViewFrame = rightImageView.frame;
-    rightImageViewFrame.size = CGSizeMake(25.0f,25.0f);
-    rightImageView.frame = rightImageViewFrame;
-    rightImageView.contentMode = UIViewContentModeCenter;
-    self.textfield.rightView = rightImageView;
 }
 
 - (void)buttonPressed:(id)sender

@@ -14,24 +14,12 @@
 
 @implementation JMFormListSelectionTableViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.values.count;
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -46,8 +34,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *selectedValue = [self.values objectAtIndex:indexPath.row];
-    if ([self.formDelegate respondsToSelector:@selector(dismissWithChoice:forModelKey:)]) {
-        [self.formDelegate dismissWithChoice:selectedValue forModelKey:self.modelKey];
+    if (self.presentingViewController) {
+        if ([self.formDelegate respondsToSelector:@selector(dismissWithChoice:forModelKey:)]) {
+            [self.formDelegate dismissWithChoice:selectedValue forModelKey:self.modelKey];
+        }
+    } else {
+        if ([self.formDelegate respondsToSelector:@selector(popWithChoice:forModelKey:)]) {
+            [self.formDelegate popWithChoice:selectedValue forModelKey:self.modelKey];
+        }
     }
 }
 

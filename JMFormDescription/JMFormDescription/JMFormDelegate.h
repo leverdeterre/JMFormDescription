@@ -34,6 +34,8 @@
 - (void)listPressedFromFormView:(JMListFormView *)formView withSelectedValue:(NSString *)value;
 - (void)presentListChoices:(NSArray *)choices forModelKey:(NSString *)modelKey currentChoice:(id)currentChoice;
 - (void)dismissWithChoice:(id)currentChoice forModelKey:(NSString *)modelKey;
+- (void)pushListChoices:(NSArray *)choices forModelKey:(NSString *)modelKey currentChoice:(id)currentChoice;
+- (void)popWithChoice:(id)currentChoice forModelKey:(NSString *)modelKey;
 
 - (void)scrollToFormView:(JMFormView *)formView;
 

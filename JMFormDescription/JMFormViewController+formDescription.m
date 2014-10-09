@@ -127,12 +127,10 @@
     [descriptions addObject:headerDesc];
     
     JMListFormViewDescription *listDesc = [JMListFormViewDescription new];
-    listDesc.title = model.listPlaceholder;
-//  listDesc.choices = model.coloChoices;
-    listDesc.placeholder = model.listPlaceholder;
+    listDesc.title = @"modal list using block";
+    listDesc.placeholder = @"Choose a color";
     listDesc.data = model.selectedColorNAme;
-//  listDesc.modelKey = @"selectedColorNAme";
-//  listDesc.formDelegate = self;
+    listDesc.listStyle = JMListFormViewAppleModal;
     listDesc.updateBlock = ^(id modifiedValue){
         dispatch_async(dispatch_get_main_queue(), ^{
             [self presentListChoices:model.coloChoices forModelKey:@"selectedColorNAme" currentChoice:model.selectedColorNAme];
@@ -141,12 +139,13 @@
     [descriptions addObject:listDesc];
     
     listDesc = [JMListFormViewDescription new];
-    listDesc.title = model.listPlaceholder;
+    listDesc.title = @"push list using delegate";
     listDesc.formDelegate = self;
     listDesc.choices = model.coloChoices;
-    listDesc.placeholder = model.listPlaceholder;
+    listDesc.placeholder = @"Choose a color";
     listDesc.data = model.selectedColorNAme2;
     listDesc.modelKey = @"selectedColorNAme2";
+    listDesc.listStyle = JMListFormViewApplePush;
     [descriptions addObject:listDesc];
     
     headerDesc = [JMFormSectionHeaderFormViewDescription new];

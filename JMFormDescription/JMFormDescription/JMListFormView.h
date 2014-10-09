@@ -8,9 +8,16 @@
 
 #import "JMTextfieldWithTitleFormView.h"
 
+typedef NS_ENUM(NSUInteger, JMListFormViewStyle) {
+    JMListFormViewApplePush,
+    JMListFormViewAppleModal
+};
+
 @interface JMListFormViewDescription : JMTextfieldWithTitleFormViewDescription
 @property (strong, nonatomic) NSArray *choices;
+@property (assign, nonatomic) JMListFormViewStyle listStyle;
 @end
 
 @interface JMListFormView : JMTextfieldWithTitleFormView
+@property (assign, nonatomic) JMListFormViewStyle listStyle;
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2229E4C19E7175F008AF704 /* ico_chevron_horizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = C2229E4A19E7175F008AF704 /* ico_chevron_horizontal.png */; };
+		C2229E4D19E7175F008AF704 /* ico_chevron_horizontal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2229E4B19E7175F008AF704 /* ico_chevron_horizontal@2x.png */; };
 		C24A7E1A19E3495C00BDF4B3 /* ico_arrow_down_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C24A7E1819E3495C00BDF4B3 /* ico_arrow_down_list@2x.png */; };
 		C24A7E1B19E3495C00BDF4B3 /* ico_arrow_down_list.png in Resources */ = {isa = PBXBuildFile; fileRef = C24A7E1919E3495C00BDF4B3 /* ico_arrow_down_list.png */; };
 		C275E61F19E03A1200ECEB3E /* JMFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E61E19E03A1200ECEB3E /* JMFormModel.m */; };
@@ -58,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2229E4A19E7175F008AF704 /* ico_chevron_horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_chevron_horizontal.png; sourceTree = "<group>"; };
+		C2229E4B19E7175F008AF704 /* ico_chevron_horizontal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_chevron_horizontal@2x.png"; sourceTree = "<group>"; };
 		C24A7E1819E3495C00BDF4B3 /* ico_arrow_down_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_arrow_down_list@2x.png"; sourceTree = "<group>"; };
 		C24A7E1919E3495C00BDF4B3 /* ico_arrow_down_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_arrow_down_list.png; sourceTree = "<group>"; };
 		C275E61D19E03A1200ECEB3E /* JMFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormModel.h; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 		C275E66619E08C7400ECEB3E /* FormViews */ = {
 			isa = PBXGroup;
 			children = (
+				C2229E4A19E7175F008AF704 /* ico_chevron_horizontal.png */,
+				C2229E4B19E7175F008AF704 /* ico_chevron_horizontal@2x.png */,
 				C24A7E1819E3495C00BDF4B3 /* ico_arrow_down_list@2x.png */,
 				C24A7E1919E3495C00BDF4B3 /* ico_arrow_down_list.png */,
 				C275E63519E08C4600ECEB3E /* JMButtonFormView.h */,
@@ -360,7 +366,9 @@
 			files = (
 				C24A7E1A19E3495C00BDF4B3 /* ico_arrow_down_list@2x.png in Resources */,
 				C275E65919E08C4600ECEB3E /* JMFormSectionHeaderFormView.xib in Resources */,
+				C2229E4D19E7175F008AF704 /* ico_chevron_horizontal@2x.png in Resources */,
 				C27D211919D20298001AB506 /* Images.xcassets in Resources */,
+				C2229E4C19E7175F008AF704 /* ico_chevron_horizontal.png in Resources */,
 				C27D210B19D20298001AB506 /* InfoPlist.strings in Resources */,
 				C275E66319E08C4600ECEB3E /* JMTextfieldWithTitleFormView.xib in Resources */,
 				C27D211419D20298001AB506 /* Main.storyboard in Resources */,
