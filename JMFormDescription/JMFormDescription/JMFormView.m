@@ -41,7 +41,7 @@
 
 - (void)updateFormViewWithDescription:(JMFormViewDescription *)data
 {
-    self.completionBlock = data.completionBlock;
+    self.updateBlock = data.updateBlock;
     self.formDelegate = data.formDelegate;
 }
 

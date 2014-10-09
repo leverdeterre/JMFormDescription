@@ -65,23 +65,30 @@
     self.keyboardPresented = NO;
 }
 
+#pragma mark - Appearance
+
+- (void)setFormViewSpace:(CGFloat)formViewSpace
+{
+    _formViewSpace = formViewSpace;
+}
+
 #pragma mark - ReloadData
 
 - (void)reloadScrollViewWithFormDescription:(NSArray *)descriptions
 {
-    self.backgroundColor = [UIColor redColor];
+    //self.backgroundColor = [UIColor redColor];
     
     if (self.contentView.superview) {
         [self.contentView removeFromSuperview];
     }
 
     self.contentView = [[UIView alloc] initWithFrame:self.bounds];
-    self.contentView.backgroundColor = [UIColor blueColor];
+    //self.contentView.backgroundColor = [UIColor blueColor];
     CGFloat computedHeight = 0.0f;
 
     JMFormView *previousFormView;
     JMFormView *currentFormView;
-
+    
     for (JMFormViewDescription *desc in descriptions) {
         if ([desc.formViewClass isSubclassOfClass:[JMFormView class]]) {
             previousFormView = currentFormView;
@@ -94,9 +101,9 @@
             [self addConstraintsForPreviousFormView:previousFormView
                                     currentFormView:currentFormView
                              currentFormDescription:desc
-                                 defaultHeightSpace:self.formViewSpace];
+                                 defaultHeightSpace:_formViewSpace];
             
-            computedHeight = computedHeight + desc.formViewHeight + self.formViewSpace;
+            computedHeight = computedHeight + desc.formViewHeight + _formViewSpace;
         }
     }
     

@@ -54,6 +54,10 @@
     if ([self.formDelegate respondsToSelector:@selector(switchChangedFromFormView:toValue:)]) {
         [self.formDelegate switchChangedFromFormView:self toValue:self.switche.on];
     }
+    
+    if (self.updateBlock) {
+        self.updateBlock(@(self.switche.on));
+    }
 }
 
 #pragma mark - Appearance

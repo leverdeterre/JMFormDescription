@@ -12,5 +12,6 @@
 @interface JMFormViewController : UIViewController <JMFormDelegate>
 
 - (IBAction)customSelector1:(id)sender;
+- (void)reloadContent;
 
 @end

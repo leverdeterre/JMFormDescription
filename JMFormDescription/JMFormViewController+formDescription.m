@@ -37,7 +37,7 @@
     textfieldDesc  = [JMTextfieldFormViewDescription new];
     textfieldDesc.placeholder = nil;
     textfieldDesc.data = model.textfieldText3;
-    textfieldDesc.completionBlock = ^(id modifiedValue){
+    textfieldDesc.updateBlock = ^(id modifiedValue){
         model.textfieldText3 = modifiedValue;
     };
     [descriptions addObject:textfieldDesc];
@@ -58,7 +58,7 @@
     textfieldTitleDesc.title = @"Mont titre4";
     textfieldTitleDesc.placeholder = @"Mon placeholder4";
     textfieldTitleDesc.data = model.textfieldText5;
-    textfieldTitleDesc.completionBlock = ^(id modifiedValue){
+    textfieldTitleDesc.updateBlock = ^(id modifiedValue){
         model.textfieldText5 = modifiedValue;
     };
     [descriptions addObject:textfieldTitleDesc];
@@ -84,8 +84,16 @@
     switchDescription = [JMTSwitchFormViewDescription new];
     switchDescription.data = @"Switch pour déplier";
     switchDescription.on = model.expended;
-    switchDescription.formDelegate = self;
-    switchDescription.modelKey = @"expended";
+    /*
+     switchDescription.formDelegate = self;
+     switchDescription.modelKey = @"expended";
+     */
+    switchDescription.updateBlock = ^(id modifiedValue){
+        model.expended = [modifiedValue boolValue];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self reloadContent];
+        });
+    };
     [descriptions addObject:switchDescription];
     
     if (model.expended) {

@@ -33,6 +33,7 @@
     self.formModel.listPlaceholder = @"choose a color";
     self.formModel.textfieldText1 = @"test";
     
+    [[JMFormScrollView appearance] setFormViewSpace:0.0f];
     [[JMFormView appearance] setFormViewBackgroundColor:[UIColor colorWithRed:219.0/255 green:214.0/255 blue:208/255 alpha:1.0]];
     [[JMTextfieldFormView appearance] setFormViewTextfieldFont:[UIFont fontWithName:@"HelveticaNeue-Regular" size:16.0f]];
     [[JMTextfieldFormView appearance] setFormViewTextfieldTextColor:[UIColor blackColor]];
@@ -47,8 +48,19 @@
     
     [[JMSwitchFormView appearance] setFormViewTitleFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:15.0f]];
     [[JMSwitchFormView appearance] setFormViewSwitchTintColor:[UIColor purpleColor]];
+}
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
     //generate Layout description
+    self.formDescription = [self generateFormDescriptionUsingModel:self.formModel];
+    [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
+}
+
+- (void)reloadContent
+{
     self.formDescription = [self generateFormDescriptionUsingModel:self.formModel];
     [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
 }
@@ -78,9 +90,7 @@
     NSInteger index = [self.formScrollView indexForFormView:formView];
     NSString *modelKey = [self.formDescription modelKeyForDescriptionAtIndex:index];
     [self.formModel setValue:@(value) forKey:modelKey];
-    
-    self.formDescription = [self generateFormDescriptionUsingModel:self.formModel];
-    [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
+    [self reloadContent];
 }
 
 - (void)buttonPressedFromFormView:(JMButtonFormView *)formView withTitleValue:(NSString *)value
@@ -110,8 +120,7 @@
     [self.view endEditing:NO];
     [self.formModel setValue:choice forKeyPath:modelKey];
     [self dismissViewControllerAnimated:YES completion:^{
-        self.formDescription = [self generateFormDescriptionUsingModel:self.formModel];
-        [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
+        [self reloadContent];
     }];
 }
 

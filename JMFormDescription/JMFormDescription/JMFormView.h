@@ -21,7 +21,7 @@ typedef void (^JMFormViewCompltionBlock)(id modifiedValue);
 @property (weak, nonatomic) NSString* modelKey;
 
 //update with block
-@property (copy, nonatomic) JMFormViewCompltionBlock completionBlock;
+@property (copy, nonatomic) JMFormViewCompltionBlock updateBlock;
 @end
 
 @interface JMFormView : UIView <JMFormViewDatasource>

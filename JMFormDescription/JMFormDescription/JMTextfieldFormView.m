@@ -113,7 +113,9 @@
     NSString * finalString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     if ([self.formDelegate respondsToSelector:@selector(textUpdatedFromFormView:textfield:toText:)]) {
         [self.formDelegate textUpdatedFromFormView:self textfield:textField toText:finalString];
-    } else if (self.updateBlock) {
+    }
+    
+    if (self.updateBlock) {
         self.updateBlock(finalString);
     }
     
