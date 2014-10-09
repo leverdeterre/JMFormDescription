@@ -104,6 +104,8 @@
     [self.view endEditing:NO];
 }
 
+#pragma mark - JMListFormView delegate full demos
+
 - (void)listPressedFromFormView:(JMListFormView *)formView withSelectedValue:(NSString *)value
 {
     NSLog(@"%@ listPressedFromCell Pressed to %@",formView,value);
@@ -116,8 +118,13 @@
     listVc.formDelegate = self;
     listVc.modelKey = desc.modelKey;
     listVc.title = desc.title;
-    UINavigationController *nacV = [[UINavigationController alloc] initWithRootViewController:listVc];
-    [self presentViewController:nacV animated:YES completion:NULL];
+    
+    if (formView.listStyle == JMListFormViewAppleModal) {
+        UINavigationController *nacV = [[UINavigationController alloc] initWithRootViewController:listVc];
+        [self presentViewController:nacV animated:YES completion:NULL];
+    } else {
+        [self.navigationController pushViewController:listVc animated:YES];
+    }
 }
 
 - (void)dismissWithChoice:(id)currentChoice forModelKey:(NSString *)modelKey
@@ -140,10 +147,29 @@
     [self presentViewController:nacV animated:YES completion:NULL];
 }
 
+- (void)pushListChoices:(NSArray *)choices forModelKey:(NSString *)modelKey currentChoice:(id)currentChoice
+{
+    JMFormListSelectionTableViewController *listVc = [JMFormListSelectionTableViewController new];
+    listVc.values = choices;
+    listVc.formDelegate = self;
+    listVc.modelKey = modelKey;
+    [self.navigationController pushViewController:listVc animated:YES];
+}
+
+- (void)popWithChoice:(id)currentChoice forModelKey:(NSString *)modelKey
+{
+    [self.formModel setValue:currentChoice forKeyPath:modelKey];
+    [self reloadContent];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark -
+
 - (void)scrollToFormView:(JMFormView *)formView
 {
     [self.formScrollView scrollRectToVisible:formView.frame animated:YES];
 }
+
 
 #pragma mark - Keyboard ...
 

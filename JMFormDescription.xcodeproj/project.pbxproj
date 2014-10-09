@@ -167,11 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				C275E64419E08C4600ECEB3E /* JMFormViews.h */,
-				C275E66619E08C7400ECEB3E /* FormViews */,
 				C275E63819E08C4600ECEB3E /* JMFormDelegate.h */,
 				C275E64319E08C4600ECEB3E /* JMFormViewDatasource.h */,
-				C275E63919E08C4600ECEB3E /* JMFormDescription.h */,
-				C275E63A19E08C4600ECEB3E /* JMFormDescription.m */,
+				C275E66619E08C7400ECEB3E /* FormViews */,
 				C275E63B19E08C4600ECEB3E /* JMFormScrollView.h */,
 				C275E63C19E08C4600ECEB3E /* JMFormScrollView.m */,
 			);
@@ -182,6 +180,8 @@
 		C275E66619E08C7400ECEB3E /* FormViews */ = {
 			isa = PBXGroup;
 			children = (
+				C275E63919E08C4600ECEB3E /* JMFormDescription.h */,
+				C275E63A19E08C4600ECEB3E /* JMFormDescription.m */,
 				C2229E4A19E7175F008AF704 /* ico_chevron_horizontal.png */,
 				C2229E4B19E7175F008AF704 /* ico_chevron_horizontal@2x.png */,
 				C24A7E1819E3495C00BDF4B3 /* ico_arrow_down_list@2x.png */,
