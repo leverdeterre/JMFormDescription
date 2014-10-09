@@ -13,5 +13,6 @@
 
 - (IBAction)customSelector1:(id)sender;
 - (void)reloadContent;
+- (void)presentChoices;
 
 @end

@@ -11,6 +11,7 @@
 #import "JMFormDelegate.h"
 
 typedef void (^JMFormViewCompltionBlock)(id modifiedValue);
+//typedef void (^JMFormViewCompltionBlock)(id modifiedValue, NSString *forKey);
 
 @interface JMFormViewDescription : NSObject
 @property (strong, nonatomic) Class formViewClass;

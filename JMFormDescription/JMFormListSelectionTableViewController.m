@@ -46,8 +46,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *selectedValue = [self.values objectAtIndex:indexPath.row];
-    if ([self.formDelegate respondsToSelector:@selector(selectedChoice:forModelKey:)]) {
-        [self.formDelegate selectedChoice:selectedValue forModelKey:self.modelKey];
+    if ([self.formDelegate respondsToSelector:@selector(dismissWithChoice:forModelKey:)]) {
+        [self.formDelegate dismissWithChoice:selectedValue forModelKey:self.modelKey];
     }
 }
 

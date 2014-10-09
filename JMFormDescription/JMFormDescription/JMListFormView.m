@@ -55,6 +55,10 @@
     if ([self.formDelegate respondsToSelector:@selector(listPressedFromFormView:withSelectedValue:)]){
         [self.formDelegate listPressedFromFormView:self withSelectedValue:self.textfield.text];
     }
+    
+    if (self.updateBlock) {
+        self.updateBlock(self.textfield.text);
+    }
 }
 
 @end

@@ -128,11 +128,16 @@
     
     JMListFormViewDescription *listDesc = [JMListFormViewDescription new];
     listDesc.title = model.listPlaceholder;
-    listDesc.formDelegate = self;
-    listDesc.choices = model.coloChoices;
+//  listDesc.choices = model.coloChoices;
     listDesc.placeholder = model.listPlaceholder;
     listDesc.data = model.selectedColorNAme;
-    listDesc.modelKey = @"selectedColorNAme";
+//  listDesc.modelKey = @"selectedColorNAme";
+//  listDesc.formDelegate = self;
+    listDesc.updateBlock = ^(id modifiedValue){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self presentListChoices:model.coloChoices forModelKey:@"selectedColorNAme" currentChoice:model.selectedColorNAme];
+        });
+    };
     [descriptions addObject:listDesc];
     
     listDesc = [JMListFormViewDescription new];

@@ -32,7 +32,7 @@
     self.formModel.coloChoices = @[@"blue",@"red", @"grey"];
     self.formModel.listPlaceholder = @"choose a color";
     self.formModel.textfieldText1 = @"test";
-    
+
     [[JMFormScrollView appearance] setFormViewSpace:0.0f];
     [[JMFormView appearance] setFormViewBackgroundColor:[UIColor colorWithRed:219.0/255 green:214.0/255 blue:208/255 alpha:1.0]];
     [[JMTextfieldFormView appearance] setFormViewTextfieldFont:[UIFont fontWithName:@"HelveticaNeue-Regular" size:16.0f]];
@@ -63,6 +63,11 @@
 {
     self.formDescription = [self generateFormDescriptionUsingModel:self.formModel];
     [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
+}
+
+- (void)presentChoices
+{
+    
 }
 
 #pragma mark - JMFormDelegate
@@ -115,13 +120,24 @@
     [self presentViewController:nacV animated:YES completion:NULL];
 }
 
-- (void)selectedChoice:(NSString *)choice forModelKey:(NSString *)modelKey
+- (void)dismissWithChoice:(id)currentChoice forModelKey:(NSString *)modelKey
 {
     [self.view endEditing:NO];
-    [self.formModel setValue:choice forKeyPath:modelKey];
+    [self.formModel setValue:currentChoice forKeyPath:modelKey];
     [self dismissViewControllerAnimated:YES completion:^{
         [self reloadContent];
     }];
+}
+
+- (void)presentListChoices:(NSArray *)choices forModelKey:(NSString *)modelKey currentChoice:(id)currentChoice
+{
+    JMFormListSelectionTableViewController *listVc = [JMFormListSelectionTableViewController new];
+    listVc.values = choices;
+    listVc.formDelegate = self;
+    listVc.modelKey = modelKey;
+    //listVc.title = title;
+    UINavigationController *nacV = [[UINavigationController alloc] initWithRootViewController:listVc];
+    [self presentViewController:nacV animated:YES completion:NULL];
 }
 
 - (void)scrollToFormView:(JMFormView *)formView
