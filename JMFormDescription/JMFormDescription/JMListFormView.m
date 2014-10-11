@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         self.formViewClass = [JMListFormView class];
-        self.formViewHeight = 80.0f;
+        self.formViewHeight = 64.0f;
     }
     return self;
 }
@@ -40,7 +40,7 @@
     self.formDelegate = description.formDelegate;
     self.listStyle = description.listStyle;
     
-    if (self.listStyle == JMListFormViewAppleModal) {
+    if (self.listStyle == JMListFormViewModalChoice) {
         self.textfield.hidden = NO;
         self.pushStyleContainerView.hidden = YES;
         

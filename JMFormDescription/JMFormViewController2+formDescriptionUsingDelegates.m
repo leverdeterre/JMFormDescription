@@ -121,7 +121,7 @@
     listDesc.title = @"modal list using block";
     listDesc.placeholder = @"Choose a color";
     listDesc.data = model.selectedColorNAme;
-    listDesc.listStyle = JMListFormViewAppleModal;
+    listDesc.listStyle = JMListFormViewModalChoice;
     listDesc.formDelegate = self;
     listDesc.modelKey = @"selectedColorNAme2";
     [descriptions addObject:listDesc];
@@ -133,7 +133,7 @@
     listDesc.placeholder = @"Choose a color";
     listDesc.data = model.selectedColorNAme2;
     listDesc.modelKey = @"selectedColorNAme2";
-    listDesc.listStyle = JMListFormViewApplePush;
+    listDesc.listStyle = JMListFormViewAppleInlinePush;
     [descriptions addObject:listDesc];
     
     headerDesc = [JMFormSectionHeaderFormViewDescription new];

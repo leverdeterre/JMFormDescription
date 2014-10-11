@@ -34,6 +34,7 @@
     self.formModel.textfieldText1 = @"test";
     
     self.title = @"JMFormView blocks";
+    self.formScrollView.formViewSpace = 1.0f;
 }
 
 - (void)viewWillAppear:(BOOL)animated

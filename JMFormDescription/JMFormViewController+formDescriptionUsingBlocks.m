@@ -131,10 +131,11 @@
     [descriptions addObject:headerDesc];
     
     JMListFormViewDescription *listDesc = [JMListFormViewDescription new];
-    listDesc.title = @"modal list using block";
-    listDesc.placeholder = @"Choose a color";
+    listDesc.title = @"Choose a color";
+    listDesc.placeholder = @"none";
     listDesc.data = model.selectedColorNAme;
-    listDesc.listStyle = JMListFormViewAppleModal;
+    listDesc.listStyle = JMListFormViewModalChoice;
+    listDesc.formViewHeight = 64.0f;
     listDesc.updateBlock = ^(id modifiedValue){
         dispatch_async(dispatch_get_main_queue(), ^{
             [self presentListChoices:model.coloChoices currentChoice:model.selectedColorNAme withCompletionBlock:^(id modifiedValue) {
@@ -146,11 +147,12 @@
     [descriptions addObject:listDesc];
     
     listDesc = [JMListFormViewDescription new];
-    listDesc.title = @"push list using delegate";
+    listDesc.title = @"Choose a color (AppleInlinePush)";
     listDesc.choices = model.coloChoices;
-    listDesc.placeholder = @"Choose a color";
+    listDesc.placeholder = @"none";
     listDesc.data = model.selectedColorNAme2;
-    listDesc.listStyle = JMListFormViewApplePush;
+    listDesc.listStyle = JMListFormViewAppleInlinePush;
+    listDesc.formViewHeight = 41.0f;
     listDesc.updateBlock = ^(id modifiedValue){
         dispatch_async(dispatch_get_main_queue(), ^{
             [self presentListChoices:model.coloChoices currentChoice:model.selectedColorNAme2 withCompletionBlock:^(id modifiedValue) {

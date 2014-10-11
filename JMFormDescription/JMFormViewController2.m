@@ -33,6 +33,7 @@
     self.formModel.textfieldText1 = @"test";
     
     self.title = @"JMFormView delegates";
+    self.formScrollView.formViewSpace = 1.0f;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -104,7 +105,7 @@
     listVc.modelKey = desc.modelKey;
     listVc.title = desc.title;
     
-    if (formView.listStyle == JMListFormViewAppleModal) {
+    if (formView.listStyle == JMListFormViewModalChoice) {
         UINavigationController *nacV = [[UINavigationController alloc] initWithRootViewController:listVc];
         [self presentViewController:nacV animated:YES completion:NULL];
     } else {
