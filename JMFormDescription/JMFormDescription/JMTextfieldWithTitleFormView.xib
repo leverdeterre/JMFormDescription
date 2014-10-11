@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,7 +13,6 @@
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxc-XE-20Z">
                     <rect key="frame" x="20" y="7" width="280" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="280" id="5wu-ye-wAz"/>
                         <constraint firstAttribute="height" constant="21" id="kvi-Bk-Dw1"/>
@@ -22,7 +22,6 @@
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vll-7n-1iw">
                     <rect key="frame" x="20" y="34" width="280" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="Rns-UQ-I3O"/>
                         <constraint firstAttribute="width" constant="280" id="fVF-LF-jyd"/>
@@ -31,13 +30,14 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
-            <color key="backgroundColor" red="0.27843138579999999" green="0.80392163989999998" blue="0.78823536630000002" alpha="1" colorSpace="deviceRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Vll-7n-1iw" firstAttribute="top" secondItem="uxc-XE-20Z" secondAttribute="bottom" constant="6" id="PIZ-gX-CbS"/>
                 <constraint firstItem="uxc-XE-20Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="Xje-eH-ZGc"/>
                 <constraint firstItem="Vll-7n-1iw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="bJi-Yv-eX2"/>
                 <constraint firstItem="uxc-XE-20Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="umq-XV-GtW"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="textfield" destination="Vll-7n-1iw" id="WcP-C5-OdL"/>
@@ -47,4 +47,9 @@
             </connections>
         </view>
     </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

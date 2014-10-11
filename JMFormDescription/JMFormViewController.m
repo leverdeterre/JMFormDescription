@@ -8,18 +8,18 @@
 
 #import "JMFormViewController.h"
 #import "JMFormViewController+formDescriptionUsingBlocks.h"
-
-#import "JMFormListSelectionTableViewController.h"
-
 #import "JMFormScrollView.h"
 #import "JMFormViews.h"
+
 #import "JMFormModel.h"
+#import "UIViewController+MaryPopin.h"
+#import "JMFormListSelectionTableViewController.h"
+#import "JMFormViewParametersViewController.h"
 
 @interface JMFormViewController ()
 @property (weak, nonatomic) IBOutlet JMFormScrollView *formScrollView;
 @property (strong, nonatomic) JMFormModel *formModel;
 @property (strong, nonatomic) JMFormDescription *formDescription;
-
 @end
 
 @implementation JMFormViewController
@@ -35,6 +35,9 @@
     
     self.title = @"JMFormView blocks";
     self.formScrollView.formViewSpace = 1.0f;
+    
+    UIBarButtonItem *ri = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(configureScrollFormView:)];
+    self.navigationItem.rightBarButtonItem = ri;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -108,6 +111,15 @@
 {
     [self.view endEditing:NO];
     NSLog(@"%s",__FUNCTION__);
+}
+
+- (IBAction)configureScrollFormView:(id)sender
+{
+    JMFormViewParametersViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"JMFormViewParametersViewController"];
+    UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:vc];
+    navc.preferedPopinContentSize = CGSizeMake(280.0f, [UIScreen mainScreen].bounds.size.height - 100.f);
+    navc.navigationBarHidden = YES;
+    [self.navigationController presentPopinController:navc animated:YES completion:NULL];
 }
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation

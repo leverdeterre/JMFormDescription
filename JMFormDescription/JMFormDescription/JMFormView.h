@@ -14,6 +14,8 @@
 @property (strong, nonatomic) Class formViewClass;
 @property (strong, nonatomic) id data;
 @property (assign, nonatomic) CGFloat formViewHeight;
+@property (weak, nonatomic) id <JMKeyboardFormDelegate>keyboardFormDelegate;
+
 //update with delegate
 @property (weak, nonatomic) id <JMFormDelegate>formDelegate;
 @property (weak, nonatomic) NSString* modelKey;
@@ -29,6 +31,7 @@
 
 @property (assign, nonatomic) BOOL formViewCanBecomeResponder;
 @property (weak, nonatomic) id <JMFormDelegate>formDelegate;
+@property (weak, nonatomic) id <JMKeyboardFormDelegate>keyboardFormDelegate;
 @property (copy, nonatomic) JMFormViewCompltionBlock updateBlock;
 
 + (instancetype)viewFromNib;

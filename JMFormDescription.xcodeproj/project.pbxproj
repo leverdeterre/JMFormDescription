@@ -15,6 +15,9 @@
 		C2229E5C19E73169008AF704 /* JMFormViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = C2229E5B19E73169008AF704 /* JMFormViewController2.m */; };
 		C24A7E1A19E3495C00BDF4B3 /* ico_arrow_down_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C24A7E1819E3495C00BDF4B3 /* ico_arrow_down_list@2x.png */; };
 		C24A7E1B19E3495C00BDF4B3 /* ico_arrow_down_list.png in Resources */ = {isa = PBXBuildFile; fileRef = C24A7E1919E3495C00BDF4B3 /* ico_arrow_down_list.png */; };
+		C24F37AF19E9023300694FD3 /* UIViewController+MaryPopin.m in Sources */ = {isa = PBXBuildFile; fileRef = C24F37AE19E9023300694FD3 /* UIViewController+MaryPopin.m */; };
+		C24F37B319E9039E00694FD3 /* JMFormViewParametersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C24F37B219E9039E00694FD3 /* JMFormViewParametersViewController.m */; };
+		C24F37B619E9047F00694FD3 /* JMDemoParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = C24F37B519E9047F00694FD3 /* JMDemoParameters.m */; };
 		C275E61F19E03A1200ECEB3E /* JMFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E61E19E03A1200ECEB3E /* JMFormModel.m */; };
 		C275E62C19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C275E62A19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m */; };
 		C275E62D19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C275E62B19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib */; };
@@ -76,6 +79,12 @@
 		C2229E5B19E73169008AF704 /* JMFormViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormViewController2.m; sourceTree = "<group>"; };
 		C24A7E1819E3495C00BDF4B3 /* ico_arrow_down_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico_arrow_down_list@2x.png"; sourceTree = "<group>"; };
 		C24A7E1919E3495C00BDF4B3 /* ico_arrow_down_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_arrow_down_list.png; sourceTree = "<group>"; };
+		C24F37AD19E9023300694FD3 /* UIViewController+MaryPopin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MaryPopin.h"; sourceTree = "<group>"; };
+		C24F37AE19E9023300694FD3 /* UIViewController+MaryPopin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MaryPopin.m"; sourceTree = "<group>"; };
+		C24F37B119E9039E00694FD3 /* JMFormViewParametersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormViewParametersViewController.h; sourceTree = "<group>"; };
+		C24F37B219E9039E00694FD3 /* JMFormViewParametersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormViewParametersViewController.m; sourceTree = "<group>"; };
+		C24F37B419E9047F00694FD3 /* JMDemoParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMDemoParameters.h; sourceTree = "<group>"; };
+		C24F37B519E9047F00694FD3 /* JMDemoParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMDemoParameters.m; sourceTree = "<group>"; };
 		C275E61D19E03A1200ECEB3E /* JMFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormModel.h; sourceTree = "<group>"; };
 		C275E61E19E03A1200ECEB3E /* JMFormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormModel.m; sourceTree = "<group>"; };
 		C275E62919E0733C00ECEB3E /* JMFormListSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormListSelectionTableViewController.h; sourceTree = "<group>"; };
@@ -192,6 +201,26 @@
 			name = DemoWithDelegates;
 			sourceTree = "<group>";
 		};
+		C24F37AC19E9023300694FD3 /* MaryPopin */ = {
+			isa = PBXGroup;
+			children = (
+				C24F37AD19E9023300694FD3 /* UIViewController+MaryPopin.h */,
+				C24F37AE19E9023300694FD3 /* UIViewController+MaryPopin.m */,
+			);
+			path = MaryPopin;
+			sourceTree = "<group>";
+		};
+		C24F37B019E9037300694FD3 /* FormViewParameters */ = {
+			isa = PBXGroup;
+			children = (
+				C24F37B419E9047F00694FD3 /* JMDemoParameters.h */,
+				C24F37B519E9047F00694FD3 /* JMDemoParameters.m */,
+				C24F37B119E9039E00694FD3 /* JMFormViewParametersViewController.h */,
+				C24F37B219E9039E00694FD3 /* JMFormViewParametersViewController.m */,
+			);
+			name = FormViewParameters;
+			sourceTree = "<group>";
+		};
 		C275E63319E0874700ECEB3E /* Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,8 +230,10 @@
 				C2229E5819E73108008AF704 /* DemoWithBlocks */,
 				C2229E5919E73133008AF704 /* DemoWithDelegates */,
 				C275E62919E0733C00ECEB3E /* JMFormListSelectionTableViewController.h */,
+				C24F37B019E9037300694FD3 /* FormViewParameters */,
 				C275E62A19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m */,
 				C275E62B19E0733C00ECEB3E /* JMFormListSelectionTableViewController.xib */,
+				C24F37AC19E9023300694FD3 /* MaryPopin */,
 			);
 			name = Demo;
 			sourceTree = "<group>";
@@ -452,12 +483,15 @@
 				C27D211719D20298001AB506 /* JMFormViewController.m in Sources */,
 				C275E65E19E08C4600ECEB3E /* JMSwitchFormView.m in Sources */,
 				C2229E5019E72338008AF704 /* JMFormViewController+formDescriptionUsingBlocks.m in Sources */,
+				C24F37B319E9039E00694FD3 /* JMFormViewParametersViewController.m in Sources */,
+				C24F37AF19E9023300694FD3 /* UIViewController+MaryPopin.m in Sources */,
 				C275E62C19E0733C00ECEB3E /* JMFormListSelectionTableViewController.m in Sources */,
 				C275E65419E08C4600ECEB3E /* JMButtonFormView.m in Sources */,
 				C2229E5719E72E23008AF704 /* JMDemoTableViewCell.m in Sources */,
 				C27D211119D20298001AB506 /* JMAppDelegate.m in Sources */,
 				C275E65619E08C4600ECEB3E /* JMFormDescription.m in Sources */,
 				C275E65719E08C4600ECEB3E /* JMFormScrollView.m in Sources */,
+				C24F37B619E9047F00694FD3 /* JMDemoParameters.m in Sources */,
 				C275E61F19E03A1200ECEB3E /* JMFormModel.m in Sources */,
 				C27D216619D2074B001AB506 /* JMFormViewController2+formDescriptionUsingDelegates.m in Sources */,
 				C275E65A19E08C4600ECEB3E /* JMFormView.m in Sources */,

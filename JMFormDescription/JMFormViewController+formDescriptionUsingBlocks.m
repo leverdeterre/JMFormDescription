@@ -23,6 +23,7 @@
     JMTextfieldFormViewDescription *textfieldDesc  = [JMTextfieldFormViewDescription new];
     textfieldDesc.placeholder = @"Mon placeholder";
     textfieldDesc.data = model.textfieldText1;
+    textfieldDesc.keyboardFormDelegate = self;
     textfieldDesc.updateBlock = ^(id modifiedValue){
         model.textfieldText1 = modifiedValue;
     };
@@ -31,6 +32,7 @@
     textfieldDesc  = [JMTextfieldFormViewDescription new];
     textfieldDesc.placeholder = nil;
     textfieldDesc.data = model.textfieldText2;
+    textfieldDesc.keyboardFormDelegate = self;
     textfieldDesc.updateBlock = ^(id modifiedValue){
         model.textfieldText2 = modifiedValue;
     };
@@ -39,6 +41,7 @@
     textfieldDesc  = [JMTextfieldFormViewDescription new];
     textfieldDesc.placeholder = nil;
     textfieldDesc.data = model.textfieldText3;
+    textfieldDesc.keyboardFormDelegate = self;
     textfieldDesc.updateBlock = ^(id modifiedValue){
         model.textfieldText3 = modifiedValue;
     };
@@ -52,6 +55,7 @@
     textfieldTitleDesc.title = @"Mont titre4";
     textfieldTitleDesc.placeholder = @"Mon placeholder4";
     textfieldTitleDesc.data = model.textfieldText4;
+    textfieldTitleDesc.keyboardFormDelegate = self;
     textfieldTitleDesc.updateBlock = ^(id modifiedValue){
         model.textfieldText4 = modifiedValue;
     };
@@ -61,6 +65,7 @@
     textfieldTitleDesc.title = @"Mont titre5";
     textfieldTitleDesc.placeholder = @"Mon placeholder5";
     textfieldTitleDesc.data = model.textfieldText5;
+    textfieldTitleDesc.keyboardFormDelegate = self;
     textfieldTitleDesc.updateBlock = ^(id modifiedValue){
         model.textfieldText5 = modifiedValue;
     };
@@ -102,6 +107,7 @@
         textfieldTitleDesc.title = @"Secret textfield";
         textfieldTitleDesc.placeholder = @"Secret textfield";
         textfieldTitleDesc.data = model.secretValue;
+        textfieldTitleDesc.keyboardFormDelegate = self;
         textfieldTitleDesc.updateBlock = ^(id modifiedValue){
             model.secretValue = modifiedValue;
         };
@@ -111,6 +117,7 @@
         textfieldTitleDesc.title = @"Secret textfield 2";
         textfieldTitleDesc.placeholder = @"Secret textfield 2";
         textfieldTitleDesc.data = model.secretValue2;
+        textfieldTitleDesc.keyboardFormDelegate = self;
         textfieldTitleDesc.updateBlock = ^(id modifiedValue){
             model.secretValue2 = modifiedValue;
         };
@@ -135,7 +142,7 @@
     listDesc.placeholder = @"none";
     listDesc.data = model.selectedColorNAme;
     listDesc.listStyle = JMListFormViewModalChoice;
-    listDesc.formViewHeight = 64.0f;
+    listDesc.formViewHeight = 80.0f;
     listDesc.updateBlock = ^(id modifiedValue){
         dispatch_async(dispatch_get_main_queue(), ^{
             [self presentListChoices:model.coloChoices currentChoice:model.selectedColorNAme withCompletionBlock:^(id modifiedValue) {
@@ -170,6 +177,7 @@
     JMTextViewFormViewDescription *textDesc = [JMTextViewFormViewDescription new];
     textDesc.placeholder = @"";
     textDesc.data = model.bigText;
+    textDesc.keyboardFormDelegate = self;
     textDesc.updateBlock = ^(id modifiedValue){
         model.bigText = modifiedValue;
     };
@@ -178,6 +186,7 @@
     textDesc = [JMTextViewFormViewDescription new];
     textDesc.placeholder = @"";
     textDesc.data = model.bigText2;
+    textDesc.keyboardFormDelegate = self;
     textDesc.updateBlock = ^(id modifiedValue){
         model.bigText2 = modifiedValue;
     };

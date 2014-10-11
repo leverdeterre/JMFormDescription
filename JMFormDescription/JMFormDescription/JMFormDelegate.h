@@ -42,6 +42,10 @@ typedef void (^JMFormViewCompltionBlock)(id modifiedValue);
 
 - (void)scrollToFormView:(JMFormView *)formView;
 
+@end
+
+@protocol JMKeyboardFormDelegate <NSObject>
+
 #pragma mark - Keyboard Management
 
 - (BOOL)nextFormViewAvailableAfterFormView:(JMFormView *)formView;

@@ -22,6 +22,7 @@
     [super viewDidLoad];
     self.title = @"JMFormView demo";
     
+    /*
     [[JMFormScrollView appearance] setFormViewSpace:0.0f];
     [[JMFormView appearance] setFormViewBackgroundColor:[UIColor colorWithRed:219.0/255 green:214.0/255 blue:208/255 alpha:1.0]];
     [[JMTextfieldFormView appearance] setFormViewTextfieldFont:[UIFont fontWithName:@"HelveticaNeue-Regular" size:16.0f]];
@@ -37,6 +38,7 @@
     
     [[JMSwitchFormView appearance] setFormViewTitleFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:15.0f]];
     [[JMSwitchFormView appearance] setFormViewSwitchTintColor:[UIColor purpleColor]];
+     */
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -68,10 +70,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        JMFormViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"JMFormViewController"];
+        JMFormViewController2 *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"JMFormViewController2"];
         [self.navigationController pushViewController:vc animated:YES];
     } else {
-        JMFormViewController2 *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"JMFormViewController2"];
+        JMFormViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"JMFormViewController"];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

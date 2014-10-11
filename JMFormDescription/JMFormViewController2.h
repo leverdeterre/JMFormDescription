@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JMFormDelegate.h"
 
-@interface JMFormViewController2 : UIViewController <JMFormDelegate>
+@interface JMFormViewController2 : UIViewController <JMFormDelegate, JMKeyboardFormDelegate>
 
 - (IBAction)customSelector1:(id)sender;
 - (void)reloadContent;

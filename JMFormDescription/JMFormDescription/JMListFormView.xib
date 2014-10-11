@@ -8,13 +8,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="tg1-LL-Tt7" customClass="JMListFormView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="41"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-6D-WL8">
-                    <rect key="frame" x="20" y="7" width="280" height="21"/>
+                    <rect key="frame" x="8" y="8" width="292" height="21"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="280" id="5y8-o9-St8"/>
+                        <constraint firstAttribute="width" constant="292" id="5y8-o9-St8"/>
                         <constraint firstAttribute="height" constant="21" id="XwC-RK-3fU"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -30,10 +30,10 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ubz-xr-XGC" userLabel="PushStyleView">
-                    <rect key="frame" x="0.0" y="23" width="320" height="41"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="41"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC8-wc-lMo">
-                            <rect key="frame" x="20" y="5" width="263" height="32"/>
+                            <rect key="frame" x="8" y="6" width="275" height="32"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="32" id="fYU-zd-VT1"/>
                             </constraints>
@@ -55,19 +55,19 @@
                         <constraint firstItem="Y7c-xS-RyK" firstAttribute="leading" secondItem="AC8-wc-lMo" secondAttribute="trailing" constant="3" id="HyG-4Y-BCN"/>
                         <constraint firstAttribute="bottom" secondItem="Y7c-xS-RyK" secondAttribute="bottom" constant="7" id="Ic2-wB-Jf9"/>
                         <constraint firstAttribute="trailing" secondItem="Y7c-xS-RyK" secondAttribute="trailing" constant="8" id="UaA-9m-J14"/>
-                        <constraint firstAttribute="bottom" secondItem="AC8-wc-lMo" secondAttribute="bottom" constant="4" id="bx9-hv-7kD"/>
-                        <constraint firstItem="AC8-wc-lMo" firstAttribute="leading" secondItem="Ubz-xr-XGC" secondAttribute="leading" constant="20" id="yOa-0l-vwq"/>
+                        <constraint firstAttribute="bottom" secondItem="AC8-wc-lMo" secondAttribute="bottom" constant="3" id="bx9-hv-7kD"/>
+                        <constraint firstItem="AC8-wc-lMo" firstAttribute="leading" secondItem="Ubz-xr-XGC" secondAttribute="leading" constant="8" id="yOa-0l-vwq"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.27843138579999999" green="0.80392163989999998" blue="0.78823536630000002" alpha="1" colorSpace="deviceRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Ubz-xr-XGC" firstAttribute="leading" secondItem="tg1-LL-Tt7" secondAttribute="leading" id="7yu-h3-JYq"/>
                 <constraint firstItem="nVK-89-I6P" firstAttribute="leading" secondItem="tg1-LL-Tt7" secondAttribute="leading" constant="20" id="FpM-tZ-kkY"/>
-                <constraint firstItem="Rdt-6D-WL8" firstAttribute="top" secondItem="tg1-LL-Tt7" secondAttribute="top" constant="7" id="dPG-IB-9cb"/>
-                <constraint firstItem="Rdt-6D-WL8" firstAttribute="leading" secondItem="tg1-LL-Tt7" secondAttribute="leading" constant="20" id="dSv-Eu-had"/>
+                <constraint firstItem="Rdt-6D-WL8" firstAttribute="top" secondItem="tg1-LL-Tt7" secondAttribute="top" constant="8" id="dPG-IB-9cb"/>
+                <constraint firstItem="Rdt-6D-WL8" firstAttribute="leading" secondItem="tg1-LL-Tt7" secondAttribute="leading" constant="8" id="dSv-Eu-had"/>
                 <constraint firstAttribute="bottom" secondItem="Ubz-xr-XGC" secondAttribute="bottom" id="gc5-T9-HyJ"/>
-                <constraint firstItem="nVK-89-I6P" firstAttribute="top" secondItem="Rdt-6D-WL8" secondAttribute="bottom" constant="6" id="rAo-Fn-vP2"/>
+                <constraint firstItem="nVK-89-I6P" firstAttribute="top" secondItem="Rdt-6D-WL8" secondAttribute="bottom" constant="5" id="rAo-Fn-vP2"/>
                 <constraint firstAttribute="trailing" secondItem="Ubz-xr-XGC" secondAttribute="trailing" id="wCb-Vh-DwN"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -80,7 +80,7 @@
                 <outlet property="textfieldWidth" destination="jgt-Bm-OXi" id="zBk-x9-2Y8"/>
                 <outlet property="titleLabel" destination="Rdt-6D-WL8" id="8tR-6X-kId"/>
             </connections>
-            <point key="canvasLocation" x="261" y="152"/>
+            <point key="canvasLocation" x="261" y="140.5"/>
         </view>
     </objects>
     <resources>

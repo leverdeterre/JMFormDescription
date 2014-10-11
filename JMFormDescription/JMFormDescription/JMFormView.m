@@ -43,6 +43,7 @@
 {
     self.updateBlock = data.updateBlock;
     self.formDelegate = data.formDelegate;
+    self.keyboardFormDelegate = data.keyboardFormDelegate;
 }
 
 + (instancetype)viewFromNib
@@ -55,12 +56,28 @@
 {
 }
 
+- (void)setFormDelegate:(id<JMFormDelegate>)formDelegate
+{
+    _formDelegate = formDelegate;
+    if (nil == _keyboardFormDelegate) {
+        if ([_formDelegate conformsToProtocol:@protocol(JMKeyboardFormDelegate)]) {
+            id <JMKeyboardFormDelegate> keyboardFormDelegate = (id <JMKeyboardFormDelegate>) _formDelegate;
+            self.keyboardFormDelegate = keyboardFormDelegate;
+        }
+    }
+}
+
+- (void)setKeyboardFormDelegate:(id<JMKeyboardFormDelegate>)keyboardFormDelegate
+{
+    _keyboardFormDelegate = keyboardFormDelegate;
+}
+
 #pragma mark - Manage ToolBar
 
 - (UIToolbar *)toolBar
 {
-    if ([self.formDelegate respondsToSelector:@selector(nextFormViewAvailableAfterFormView:)] &&
-        [self.formDelegate respondsToSelector:@selector(previousFormViewAvailableBeforeFormView:)]) {
+    if ([self.keyboardFormDelegate respondsToSelector:@selector(nextFormViewAvailableAfterFormView:)] &&
+        [self.keyboardFormDelegate respondsToSelector:@selector(previousFormViewAvailableBeforeFormView:)]) {
     } else {
         return nil;
     }
@@ -72,13 +89,13 @@
                                                                               style:UIBarButtonItemStyleBordered
                                                                              target:self
                                                                              action:@selector(previousTextField:)];
-    [previousBarButtonItem setEnabled:[self.formDelegate previousFormViewAvailableBeforeFormView:self]];
+    [previousBarButtonItem setEnabled:[self.keyboardFormDelegate previousFormViewAvailableBeforeFormView:self]];
     
     UIBarButtonItem *nextBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"next",@"")
                                                                           style:UIBarButtonItemStyleBordered
                                                                          target:self
                                                                          action:@selector(nextTextField:)];
-    [nextBarButtonItem setEnabled:[self.formDelegate nextFormViewAvailableAfterFormView:self]];
+    [nextBarButtonItem setEnabled:[self.keyboardFormDelegate nextFormViewAvailableAfterFormView:self]];
     
     UIBarButtonItem *doneBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Done",@"")
                                                                           style:UIBarButtonItemStyleDone
@@ -97,12 +114,12 @@
 
 - (void)previousTextField:(id)sender
 {
-    [self.formDelegate presentPreviousFormViewAvailableBeforeFormView:self];
+    [self.keyboardFormDelegate presentPreviousFormViewAvailableBeforeFormView:self];
 }
 
 - (void)nextTextField:(id)sender
 {
-    [self.formDelegate presentNextFormViewAvailableAfterFormView:self];
+    [self.keyboardFormDelegate presentNextFormViewAvailableAfterFormView:self];
 }
 
 - (void)resignKeyboard:(id)sender
