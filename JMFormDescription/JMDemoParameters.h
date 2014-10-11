@@ -11,4 +11,7 @@
 @interface JMDemoParameters : NSObject
 @property (strong, nonatomic) NSArray *availableColors;
 @property (strong, nonatomic) NSString *formViewBackgroundColor;
+
+@property (strong, nonatomic) NSArray *availableformViewSpaces;
+@property (assign, nonatomic) CGFloat formViewSpace;
 @end

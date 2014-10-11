@@ -30,7 +30,8 @@
     self.formModel = [JMDemoParameters new];
     self.formScrollView.formViewSpace = 1.0f;
     
-    self.formModel.availableColors = @[@"blue",@"red", @"grey"];
+    self.formModel.availableColors = @[@"blue", @"red", @"green", @"white"];
+    self.formModel.availableformViewSpaces = @[@"1.0", @"2.0", @"5.0"];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -67,7 +68,6 @@
     
     JMListFormViewDescription *listDesc = [JMListFormViewDescription new];
     listDesc.title = @"FormView background color";
-    listDesc.choices = @[@"blue", @"red", @"green"];
     listDesc.placeholder = @"none";
     listDesc.data = model.formViewBackgroundColor;
     listDesc.listStyle = JMListFormViewAppleInlinePush;
@@ -76,6 +76,34 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             [self presentListChoices:model.availableColors currentChoice:model.formViewBackgroundColor withCompletionBlock:^(id modifiedValue) {
                 model.formViewBackgroundColor = modifiedValue;
+                
+                if ([model.formViewBackgroundColor isEqualToString:@"red"]) {
+                    [[JMFormView appearance] setFormViewBackgroundColor:[UIColor redColor]];
+                } else if ([model.formViewBackgroundColor isEqualToString:@"blue"]) {
+                    [[JMFormView appearance] setFormViewBackgroundColor:[UIColor blueColor]];
+                } else if ([model.formViewBackgroundColor isEqualToString:@"green"]) {
+                    [[JMFormView appearance] setFormViewBackgroundColor:[UIColor greenColor]];
+                } else if ([model.formViewBackgroundColor isEqualToString:@"white"]) {
+                    [[JMFormView appearance] setFormViewBackgroundColor:[UIColor whiteColor]];
+                }
+                
+                [self reloadContent];
+            }];
+        });
+    };
+    [descriptions addObject:listDesc];
+    
+    listDesc = [JMListFormViewDescription new];
+    listDesc.title = @"FormView space";
+    listDesc.placeholder = @"1.0";
+    listDesc.data = [NSString stringWithFormat:@"%@",@(model.formViewSpace)];
+    listDesc.listStyle = JMListFormViewAppleInlinePush;
+    listDesc.formViewHeight = 41.0f;
+    listDesc.updateBlock = ^(id modifiedValue){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self presentListChoices:model.availableformViewSpaces currentChoice:model.formViewBackgroundColor withCompletionBlock:^(id modifiedValue) {
+                model.formViewSpace = [modifiedValue floatValue];
+                self.formScrollView.formViewSpace = [modifiedValue floatValue];
                 [self reloadContent];
             }];
         });

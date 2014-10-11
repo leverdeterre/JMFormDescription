@@ -118,6 +118,7 @@
     JMFormViewParametersViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"JMFormViewParametersViewController"];
     UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:vc];
     navc.preferedPopinContentSize = CGSizeMake(280.0f, [UIScreen mainScreen].bounds.size.height - 100.f);
+    navc.popinOptions = BKTPopinBlurryDimmingView;
     navc.navigationBarHidden = YES;
     [self.navigationController presentPopinController:navc animated:YES completion:NULL];
 }
