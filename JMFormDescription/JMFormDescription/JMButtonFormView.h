@@ -18,27 +18,3 @@
 @property (strong, nonatomic) UIFont *formViewButtonTitleFont UI_APPEARANCE_SELECTOR;
 @property (strong, nonatomic) UIColor *formViewButtonBackgroundColor UI_APPEARANCE_SELECTOR;
 @end
-
-
-/*
- [button.layer setCornerRadius:2];
- [button setTitleColor:[self brun2] forState:UIControlStateNormal];
- button.backgroundColor = color;
- 
- if (enabled) {
- button.layer.shadowColor = [[self shadowColor] CGColor];
- button.layer.shadowOpacity = 1;
- button.layer.shadowOffset = CGSizeMake(0,1);
- button.clipsToBounds = NO;
- button.layer.shadowRadius = 1.0;
- button.alpha = 1.0;
- button.layer.shadowPath = [[UIBezierPath bezierPathWithRect:button.bounds] CGPath];
- } else {
- button.clipsToBounds = YES;
- if (IS_IBIS()) {
- button.alpha = 0.6;
- } else if (IS_HOTELF1()) {
- button.alpha = 0.3;
- }
- }
- */

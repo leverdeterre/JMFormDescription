@@ -53,6 +53,10 @@
     if ([self.formDelegate respondsToSelector:@selector(buttonPressedFromFormView:withTitleValue:)]) {
         [self.formDelegate buttonPressedFromFormView:self withTitleValue:self.button.titleLabel.text];
     }
+    
+    if (self.updateBlock) {
+        self.updateBlock(nil);
+    }
 }
 
 #pragma mark - Appearance

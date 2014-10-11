@@ -197,9 +197,12 @@
     [descriptions addObject:headerDesc];
     
     JMButtonFormViewDescription *buttonDesc = [JMButtonFormViewDescription new];
-    buttonDesc.formDelegate = self;
     buttonDesc.title = @"This is a validation button";
     buttonDesc.formViewHeight = 50.0f;
+    buttonDesc.updateBlock = ^(id m){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Button pressed" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alert show];
+    };
     [descriptions addObject:buttonDesc];
     
     

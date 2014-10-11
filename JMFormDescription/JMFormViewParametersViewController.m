@@ -14,6 +14,7 @@
 #import "JMFormDescription.h"
 
 #import "JMFormListSelectionTableViewController.h"
+#import "UIViewController+MaryPopin.h"
 
 @interface JMFormViewParametersViewController ()
 @property (weak, nonatomic) IBOutlet JMFormScrollView *formScrollView;
@@ -31,7 +32,7 @@
     self.formScrollView.formViewSpace = 1.0f;
     
     self.formModel.availableColors = @[@"blue", @"red", @"green", @"white"];
-    self.formModel.availableformViewSpaces = @[@"1.0", @"2.0", @"5.0"];
+    self.formModel.availableformViewSpaces = @[@"0.0",@"1.0", @"2.0", @"5.0"];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -111,9 +112,13 @@
     [descriptions addObject:listDesc];
     
     JMButtonFormViewDescription *buttonDesc = [JMButtonFormViewDescription new];
-    buttonDesc.formDelegate = self;
-    buttonDesc.title = @"This is a validation button";
+    buttonDesc.title = @"Validate";
     buttonDesc.formViewHeight = 50.0f;
+    buttonDesc.updateBlock = ^(id modifiedValue){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.navigationController.presentingPopinViewController dismissCurrentPopinControllerAnimated:YES];
+        });
+    };
     [descriptions addObject:buttonDesc];
     
     formDesc.formViewDescriptions = descriptions;
