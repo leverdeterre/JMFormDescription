@@ -92,7 +92,6 @@
     }
     
     self.contentView = [[UIView alloc] initWithFrame:self.bounds];
-    CGFloat computedHeight = 0.0f;
     JMFormView *currentFormView;
     
     for (NSInteger i = 0; i < [self.formViewDatasource formScrollView:self numberOfRowsInSection:0]; i++){
@@ -100,18 +99,9 @@
         [currentFormView setTranslatesAutoresizingMaskIntoConstraints:NO];
         [self.contentView addSubview:currentFormView];
         [self.formViews addObject:currentFormView];
-        computedHeight = computedHeight + currentFormView.formViewHeight + self.formViewSpace;
     }
     
-    CGRect contentViewFrame = self.contentView.frame;
-    contentViewFrame.origin.y = 0.0f;
-    contentViewFrame.origin.x = 0.0f;
-    contentViewFrame.size = CGSizeMake(CGRectGetWidth(self.bounds), computedHeight);
-    
-    self.contentView.frame = contentViewFrame;
     [self addSubview:self.contentView];
-    [self setContentSize:self.contentView.frame.size];
-    NSLog(@"%@", NSStringFromCGSize(self.contentView.frame.size));
     [self setNeedsUpdateConstraints];
 }
 
@@ -123,7 +113,6 @@
     }
 
     self.contentView = [[UIView alloc] initWithFrame:self.bounds];
-    CGFloat computedHeight = 0.0f;
 
     JMFormView *currentFormView;
     for (JMFormViewDescription *desc in descriptions) {
@@ -133,19 +122,10 @@
             [currentFormView setTranslatesAutoresizingMaskIntoConstraints:NO];
             [self.contentView addSubview:currentFormView];
             [self.formViews addObject:currentFormView];
-            computedHeight = computedHeight + desc.formViewHeight + self.formViewSpace;
         }
     }
     
-    CGRect contentViewFrame = self.contentView.frame;
-    contentViewFrame.origin.y = 0.0f;
-    contentViewFrame.origin.x = 0.0f;
-    contentViewFrame.size = CGSizeMake(CGRectGetWidth(self.bounds), computedHeight);
-    
-    self.contentView.frame = contentViewFrame;
     [self addSubview:self.contentView];
-    [self setContentSize:self.contentView.frame.size];
-    NSLog(@"%@", NSStringFromCGSize(self.contentView.frame.size));
     [self setNeedsUpdateConstraints];
 }
 
@@ -168,10 +148,9 @@
 - (void)updateConstraints
 {
     [super updateConstraints];
-    [self.formViews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    self.contentView.translatesAutoresizingMaskIntoConstraints = NO;
     
-    //self.contentView.backgroundColor = [UIColor blueColor];
-    CGFloat computedHeight = 0.0f;
+    [self.formViews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     JMFormView *previousFormView;
     JMFormView *currentFormView;
@@ -186,17 +165,23 @@
         [self addConstraintsForPreviousFormView:previousFormView
                                 currentFormView:currentFormView
                              defaultHeightSpace:self.formViewSpace];
-        
-        computedHeight = computedHeight + currentFormView.formViewHeight + self.formViewSpace;
     }
     
-    CGRect contentViewFrame = self.contentView.frame;
-    contentViewFrame.origin.y = 0.0f;
-    contentViewFrame.origin.x = 0.0f;
-    contentViewFrame.size = CGSizeMake(CGRectGetWidth(self.bounds), computedHeight);
+    [self addContentViewConstraints];
+}
+
+- (void)addContentViewConstraints
+{
+    id views = @{@"contentView": self.contentView};
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[contentView]-|"
+                                                                 options:NSLayoutFormatAlignAllBaseline
+                                                                 metrics:nil
+                                                                   views:views]];
     
-    self.contentView.frame = contentViewFrame;
-    [self setContentSize:self.contentView.frame.size];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[contentView]-|"
+                                                                 options:NSLayoutFormatAlignAllBaseline
+                                                                 metrics:nil
+                                                                   views:views]];
 }
 
 - (void)addConstraintsForPreviousFormView:(JMFormView *)previousFormView
@@ -205,53 +190,36 @@
 {
     //HEIGHT + ALIGN TOP (previous) + LEFT/ RIGHT PARENT
     if (previousFormView) {
+        BOOL currentFormViewIsTheLast = [currentFormView isEqual:[self.formViews lastObject]];
         id views = @{@"currentFormView": currentFormView,
                      @"previousFormView": previousFormView};
         NSDictionary *metrics = @{@"currentFormViewHeight":@(currentFormView.formViewHeight),
                                   @"defaultHeightSpace":@(defaultHeightSpace)};
         
-        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(0)-[currentFormView]-(0)-|"
-                                                                                 options:NSLayoutFormatAlignAllBaseline
-                                                                                 metrics:0
-                                                                                   views:views]];
-        [self.contentView addConstraints:
-         [NSLayoutConstraint constraintsWithVisualFormat:@"V:[previousFormView]-(defaultHeightSpace)-[currentFormView(currentFormViewHeight)]"
-                                                 options:NSLayoutFormatAlignAllLeft
-                                                 metrics:metrics
-                                                   views:views]];
+        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(0)-[currentFormView]-(0)-|" options:NSLayoutFormatAlignAllBaseline metrics:0 views:views]];
+        
+        if (NO == currentFormViewIsTheLast) {
+            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[previousFormView]-(defaultHeightSpace)-[currentFormView(currentFormViewHeight)]" options:NSLayoutFormatAlignAllLeft metrics:metrics views:views]];
+        } else {
+            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[previousFormView]-(defaultHeightSpace)-[currentFormView(currentFormViewHeight)]-(0)-|" options:NSLayoutFormatAlignAllLeft metrics:metrics views:views]];
+        }
         
     } else {
+        BOOL currentFormViewIsTheLast = [currentFormView isEqual:[self.formViews lastObject]];
+
         id views = @{@"currentFormView": currentFormView};
-        NSDictionary *metrics = @{@"currentFormViewHeight":@(currentFormView.formViewHeight),
-                                  @"defaultHeightSpace":@(defaultHeightSpace)};
+            NSDictionary *metrics = @{@"currentFormViewHeight":@(currentFormView.formViewHeight),
+                                      @"defaultHeightSpace":@(defaultHeightSpace)};
+            
+            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(0)-[currentFormView]-(0)-|" options:NSLayoutFormatAlignAllBaseline metrics:0 views:views]];
         
-        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(0)-[currentFormView]-(0)-|"
-                                                                                 options:NSLayoutFormatAlignAllBaseline
-                                                                                 metrics:0
-                                                                                   views:views]];
-        
-        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(defaultHeightSpace)-[currentFormView(currentFormViewHeight)]"
-                                                                                 options:NSLayoutFormatAlignAllLeft
-                                                                                 metrics:metrics
-                                                                                   views:views]];
+        if (NO == currentFormViewIsTheLast) {
+            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(defaultHeightSpace)-[currentFormView(currentFormViewHeight)]" options:NSLayoutFormatAlignAllLeft metrics:metrics views:views]];
+        } else {
+            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(defaultHeightSpace)-[currentFormView(currentFormViewHeight)]-(0)-|" options:NSLayoutFormatAlignAllLeft metrics:metrics views:views]];
+        }
     }
 }
-
-- (void)addContentViewConstraintsWithHeight:(CGFloat)height
-{
-    id views = @{@"contentView": self.contentView};
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[contentView]-|"
-                                                                 options:NSLayoutFormatAlignAllBaseline
-                                                                 metrics:nil
-                                                                   views:views]];
-    
-    NSDictionary *metrics = @{@"contentViewHeight":@(height)};
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[contentView(contentViewHeight)]"
-                                                                 options:NSLayoutFormatAlignAllBaseline
-                                                                 metrics:metrics
-                                                                   views:views]];
-}
-
 
 #pragma mark -
 

@@ -154,7 +154,7 @@
     [descriptions addObject:listDesc];
     
     listDesc = [JMListFormViewDescription new];
-    listDesc.title = @"Choose a color (AppleInlinePush)";
+    listDesc.title = @"Choose a color (Inline)";
     listDesc.choices = model.coloChoices;
     listDesc.placeholder = @"none";
     listDesc.data = model.selectedColorNAme2;

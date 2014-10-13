@@ -34,10 +34,10 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yf9-e7-Rpt" customClass="JMFormScrollView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.27843138579999999" green="0.80392163989999998" blue="0.78823536630000002" alpha="1" colorSpace="deviceRGB"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94117653369999998" green="0.18431372939999999" blue="0.270588249" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstItem="yf9-e7-Rpt" firstAttribute="top" secondItem="p9G-C7-bbu" secondAttribute="top" id="3XK-zY-vqA"/>
                             <constraint firstItem="yf9-e7-Rpt" firstAttribute="leading" secondItem="p9G-C7-bbu" secondAttribute="leading" id="4Xb-iW-7Og"/>
