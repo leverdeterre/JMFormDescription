@@ -93,11 +93,9 @@
     
     self.contentView = [[UIView alloc] initWithFrame:self.bounds];
     CGFloat computedHeight = 0.0f;
-    JMFormView *previousFormView;
     JMFormView *currentFormView;
     
     for (NSInteger i = 0; i < [self.formViewDatasource formScrollView:self numberOfRowsInSection:0]; i++){
-        previousFormView = currentFormView;
         currentFormView = [self.formViewDatasource formScrollView:self formViewForRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
         [currentFormView setTranslatesAutoresizingMaskIntoConstraints:NO];
         [self.contentView addSubview:currentFormView];
@@ -127,12 +125,9 @@
     self.contentView = [[UIView alloc] initWithFrame:self.bounds];
     CGFloat computedHeight = 0.0f;
 
-    JMFormView *previousFormView;
     JMFormView *currentFormView;
-    
     for (JMFormViewDescription *desc in descriptions) {
         if ([desc.formViewClass isSubclassOfClass:[JMFormView class]]) {
-            previousFormView = currentFormView;
             currentFormView = [desc.formViewClass viewFromNib];
             [currentFormView updateFormViewWithDescription:desc];
             [currentFormView setTranslatesAutoresizingMaskIntoConstraints:NO];

@@ -8,8 +8,7 @@
 
 #import "JMFormViewController.h"
 #import "JMFormViewController+formDescriptionUsingBlocks.h"
-#import "JMFormScrollView.h"
-#import "JMFormViews.h"
+#import "JMFormDescriptions.h"
 
 #import "JMFormModel.h"
 #import "UIViewController+MaryPopin.h"

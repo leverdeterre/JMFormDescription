@@ -12,33 +12,12 @@
 #import "JMFormViewController.h"
 #import "JMFormViewController2.h"
 
-#import "JMFormScrollView.h"
-#import "JMFormViews.h"
-
 @implementation JMDemoTableViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"JMFormView demo";
-    
-    /*
-    [[JMFormScrollView appearance] setFormViewSpace:0.0f];
-    [[JMFormView appearance] setFormViewBackgroundColor:[UIColor colorWithRed:219.0/255 green:214.0/255 blue:208/255 alpha:1.0]];
-    [[JMTextfieldFormView appearance] setFormViewTextfieldFont:[UIFont fontWithName:@"HelveticaNeue-Regular" size:16.0f]];
-    [[JMTextfieldFormView appearance] setFormViewTextfieldTextColor:[UIColor blackColor]];
-    
-    [[JMTextfieldWithTitleFormView appearance] setFormViewTitleFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:16.0f]];
-    [[JMFormSectionHeaderFormView appearance] setFormViewHeaderLabelFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:25.0f]];
-    [[JMFormSectionHeaderFormView appearance] setFormViewHeaderBackgroundColor:[UIColor whiteColor]];
-    
-    [[JMButtonFormView appearance] setFormViewButtonTitleColor:[UIColor whiteColor]];
-    [[JMButtonFormView appearance] setFormViewButtonBackgroundColor:[UIColor blackColor]];
-    [[JMButtonFormView appearance] setFormViewButtonTitleFont:[UIFont fontWithName:@"HelveticaNeue-Regular" size:16.0f]];
-    
-    [[JMSwitchFormView appearance] setFormViewTitleFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:15.0f]];
-    [[JMSwitchFormView appearance] setFormViewSwitchTintColor:[UIColor purpleColor]];
-     */
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
