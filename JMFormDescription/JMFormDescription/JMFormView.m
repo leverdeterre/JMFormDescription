@@ -44,6 +44,7 @@
     self.updateBlock = data.updateBlock;
     self.formDelegate = data.formDelegate;
     self.keyboardFormDelegate = data.keyboardFormDelegate;
+    self.formViewHeight = data.formViewHeight;
 }
 
 + (instancetype)viewFromNib

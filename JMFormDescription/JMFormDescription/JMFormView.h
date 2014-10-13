@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JMFormViewDatasource.h"
+#import "JMFormDatasources.h"
 #import "JMFormDelegate.h"
 
 @interface JMFormViewDescription : NSObject
@@ -33,6 +33,7 @@
 @property (weak, nonatomic) id <JMFormDelegate>formDelegate;
 @property (weak, nonatomic) id <JMKeyboardFormDelegate>keyboardFormDelegate;
 @property (copy, nonatomic) JMFormViewCompltionBlock updateBlock;
+@property (assign, nonatomic) CGFloat formViewHeight;
 
 + (instancetype)viewFromNib;
 - (void)formViewBecomeFirstResponder;

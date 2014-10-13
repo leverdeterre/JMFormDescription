@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "JMFormDelegate.h"
+#import "JMFormScrollView.h"
 
 @interface JMFormViewController : UIViewController <JMFormDelegate, JMKeyboardFormDelegate>
+
+@property (weak, nonatomic) IBOutlet JMFormScrollView *formScrollView;
 
 - (IBAction)customSelector1:(id)sender;
 - (void)reloadContent;

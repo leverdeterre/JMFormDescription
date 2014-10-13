@@ -7,17 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JMFormDatasources.h"
 
 @class JMFormView;
 @class JMFormViewDescription;
-
 @interface JMFormScrollView : UIScrollView
 
 @property (assign, nonatomic) CGFloat formViewSpace UI_APPEARANCE_SELECTOR;
+@property (weak, nonatomic) id <JMFormDatasource> formViewDatasource;
 
 - (void)reloadScrollViewWithFormDescription:(NSArray *)description;
-//- (void)insertFormViewDescription:(JMFormViewDescription *)description afterFromView:(JMFormView *)formView;
-//- (void)insertFormViewDescriptions:(NSArray *)descriptions afterFromView:(JMFormView *)formView;
+- (void)reloadData;
 
 - (NSInteger)indexForFormView:(JMFormView *)formView;
 - (JMFormView *)nextFirstResponderFormViewFromView:(JMFormView *)formView;

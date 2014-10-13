@@ -16,8 +16,7 @@
 #import "JMFormListSelectionTableViewController.h"
 #import "JMFormViewParametersViewController.h"
 
-@interface JMFormViewController ()
-@property (weak, nonatomic) IBOutlet JMFormScrollView *formScrollView;
+@interface JMFormViewController () <JMFormDatasource>
 @property (strong, nonatomic) JMFormModel *formModel;
 @property (strong, nonatomic) JMFormDescription *formDescription;
 @end
@@ -45,14 +44,14 @@
     [super viewWillAppear:animated];
     
     //generate Layout description
-    self.formDescription = [self generateFormDescriptionBlocksUsingModel:self.formModel];
-    [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
+    self.formScrollView.formViewDatasource = self;
+    [self reloadContent];
 }
 
 - (void)reloadContent
 {
     self.formDescription = [self generateFormDescriptionBlocksUsingModel:self.formModel];
-    [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
+    [self.formScrollView reloadData];
 }
 
 - (void)presentChoices
@@ -62,6 +61,20 @@
 
 #pragma mark - JMFormDelegate
 
+#pragma mark - JMFormDatasource
+
+- (NSInteger)formScrollView:(JMFormScrollView *)formScrollView numberOfRowsInSection:(NSInteger)section
+{
+    return self.formDescription.formViewDescriptions.count;
+}
+
+- (JMFormView *)formScrollView:(JMFormScrollView *)formScrollView formViewForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    JMFormViewDescription *desc = [self.formDescription.formViewDescriptions objectAtIndex:indexPath.row];
+    JMFormView *formView = [desc.formViewClass viewFromNib];
+    [formView updateFormViewWithDescription:desc];
+    return formView;
+}
 
 #pragma mark - JMListFormView delegate full demos
 

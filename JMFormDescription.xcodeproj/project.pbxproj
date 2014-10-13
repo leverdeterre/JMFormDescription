@@ -104,7 +104,7 @@
 		C275E64019E08C4600ECEB3E /* JMFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormView.h; sourceTree = "<group>"; };
 		C275E64119E08C4600ECEB3E /* JMFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFormView.m; sourceTree = "<group>"; };
 		C275E64219E08C4600ECEB3E /* JMFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JMFormView.xib; sourceTree = "<group>"; };
-		C275E64319E08C4600ECEB3E /* JMFormViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormViewDatasource.h; sourceTree = "<group>"; };
+		C275E64319E08C4600ECEB3E /* JMFormDatasources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormDatasources.h; sourceTree = "<group>"; };
 		C275E64419E08C4600ECEB3E /* JMFormViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFormViews.h; sourceTree = "<group>"; };
 		C275E64519E08C4600ECEB3E /* JMListFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMListFormView.h; sourceTree = "<group>"; };
 		C275E64619E08C4600ECEB3E /* JMListFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMListFormView.m; sourceTree = "<group>"; };
@@ -142,6 +142,7 @@
 		C27D212B19D20298001AB506 /* JMFormDescriptionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMFormDescriptionTests.m; sourceTree = "<group>"; };
 		C27D216419D2074B001AB506 /* JMFormViewController2+formDescriptionUsingDelegates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JMFormViewController2+formDescriptionUsingDelegates.h"; sourceTree = "<group>"; };
 		C27D216519D2074B001AB506 /* JMFormViewController2+formDescriptionUsingDelegates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JMFormViewController2+formDescriptionUsingDelegates.m"; sourceTree = "<group>"; };
+		C2A1CF4619EC72E800C9A3FE /* JMFormDescriptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMFormDescriptions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,9 +242,10 @@
 		C275E63419E08C4600ECEB3E /* JMFormDescription */ = {
 			isa = PBXGroup;
 			children = (
+				C2A1CF4619EC72E800C9A3FE /* JMFormDescriptions.h */,
 				C275E64419E08C4600ECEB3E /* JMFormViews.h */,
 				C275E63819E08C4600ECEB3E /* JMFormDelegate.h */,
-				C275E64319E08C4600ECEB3E /* JMFormViewDatasource.h */,
+				C275E64319E08C4600ECEB3E /* JMFormDatasources.h */,
 				C275E66619E08C7400ECEB3E /* FormViews */,
 				C275E63B19E08C4600ECEB3E /* JMFormScrollView.h */,
 				C275E63C19E08C4600ECEB3E /* JMFormScrollView.m */,

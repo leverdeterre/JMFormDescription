@@ -54,3 +54,4 @@ typedef void (^JMFormViewCompltionBlock)(id modifiedValue);
 - (void)presentPreviousFormViewAvailableBeforeFormView:(JMFormView *)formView;
 
 @end
+
