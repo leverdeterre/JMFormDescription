@@ -38,14 +38,12 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
-    //generate Layout description
-    self.formDescription = [self generateFormDescriptionBlocksUsingModel:self.formModel];
-    [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
+    [self reloadContent];
 }
 
 - (void)reloadContent
 {
+    //generate Layout description
     self.formDescription = [self generateFormDescriptionBlocksUsingModel:self.formModel];
     [self.formScrollView reloadScrollViewWithFormDescription:self.formDescription.formViewDescriptions];
 }

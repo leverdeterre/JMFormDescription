@@ -113,6 +113,7 @@
     }
 
     self.contentView = [[UIView alloc] initWithFrame:self.bounds];
+    self.contentView.translatesAutoresizingMaskIntoConstraints = NO;
 
     JMFormView *currentFormView;
     for (JMFormViewDescription *desc in descriptions) {
@@ -172,13 +173,18 @@
 
 - (void)addContentViewConstraints
 {
+    if (nil == self.contentView) {
+        return;
+    }
+        
     id views = @{@"contentView": self.contentView};
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[contentView]-|"
+    NSDictionary *metrics = @{@"contentViewWidth":@(self.frame.size.width)};
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[contentView(contentViewWidth)]|"
                                                                  options:NSLayoutFormatAlignAllBaseline
-                                                                 metrics:nil
+                                                                 metrics:metrics
                                                                    views:views]];
     
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[contentView]-|"
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[contentView]|"
                                                                  options:NSLayoutFormatAlignAllBaseline
                                                                  metrics:nil
                                                                    views:views]];
@@ -196,12 +202,12 @@
         NSDictionary *metrics = @{@"currentFormViewHeight":@(currentFormView.formViewHeight),
                                   @"defaultHeightSpace":@(defaultHeightSpace)};
         
-        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(0)-[currentFormView]-(0)-|" options:NSLayoutFormatAlignAllBaseline metrics:0 views:views]];
+        [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[currentFormView]|" options:NSLayoutFormatAlignAllBaseline metrics:0 views:views]];
         
         if (NO == currentFormViewIsTheLast) {
             [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[previousFormView]-(defaultHeightSpace)-[currentFormView(currentFormViewHeight)]" options:NSLayoutFormatAlignAllLeft metrics:metrics views:views]];
         } else {
-            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[previousFormView]-(defaultHeightSpace)-[currentFormView(currentFormViewHeight)]-(0)-|" options:NSLayoutFormatAlignAllLeft metrics:metrics views:views]];
+            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[previousFormView]-(defaultHeightSpace)-[currentFormView(currentFormViewHeight)]|" options:NSLayoutFormatAlignAllLeft metrics:metrics views:views]];
         }
         
     } else {
@@ -211,12 +217,12 @@
             NSDictionary *metrics = @{@"currentFormViewHeight":@(currentFormView.formViewHeight),
                                       @"defaultHeightSpace":@(defaultHeightSpace)};
             
-            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-(0)-[currentFormView]-(0)-|" options:NSLayoutFormatAlignAllBaseline metrics:0 views:views]];
+            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[currentFormView]|" options:NSLayoutFormatAlignAllBaseline metrics:0 views:views]];
         
         if (NO == currentFormViewIsTheLast) {
             [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(defaultHeightSpace)-[currentFormView(currentFormViewHeight)]" options:NSLayoutFormatAlignAllLeft metrics:metrics views:views]];
         } else {
-            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(defaultHeightSpace)-[currentFormView(currentFormViewHeight)]-(0)-|" options:NSLayoutFormatAlignAllLeft metrics:metrics views:views]];
+            [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-(defaultHeightSpace)-[currentFormView(currentFormViewHeight)]|" options:NSLayoutFormatAlignAllLeft metrics:metrics views:views]];
         }
     }
 }
