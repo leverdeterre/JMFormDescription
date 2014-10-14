@@ -55,7 +55,7 @@
     [descriptions addObject:textfieldTitleDesc];
     
     textfieldTitleDesc = [JMTextfieldWithTitleFormViewDescription new];
-    textfieldTitleDesc.title = @"Mont titre4";
+    textfieldTitleDesc.title = @"Mon titre4";
     textfieldTitleDesc.placeholder = @"Mon placeholder4";
     textfieldTitleDesc.data = model.textfieldText5;
     textfieldTitleDesc.formDelegate = self;
@@ -67,21 +67,21 @@
     [descriptions addObject:headerDesc];
     
     JMTSwitchFormViewDescription *switchDescription = [JMTSwitchFormViewDescription new];
-    switchDescription.data = @"Mon text de switch";
+    switchDescription.data = @"My switch text";
     switchDescription.on = model.switch1;
     switchDescription.formDelegate = self;
     switchDescription.modelKey = @"switch1";
     [descriptions addObject:switchDescription];
     
     switchDescription = [JMTSwitchFormViewDescription new];
-    switchDescription.data = @"Mon text de switch";
+    switchDescription.data = @"My switch text";
     switchDescription.on = model.switch2;
     switchDescription.formDelegate = self;
     switchDescription.modelKey = @"switch2";
     [descriptions addObject:switchDescription];
     
     switchDescription = [JMTSwitchFormViewDescription new];
-    switchDescription.data = @"Switch pour déplier";
+    switchDescription.data = @"Switch to fold/unfold";
     switchDescription.on = model.expended;
     switchDescription.formDelegate = self;
     switchDescription.modelKey = @"expended";
@@ -106,7 +106,7 @@
     }
     
     switchDescription = [JMTSwitchFormViewDescription new];
-    switchDescription.data = @"Mon text de switch un peu plus llong ";
+    switchDescription.data = @"Long switch text but switch is not active";
     switchDescription.enable = NO;
     switchDescription.on = model.switch4;
     switchDescription.formDelegate = self;

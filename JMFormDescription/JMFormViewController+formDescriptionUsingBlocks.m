@@ -125,7 +125,7 @@
     }
     
     switchDescription = [JMTSwitchFormViewDescription new];
-    switchDescription.data = @"Mon text de switch un peu plus llong ";
+    switchDescription.data = @"Long switch text but switch is not active";
     switchDescription.enable = NO;
     switchDescription.on = model.switch4;
     switchDescription.updateBlock = ^(id modifiedValue){
