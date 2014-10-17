@@ -123,8 +123,9 @@
     listDesc.data = model.selectedColorNAme;
     listDesc.listStyle = JMListFormViewModalChoice;
     listDesc.formDelegate = self;
-    listDesc.modelKey = @"selectedColorNAme2";
+    listDesc.modelKey = @"selectedColorNAme";
     listDesc.formViewHeight = 80.0f;
+    listDesc.choices = model.coloChoices;
     [descriptions addObject:listDesc];
     
     listDesc = [JMListFormViewDescription new];
