@@ -177,15 +177,16 @@
         return;
     }
         
-    id views = @{@"contentView": self.contentView};
+    id views = @{@"contentView": self.contentView,
+                 @"scrollView": self};
     NSDictionary *metrics = @{@"contentViewWidth":@(self.frame.size.width)};
-    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[contentView(contentViewWidth)]|"
-                                                                 options:NSLayoutFormatAlignAllBaseline
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[contentView(==scrollView)]|"
+                                                                 options:0
                                                                  metrics:metrics
                                                                    views:views]];
     
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[contentView]|"
-                                                                 options:NSLayoutFormatAlignAllBaseline
+                                                                 options:0
                                                                  metrics:nil
                                                                    views:views]];
 }
