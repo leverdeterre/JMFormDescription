@@ -1,12 +1,12 @@
+## My other works
+
+[http://leverdeterre.github.io] (http://leverdeterre.github.io)
+
 ##JMFormDescription
 
 JMFormDescription is an Objective-C library for easily creating forms on iOS. 
 
 ![Image](./screenshots/merged_demos.png)
-
-## My other librairies
-
-[Have a look to my other librairies] (http://leverdeterre.github.io)
 
 ###Creating a form element (JMFormView)
 
